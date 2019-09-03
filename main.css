@@ -10,8 +10,8 @@ body {
 
 #content {
   position: relative;
-  border: .1vw solid rgba(0, 0, 0, 0);
 }
+
 
 /* First page */
 /* Phone */
@@ -19,7 +19,7 @@ div.phone-hide {
   position: fixed;
   left: 45%;
   bottom: -19vw;
-  transition: .5s;
+  transition: 1s;
 }
 
 div.phone-paralax {
@@ -56,7 +56,6 @@ div.background-accumulator-green {
   position: absolute;
   left: -80%;
   width: 88%;
-  /* width: 80%; */
   height: 100%;
   background: red;
   border-radius: 1vw;
@@ -76,7 +75,6 @@ div.end-accumulator {
   border-radius: 2vw;
   overflow: hidden;
 }
-
 
 div.background-end-accumulator-green {
   width: 0%;
@@ -100,26 +98,53 @@ div.first-vertical-line {
   height: 0vw;
   background: #4EFF01;
   z-index: 1;
-  transition: .5s;
-}
-
-div.bent-line {
-  position: absolute;
-  top: 3.85vw;
-  right: 0vw;
-  width: 85%;
-}
-
-/* change */
-div.width {
-  width: 0%;
-  overflow: hidden;
   transition: 1s;
 }
 
-div.bent-line img {
-  width: 100%;
-  width: 85vw;
+div#bent {
+  position: absolute;
+  top: 3.4vw;
+  right: -.2vw;
+  width: 85%;
+  height: 7vw;
+}
+
+div.width {
+  width: 0%;
+  overflow: hidden;
+  z-index: 1;
+  transition: 2s;
+}
+
+div.bent {
+  margin: -6.6vw 0 0 45.8vw;
+  right: 10vw;
+  width: 29vw;
+  height: 6.5vw;
+  overflow: hidden;
+}
+
+div.bent-line {
+  border: .4vw solid #4EFF01;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 100%;
+  box-sizing: border-box;
+  transform: translateX(-5.5vw);
+}
+
+div.first-horizontal-line {
+  margin-top: 6.6vw;
+  width: 46vw;
+  height: .5vw;
+  background: #4EFF01;
+}
+
+div.first-next-horizontal-line {
+  margin: -.4vw 0 0 74.6vw;
+  width: 11vw;
+  height: .4vw;
+  background: #4EFF01;
 }
 
 /* Charge motion circle */
@@ -143,7 +168,7 @@ div.about {
   top: 3vw;
   left: 5vw;
   font-size: 4vw;
-  transition: .5s;
+  transition: 1s;
 }
 
 div.about-text {
@@ -156,7 +181,7 @@ div.about-text {
   line-height: 2.5vw;
   font-size: 1.4vw;
   z-index: 1;
-  transition: .5s;
+  transition: 1s;
 }
 
 div.about-text img {
@@ -166,7 +191,7 @@ div.about-text img {
 
 div.first-opacity {
   opacity: 0;
-  transition: .5s;
+  transition: 1.5s;
 }
 
 /* Second page */
@@ -174,7 +199,18 @@ div.table-img {
   position: fixed;
   bottom: -42vw;
   width: 100%;
-  transition: .5s;
+  transition: 1s;
+}
+
+div.circle {
+  position: absolute;
+  top: -3.65vw;
+  right: 11.7vw;
+  border: .3vw solid #4EFF01;
+  border-radius: 25vw;
+  width: 24.1vw;
+  height: 24.1vw;
+  transform: rotateX(60deg);
 }
 
 div.table-img img{
@@ -223,7 +259,7 @@ div.second-prompt-line {
 
 div.second-opacity {
   opacity: 0;
-  transition: .5s;
+  transition: 1s;
 }
 
 div.hand-img {
@@ -231,8 +267,8 @@ div.hand-img {
   right: -41vw;
   bottom: 25vw;
   width: 35vw;
-  transition: .5s;
   z-index: 1;
+  transition: 1s;
 }
 
 div.hand-img img {
@@ -244,7 +280,7 @@ div.mission {
   top: -5vw;
   left: 5vw;
   font-size: 4vw;
-  transition: .5s;
+  transition: 1s;
 }
 
 div.mission-text {
@@ -257,9 +293,8 @@ div.mission-text {
   line-height: 2.5vw;
   font-size: 1.4vw;
   z-index: 1;
-  transition: .5s;
+  transition: 1s;
 }
-
 
 div.second-vertical-line {
   position: absolute;
@@ -268,7 +303,7 @@ div.second-vertical-line {
   width: .4vw;
   height: 0vw;
   background: #4EFF01;
-  transition: .5s;
+  transition: 1s;
 }
 
 div.second-horizontal-line {
@@ -278,7 +313,7 @@ div.second-horizontal-line {
   width: 0vw;
   height: .4vw;
   background: #4EFF01;
-  transition: .5s;
+  transition: 1s;
 }
 
 /* Main */
@@ -287,10 +322,10 @@ div#social {
   display: flex;
   align-items: center;
   bottom: 2vw;
-  left: 8vw;
-  height: 4vw;
+  left: 6vw;
+  height: 3vw;
   width: 25vw;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   z-index: 2;
 }
 
@@ -324,5 +359,5 @@ div.active-dot {
   width: .6vw;
   height: .6vw;
   margin: .05vw;
-  transition: 1s;
+  transition: 1.5s;
 }
