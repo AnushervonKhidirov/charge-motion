@@ -23,53 +23,6 @@ var secondHorizontalLine = document.querySelector('.second-horizontal-line');
 
 window.addEventListener('load', firstSlide(0));
 
-// var touchstartX = 1;
-// var touchstartY = 1;
-// var touchendX = 0;
-// var touchendY = 0;
-//
-// window.addEventListener('touchstart', function(event) {
-//     touchstartX = event.screenX;
-//     touchstartY = event.screenY;
-// }, false);
-//
-// window.addEventListener('touchend', function(event) {
-//     touchendX = event.screenX;
-//     touchendY = event.screenY;
-//     handleGesure();
-// }, false);
-//
-// function handleGesure() {
-//     var swiped = 'swiped: ';
-//     if (touchendX < touchstartX) {
-//         alert(swiped + 'left!');
-//     }
-//     if (touchendX > touchstartX) {
-//         alert(swiped + 'right!');
-//     }
-//     if (touchendY < touchstartY) {
-//         alert(swiped + 'down!');
-//     }
-//     if (touchendY > touchstartY) {
-//         alert(swiped + 'up!');
-//     }
-//     if (touchendY == touchstartY) {
-//         alert('tap!');
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.onmousewheel = function (event) {
   var delta = event.deltaY;
 
