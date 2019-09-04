@@ -1,6 +1,7 @@
 // scrolling variable
 var dotItem = document.querySelectorAll('.dot-item');
 var activeDot = document.querySelectorAll('.active-dot');
+var menuItem = document.querySelectorAll('.menu-item');
 var isScrolling = true;
 var numberIndex = 0;
 
@@ -23,6 +24,44 @@ var secondHorizontalLine = document.querySelector('.second-horizontal-line');
 
 window.addEventListener('load', firstSlide(0));
 
+
+// var touchstartX = 1;
+// var touchstartY = 1;
+// var touchendX = 0;
+// var touchendY = 0;
+//
+// window.addEventListener('touchstart', function(event) {
+//     touchstartX = event.screenX;
+//     touchstartY = event.screenY;
+// }, false);
+//
+// window.addEventListener('touchend', function(event) {
+//     touchendX = event.screenX;
+//     touchendY = event.screenY;
+//     handleGesure();
+// }, false);
+//
+// function handleGesure() {
+//     var swiped = 'swiped: ';
+//     if (touchendX < touchstartX) {
+//         alert(swiped + 'left!');
+//     }
+//     if (touchendX > touchstartX) {
+//         alert(swiped + 'right!');
+//     }
+//     if (touchendY < touchstartY) {
+//         alert(swiped + 'down!');
+//     }
+//     if (touchendY > touchstartY) {
+//         alert(swiped + 'up!');
+//     }
+//     if (touchendY == touchstartY) {
+//         alert('tap!');
+//     }
+// }
+
+
+
 window.onmousewheel = function (event) {
   var delta = event.deltaY;
 
@@ -43,6 +82,7 @@ window.onmousewheel = function (event) {
       };
     };
 
+    closing()
     firstSlide(numberIndex);
     secondSlide(numberIndex);
 
@@ -54,10 +94,21 @@ window.onmousewheel = function (event) {
   };
 };
 
+menuItem.forEach(function(elem, index) {
+
+  elem.onclick = function () {
+    numberIndex = index;
+
+    firstSlide(index);
+    secondSlide(index);
+  };
+})
+
 dotItem.forEach(function(elem, index) {
   elem.onclick = function () {
     numberIndex = index;
 
+    closing()
     firstSlide(index);
     secondSlide(index);
   };
