@@ -24,67 +24,28 @@ var secondHorizontalLine = document.querySelector('.second-horizontal-line');
 
 window.addEventListener('load', firstSlide(0));
 
-
-// var touchstartX = 1;
-// var touchstartY = 1;
-// var touchendX = 0;
-// var touchendY = 0;
-//
-// window.addEventListener('touchstart', function(event) {
-//     touchstartX = event.screenX;
-//     touchstartY = event.screenY;
-// }, false);
-//
-// window.addEventListener('touchend', function(event) {
-//     touchendX = event.screenX;
-//     touchendY = event.screenY;
-//     handleGesure();
-// }, false);
-//
-// function handleGesure() {
-//     var swiped = 'swiped: ';
-//     if (touchendX < touchstartX) {
-//         alert(swiped + 'left!');
-//     }
-//     if (touchendX > touchstartX) {
-//         alert(swiped + 'right!');
-//     }
-//     if (touchendY < touchstartY) {
-//         alert(swiped + 'down!');
-//     }
-//     if (touchendY > touchstartY) {
-//         alert(swiped + 'up!');
-//     }
-//     if (touchendY == touchstartY) {
-//         alert('tap!');
-//     }
-// }
-
-
-
 window.onmousewheel = function (event) {
   var delta = event.deltaY;
+  var index = numberIndex;
 
   if (isScrolling) {
     if (delta < 0) {
-      if (numberIndex <= 0) {
-        numberIndex = 0;
+      if (index <= 0) {
+        index = 0;
       } else {
-        numberIndex--;
+        index--;
       };
     };
 
     if (delta > 0) {
-      if (numberIndex >= dotItem.length - 1) {
-        numberIndex = dotItem.length - 1;
+      if (index >= dotItem.length - 1) {
+        index = dotItem.length - 1;
       } else {
-        numberIndex++;
+        index++;
       };
     };
 
-    closing()
-    firstSlide(numberIndex);
-    secondSlide(numberIndex);
+    switching(index);
 
     isScrolling = false;
 
@@ -95,12 +56,10 @@ window.onmousewheel = function (event) {
 };
 
 menuItem.forEach(function(elem, index) {
-
   elem.onclick = function () {
     numberIndex = index;
 
-    firstSlide(index);
-    secondSlide(index);
+    switching(index);
   };
 })
 
@@ -108,12 +67,15 @@ dotItem.forEach(function(elem, index) {
   elem.onclick = function () {
     numberIndex = index;
 
-    closing()
-    firstSlide(index);
-    secondSlide(index);
+    switching(index);
   };
 });
 
+function switching(index) {
+  closing();
+  firstSlide(index);
+  secondSlide(index);
+};
 
 function firstSlide(index) {
   if (index == 0) {
@@ -170,3 +132,45 @@ function activingDot(index) {
 
   activeDot[index].style.opacity = 1;
 };
+
+
+
+
+
+
+
+
+// var touchstartX = 1;
+// var touchstartY = 1;
+// var touchendX = 0;
+// var touchendY = 0;
+//
+// window.addEventListener('touchstart', function(event) {
+//     touchstartX = event.screenX;
+//     touchstartY = event.screenY;
+// }, false);
+//
+// window.addEventListener('touchend', function(event) {
+//     touchendX = event.screenX;
+//     touchendY = event.screenY;
+//     handleGesure();
+// }, false);
+//
+// function handleGesure() {
+//     var swiped = 'swiped: ';
+//     if (touchendX < touchstartX) {
+//         alert(swiped + 'left!');
+//     }
+//     if (touchendX > touchstartX) {
+//         alert(swiped + 'right!');
+//     }
+//     if (touchendY < touchstartY) {
+//         alert(swiped + 'down!');
+//     }
+//     if (touchendY > touchstartY) {
+//         alert(swiped + 'up!');
+//     }
+//     if (touchendY == touchstartY) {
+//         alert('tap!');
+//     }
+// }

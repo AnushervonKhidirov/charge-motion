@@ -47,6 +47,7 @@ li.menu-item {
   box-sizing: border-box;
   border-left: .2vw solid rgba(78, 255, 1, 0);
   border-right: .2vw solid rgba(78, 255, 1, 0);
+  transition: .3s;
 }
 
 li.menu-item:hover {
@@ -57,14 +58,15 @@ li.menu-item:hover {
 
 div.menu-button {
   position: fixed;
-  top: 1.4vw;
-  right: 1.4vw;
+  top: 0vw;
+  right: 0vw;
   height: 2.2vw;
   width: 2.55vw;
   cursor: pointer;
   z-index: 2;
   opacity: 0;
   transition: 1s;
+  padding: 1.4vw;
 }
 
 div.menu-line {
@@ -77,7 +79,7 @@ div.menu-line {
 }
 
 div.l1 {
-  top: 0px;
+  top: 30%;
 }
 
 div.l2 {
@@ -86,7 +88,7 @@ div.l2 {
 }
 
 div.l3 {
-  bottom: 0px;
+  bottom: 30%;
 }
 
 

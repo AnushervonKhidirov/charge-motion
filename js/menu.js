@@ -9,21 +9,21 @@ menuButton.style.opacity = 1;
 menuButton.addEventListener('click', toggleMenu);
 
 for (var i = 0; i < menuItem.length; i++) {
-  menuItem[i].addEventListener('click', toggleMenu)
-}
+  menuItem[i].addEventListener('click', toggleMenu);
+};
 
 function toggleMenu() {
   if (isOpen) {
-    opening()
+    opening();
   } else {
-    closing()
+    closing();
   };
 };
 
 function opening() {
-  menuLine[0].style.transform = 'translate(0%, 225%) rotate(45deg)';
+  menuLine[0].style.transform = 'translate(0vw, .8vw) rotate(45deg)';
   menuLine[1].style.opacity = 0;
-  menuLine[2].style.transform = 'translate(0%, -225%) rotate(-45deg)';
+  menuLine[2].style.transform = 'translate(0vw, -.8vw) rotate(-45deg)';
   menu.style.width = '100%';
 
   setTimeout(function() {
@@ -31,7 +31,7 @@ function opening() {
   }, 500);
 
   isOpen = false;
-}
+};
 
 function closing() {
   menuLine[0].style.transform = 'translate(0%, 0%) rotate(0deg)';
@@ -44,4 +44,4 @@ function closing() {
   }, 500);
 
   isOpen = true;
-}
+};
