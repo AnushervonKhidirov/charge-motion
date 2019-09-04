@@ -26,26 +26,25 @@ window.addEventListener('load', firstSlide(0));
 
 window.onmousewheel = function (event) {
   var delta = event.deltaY;
-  var index = numberIndex;
 
   if (isScrolling) {
     if (delta < 0) {
-      if (index <= 0) {
-        index = 0;
+      if (numberIndex <= 0) {
+        numberIndex = 0;
       } else {
-        index--;
+        numberIndex--;
       };
     };
 
     if (delta > 0) {
-      if (index >= dotItem.length - 1) {
-        index = dotItem.length - 1;
+      if (numberIndex >= dotItem.length - 1) {
+        numberIndex = dotItem.length - 1;
       } else {
-        index++;
+        numberIndex++;
       };
     };
 
-    switching(index);
+    switching(numberIndex);
 
     isScrolling = false;
 
