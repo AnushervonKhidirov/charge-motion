@@ -12,6 +12,83 @@ body {
   position: relative;
 }
 
+div#menu {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.4vw;
+  width: 0%;
+  height: 5vw;
+  box-sizing: border-box;
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s linear;
+}
+
+ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding: 0vw 2vw;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: .5s;
+}
+
+li.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0vw 2vw;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: .2vw solid rgba(78, 255, 1, 0);
+  border-right: .2vw solid rgba(78, 255, 1, 0);
+}
+
+li.menu-item:hover {
+  background: #101011;
+  border-left: .2vw solid rgba(78, 255, 1, 1);
+  border-right: .2vw solid rgba(78, 255, 1, 1);
+}
+
+div.menu-button {
+  position: fixed;
+  top: 1.4vw;
+  right: 1.4vw;
+  height: 2.2vw;
+  width: 2.55vw;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  transition: 1s;
+}
+
+div.menu-line {
+  position: absolute;
+  height: .4vw;
+  width: 2.55vw;
+  transition-duration: .5s;
+  background: #4EFF01;
+  border-radius: 5px;
+}
+
+div.l1 {
+  top: 0px;
+}
+
+div.l2 {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+div.l3 {
+  bottom: 0px;
+}
+
 
 /* First page */
 /* Phone */
