@@ -27,7 +27,7 @@ div.third-horizontal-line {
 }
 
 /* поменять класс */
-div.nav {
+div.third-page-menu {
   position: fixed;
   top: 11vw;
   left: -100%;
@@ -95,7 +95,7 @@ div.underline-arrow img {
 }
 
 /* поменять класс */
-div.rel {
+div.choose-third-page-menu {
   position: relative;
   top: 50vw;
   left: 50%;
