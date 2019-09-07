@@ -9,6 +9,4 @@ window.addEventListener('mousemove', function (event) {
   for (var i = 0; i < paralaxItem.length; i++) {
     paralaxItem[i].style.transform = 'translate(-' + left + 'px, -' + top + 'px)';
   };
-
-  paralaxPhone.style.transform = 'translate(-' + left + 'px, -' + top + 'px) rotate(-30deg)';
 });
