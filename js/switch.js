@@ -1,8 +1,11 @@
 var dotItem = document.querySelectorAll('.dot-item');
+var lengthItem = dotItem.length - 1;
 var activeDot = document.querySelectorAll('.active-dot');
 var menuItem = document.querySelectorAll('.menu-item');
 var isScrolling = true;
 var numberIndex = 0;
+
+var partners = document.querySelector('.partners')
 
 window.addEventListener('load', switching(0));
 
@@ -12,15 +15,15 @@ window.onmousewheel = function (event) {
   if (isScrolling) {
     if (delta < 0) {
       if (numberIndex <= 0) {
-        numberIndex = 0;
+        numberIndex = lengthItem;
       } else {
         numberIndex--;
       };
     };
 
     if (delta > 0) {
-      if (numberIndex >= dotItem.length - 1) {
-        numberIndex = dotItem.length - 1;
+      if (numberIndex >= lengthItem) {
+        numberIndex = 0;
       } else {
         numberIndex++;
       };
