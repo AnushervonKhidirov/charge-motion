@@ -26,7 +26,6 @@ div.third-horizontal-line {
   transition: 1s;
 }
 
-/* поменять класс */
 div.third-page-menu {
   position: fixed;
   top: 11vw;
@@ -94,11 +93,10 @@ div.underline-arrow img {
   width: 100%;
 }
 
-/* поменять класс */
 div.choose-third-page-menu {
-  position: relative;
-  top: 50vw;
-  left: 50%;
+  position: fixed;
+  left: -100%;
+  top: 18vw;
   transform: translateX(-50%);
   width: 75%;
   height: 25vw;

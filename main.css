@@ -96,10 +96,9 @@ div#social {
   display: flex;
   align-items: center;
   bottom: 2vw;
-  left: 6vw;
-  height: 3vw;
-  width: 25vw;
-  font-size: 1.4vw;
+  left: 5vw;
+  height: 2.5vw;
+  font-size: 1.2vw;
   z-index: 2;
 }
 
@@ -111,7 +110,7 @@ div#social img {
 
 div#dots {
   position: fixed;
-  bottom: 7vw;
+  bottom: 2.5vw;
   right: 0vw;
   display: grid;
   grid-gap: 1.5vw;
