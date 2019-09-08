@@ -2,7 +2,7 @@ var dotItem = document.querySelectorAll('.dot-item');
 var lengthItem = dotItem.length - 1;
 var activeDot = document.querySelectorAll('.active-dot');
 var menuItem = document.querySelectorAll('.menu-item');
-var scrolling = document.querySelector('.choose-third-page-menu')
+var scrolling = document.querySelector('.choose-third-page-menu');
 var isScrolling = true;
 var permission = true;
 var numberIndex = 0;
@@ -11,19 +11,21 @@ window.addEventListener('load', switching(0));
 
 window.onmousewheel = function () {
   mousewheelSwitch(event);
-}
+};
+
+isPermission()
 
 function isPermission() {
   scrolling.onmouseover = function () {
     permission = false;
     console.log(permission);
-  }
+  };
 
   scrolling.onmouseout = function () {
     permission = true;
     console.log(permission);
-  }
-}
+  };
+};
 
 function mousewheelSwitch(event) {
   isPermission()
