@@ -4,20 +4,21 @@ var underline = document.querySelector('.underline-active')
 var bankItem = document.querySelectorAll('.bank-item')
 var background = document.querySelectorAll('.background')
 
-var sizeArr = [6.2, 13.2, 23.5, 37.7, 48, 55.2] //70%
-// var sizeArr = [11.2, 18.2, 28.5, 42.7, 53, 60.2] //80%
+var menuWidth = document.querySelector('.our-partners-menu')
+var movePlace = document.querySelector('.move-place')
+
+movePlace.style.width = menuWidth.clientWidth + 'px';
 
 li.forEach(function (elem, index) {
   elem.onclick = function () {
     underline.style.width = elem.clientWidth + 'px';
-    underline.style.left = sizeArr[index] + 'vw';
+    underline.style.left = elem.offsetLeft + 'px';
   }
 })
 
 bankItem.forEach(function (elem, index) {
   return elem.onclick = () => toggle(index);
 })
-
 
 function toggle(index) {
   bankItem[index].classList.toggle('active')

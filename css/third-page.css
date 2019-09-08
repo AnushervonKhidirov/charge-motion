@@ -71,9 +71,15 @@ div.underline {
   background: rgba(255, 255, 255, .2);
 }
 
+div.move-place {
+  position: relative;
+  height: .8vw;
+  margin: auto;
+}
+
 div.underline-active {
   position: absolute;
-  left: 6.2vw;
+  left: 0vw;
   background: #4EFF01;
   width: 93px;
   height: .8vw;
