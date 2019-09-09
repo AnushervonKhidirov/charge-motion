@@ -9,7 +9,7 @@ var numberIndex = 0;
 
 window.addEventListener('load', switching(0));
 
-window.onmousewheel = function () {
+window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function () {
   mousewheelSwitch(event);
 };
 
