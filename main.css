@@ -17,7 +17,7 @@ div#menu {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   width: 0%;
   height: 5vw;
   box-sizing: border-box;
@@ -33,7 +33,7 @@ ul.menu {
   width: 100%;
   overflow: hidden;
   height: 100%;
-  padding: 0vw 2vw;
+  padding: 0vw 1vw;
   box-sizing: border-box;
   opacity: 0;
   transition: .5s;
