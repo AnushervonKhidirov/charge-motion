@@ -12,8 +12,16 @@ body {
   position: relative;
 }
 
+
+
+
+
+
+
+
 div#menu {
   position: fixed;
+  right: 0px;
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
@@ -26,11 +34,26 @@ div#menu {
   transition: .5s linear;
 }
 
-ul.menu {
+/* div#menu {
+  position: fixed;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.6vw;
+  width: 0%;
+  height: 5vw;
+  box-sizing: border-box;
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s linear;
+} */
+
+ul.menu {
+  position: absolute;
+  top: -1.57vw;
+  right: 5.35vw;
+  display: flex;
   list-style-type: none;
-  width: 100%;
   overflow: hidden;
   height: 100%;
   padding: 0vw 1vw;
@@ -38,6 +61,17 @@ ul.menu {
   opacity: 0;
   transition: .5s;
 }
+
+/* ul.menu {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  height: 100%;
+  padding: 0vw 1vw;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: .5s;
+} */
 
 li.menu-item {
   display: flex;
@@ -89,6 +123,22 @@ div.l2 {
 
 div.l3 {
   bottom: 30%;
+}
+
+div.openMenu div.l1 {
+  transform: translate(0vw, .8vw) rotate(45deg)
+}
+
+div.openMenu div.l2 {
+  opacity: 0;
+}
+
+div.openMenu div.l3 {
+  transform: translate(0vw, -.8vw) rotate(-45deg)
+}
+
+div.openMenu div#menu {
+  width: 100%;
 }
 
 div#social {

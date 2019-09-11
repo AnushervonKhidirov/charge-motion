@@ -139,33 +139,8 @@ div.background {
   transition: .3s;
 }
 
-div.to-top {
-  position: absolute;
-  top: 0vw;
-  right: .2vw;
-  height: 1.5vw;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-}
-
-div.to-top img {
-  height: 100%;
-}
-
-div.to-bottom {
-  position: absolute;
-  bottom: 0vw;
-  right: .2vw;
-  height: 1.5vw;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-}
-
-div.to-bottom img {
-  height: 100%;
-  transform: rotateX(180deg);
+div.active div.background {
+  opacity: 1;
 }
 
 /* scrollbar */

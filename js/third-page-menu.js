@@ -6,6 +6,8 @@ var background = document.querySelectorAll('.background')
 
 var menuWidth = document.querySelector('.our-partners-menu')
 var movePlace = document.querySelector('.move-place')
+var previous = 0;
+var current = 0;
 
 movePlace.style.width = menuWidth.clientWidth + 'px';
 
@@ -17,31 +19,15 @@ li.forEach(function (elem, index) {
 })
 
 bankItem.forEach(function (elem, index) {
-  return elem.onclick = () => toggle(index);
-})
+  elem.onclick = function () {
+    previous = current;
+    current = index;
 
-function toggle(index) {
-  bankItem[index].classList.toggle('active')
-
-  var active = document.querySelectorAll('.active')
-
-  for (var i = 0; i < bankItem.length; i++) {
-    background[i].style.opacity = 0;
-  }
-
-  background[index].style.opacity = 1;
-
-
-  if (active.length == 0) {
-    for (var i = 0; i < bankItem.length; i++) {
-      background[i].style.opacity = 0;
+    if (previous == current) {
+      previous = current - 1;
     }
-  }
 
-  if (active.length > 1) {
-    for (var i = 0; i < bankItem.length; i++) {
-      bankItem[i].classList.remove('active')
-    }
-    bankItem[index].classList.toggle('active')
-  }
-}
+    bankItem[previous].classList.remove('active')
+    bankItem[current].classList.toggle('active')
+  };
+});

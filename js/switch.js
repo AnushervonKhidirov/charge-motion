@@ -5,7 +5,8 @@ var menuItem = document.querySelectorAll('.menu-item');
 var scrolling = document.querySelector('.choose-third-page-menu');
 var isScrolling = true;
 var permission = true;
-var numberIndex = 0;
+var prevpos = 0;
+var pos = 0;
 
 window.addEventListener('load', switching(0));
 
@@ -32,25 +33,27 @@ function mousewheelSwitch(event) {
 
   var delta = event.deltaY;
 
+  prevpos = pos
+
   if (permission) {
     if (isScrolling) {
       if (delta < 0) {
-        if (numberIndex <= 0) {
-          numberIndex = lengthItem;
+        if (pos <= 0) {
+          pos = lengthItem;
         } else {
-          numberIndex--;
+          pos--;
         };
       };
 
       if (delta > 0) {
-        if (numberIndex >= lengthItem) {
-          numberIndex = 0;
+        if (pos >= lengthItem) {
+          pos = 0;
         } else {
-          numberIndex++;
+          pos++;
         };
       };
 
-      switching(numberIndex);
+      switching(pos);
 
       isScrolling = false;
 
@@ -63,7 +66,8 @@ function mousewheelSwitch(event) {
 
 menuItem.forEach(function(elem, index) {
   elem.onclick = function () {
-    numberIndex = index;
+    prevpos = pos;
+    pos = index;
 
     switching(index);
   };
@@ -71,7 +75,8 @@ menuItem.forEach(function(elem, index) {
 
 dotItem.forEach(function(elem, index) {
   elem.onclick = function () {
-    numberIndex = index;
+    prevpos = pos;
+    pos = index;
 
     switching(index);
   };
@@ -88,9 +93,6 @@ function changeBodyClass(index) {
 }
 
 function activingDot(index) {
-  for (var i = 0; i < activeDot.length; i++) {
-    activeDot[i].style.opacity = 0;
-  };
-
-  activeDot[index].style.opacity = 1;
+  activeDot[prevpos].style.opacity = 0;
+  activeDot[pos].style.opacity = 1;
 };

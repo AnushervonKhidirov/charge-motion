@@ -1,5 +1,6 @@
 var menuButton = document.querySelector('.menu-button');
 var menu = document.querySelector('#menu');
+var topMenu = document.querySelector('#top-menu');
 var menuBlock = document.querySelector('.menu');
 var menuItem = document.querySelectorAll('.menu-item');
 var menuLine = document.querySelectorAll('.menu-line');
@@ -21,10 +22,7 @@ function toggleMenu() {
 };
 
 function opening() {
-  menuLine[0].style.transform = 'translate(0vw, .8vw) rotate(45deg)';
-  menuLine[1].style.opacity = 0;
-  menuLine[2].style.transform = 'translate(0vw, -.8vw) rotate(-45deg)';
-  menu.style.width = '100%';
+  topMenu.classList.add('openMenu');
 
   setTimeout(function() {
     menuBlock.style.opacity = 1;
@@ -34,13 +32,10 @@ function opening() {
 };
 
 function closing() {
-  menuLine[0].style.transform = 'translate(0%, 0%) rotate(0deg)';
-  menuLine[1].style.opacity = 1;
-  menuLine[2].style.transform = 'translate(0%, 0%) rotate(0deg)';
   menuBlock.style.opacity = 0;
 
   setTimeout(function() {
-    menu.style.width = '0%';
+    topMenu.classList.remove('openMenu');
   }, 500);
 
   isOpen = true;
