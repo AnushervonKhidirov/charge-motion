@@ -20,18 +20,9 @@ li.forEach(function (elem, index) {
 
 bankItem.forEach(function (elem, index) {
   elem.onclick = function () {
-    // previous = current;
-    // current = index;
-    //
-    // if (previous == current) {
-    //   previous = current - 1;
-    // }
-
-    // bankItem[previous].classList.remove('active')
-    // bankItem[current].classList.toggle('active')
-
+    bankItem[index].classList.toggle('active')
+    if(previous == index) return;
     bankItem[previous].classList.remove('active')
-    this.classList.toggle('active')
-    previous = index
+    previous = index;
   };
 });
