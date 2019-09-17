@@ -9,7 +9,7 @@ let desctopScrolling = true;
 let prevpos = 0;
 let pos = 0;
 
-let isLoad = false;
+let isLoad = true;
 
 
 if (document.body.clientWidth < 850) {
@@ -27,7 +27,7 @@ function scrollingControl() {
 };
 
 
-window.addEventListener('load', switching(0));
+window.addEventListener('load', switching);
 
 window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function () {
   if (desctopScrolling) {
@@ -109,6 +109,14 @@ dotItem.forEach(function(elem, index) {
 });
 
 function switching(index) {
+  if (isLoad) {
+    index = 0;
+    isLoad = false;
+    // alert('hello')
+  }
+  // else {
+  //   index = index;
+  // }
   changeBodyClass(index);
   activingDot(index);
 };
@@ -123,16 +131,16 @@ function itemSwitch(index) {
 
 
 function changeBodyClass(index) {
+  document.body.setAttribute('class', 'pos_' + index);
 
-  if (isLoad) {
-    document.body.setAttribute('class', 'pos_' + index);
-  }
-  else {
-    window.addEventListener('load', function() {
-      document.body.setAttribute('class', 'pos_' + index);
-      isLoad = true;
-    });
-  }
+  // if (isLoad) {
+  //   window.addEventListener('load', function() {
+  //     document.body.setAttribute('class', 'pos_' + index);
+  //     isLoad = false;
+  //   });
+  // } else {
+  //   document.body.setAttribute('class', 'pos_' + index);
+  // }
 };
 
 function activingDot(index) {
