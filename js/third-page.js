@@ -13,6 +13,7 @@ let current = 0;
 movePlace.style.width = menuWidth.clientWidth + 'px';
 
 window.addEventListener('resize', () => movingUnderline(indexElem))
+window.addEventListener('load', () => movingUnderline(indexElem))
 
 li.forEach(function (elem, index) {
   elem.onclick = () => movingUnderline(index)

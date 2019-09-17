@@ -5,11 +5,22 @@ let mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 let isOpen = true;
 
 menuButton.style.opacity = 1;
-menuButton.addEventListener('click', toggleMenu);
+menuButton.addEventListener('click', qwer);
 
 for (let i = 0; i < mobileMenuItem.length; i++) {
-  mobileMenuItem[i].addEventListener('click', toggleMenu);
+  mobileMenuItem[i].addEventListener('click', qwer);
 };
+
+let isClose = true;
+
+function qwer() {
+  if (isClose) {
+    toggleMenu();
+    isClose = false;
+  }
+  setTimeout(() => isClose = true, 1200)
+}
+
 
 function toggleMenu() {
   if (isOpen) {
@@ -22,6 +33,7 @@ function toggleMenu() {
 function opening() {
   mobileMenu.classList.add('open-mobile-menu');
   menuButton.classList.add('open-mobile-menu-button');
+  document.body.style.overflow = 'hidden';
 
   setTimeout(function() {
     menuButton.classList.add('open-mobile-menu-button-transform');
@@ -34,6 +46,7 @@ function opening() {
 function closing() {
   menuBlock.style.opacity = 0;
   menuButton.classList.remove('open-mobile-menu-button-transform');
+  document.body.style.overflow = 'auto';
 
   setTimeout(function() {
     mobileMenu.classList.remove('open-mobile-menu');

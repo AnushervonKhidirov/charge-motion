@@ -4,9 +4,10 @@
   height: 0%;
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
-  z-index: 3;
   overflow: hidden;
   transition: .7s;
+  user-select: none;
+  z-index: 3;
 }
 
 ul.mobile-menu {

@@ -115,11 +115,14 @@ function switching(index) {
     if (desctopScrolling == false) {
       document.body.style.overflow = 'auto';
     }
+
     isLoad = false;
   }
 
-  changeBodyClass(index);
-  activingDot(index);
+  if (!isLoad) {
+    changeBodyClass(index);
+    activingDot(index);
+  }
 
 };
 

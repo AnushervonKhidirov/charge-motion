@@ -1,22 +1,12 @@
-@media screen and (min-width: 1000px) {
-  #header {
-    height: 5.75vw;
-  }
+/* подправить размеры экрана */
 
-  #content {
-    top: 5.75vw;
-  }
+@media screen and (min-width: 1000px) {
+
 }
 
 
 @media screen and (min-width: 850px) and (max-width: 1000px) {
-  #header {
-    height: 5.75vw;
-  }
 
-  #content {
-    top: 5.75vw;
-  }
 }
 
 
@@ -30,22 +20,12 @@
     height: 4.5vw;
   }
 
-  div#dots {
-    display: none;
-  }
-
   #header {
     height: 10vw;
   }
 
-  ul#menu {
-    display: none;
-  }
-
   div#logo {
     top: -.7vw;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   div#logo span.big-font {
@@ -63,34 +43,15 @@
     width: 9vw;
   }
 
-  #mobile-menu {
-    display: block;
-  }
-
   div.menu-button {
-    position: fixed;
-    top: 0vw;
-    right: 0vw;
-    cursor: pointer;
-    z-index: 3;
-    transition: 1s;
     height: 4.4vw;
     width: 5.1vw;
     padding: 2.8vw;
-    opacity: 0;
   }
-
 
   div.menu-line {
-    position: absolute;
-    transition-duration: .5s;
     height: .8vw;
     width: 5.1vw;
-    border-radius: 5px;
-    background: #70BF4C;
-  }
-  div.l2 {
-    background: #243F83 !important;
   }
 
   ul.mobile-menu {
@@ -104,7 +65,7 @@
   }
 }
 
-/* @media screen and (max-width: 450px) { */
+
 @media screen and (max-width: 550px) {
   div.loading-page span {
     font-size: 6vw;
@@ -115,25 +76,13 @@
     height: 9vw;
   }
 
-  div#dots {
-    display: none;
-  }
-
   #header {
     height: 15vw;
-    width: 100%;
-  }
-
-  ul#menu {
-    display: none;
   }
 
   div#logo {
     top: -1.05vw;
-    left: 50%;
-    transform: translateX(-50%);
   }
-
 
   div#logo span.big-font {
     font-size: 6vw;
@@ -150,36 +99,15 @@
     width: 13.5vw;
   }
 
-
-  #mobile-menu {
-    display: block;
-  }
-
   div.menu-button {
-    position: fixed;
-    top: 0vw;
-    right: 0vw;
-    cursor: pointer;
-    z-index: 3;
-    transition: 1s;
     height: 6.6vw;
     width: 7.65vw;
     padding: 4.2vw;
-    opacity: 0;
   }
 
   div.menu-line {
-    position: absolute;
-    transition-duration: .5s;
-    background: #fff;
     height: 1.2vw;
     width: 7.65vw;
-    border-radius: 5px;
-    background: #70BF4C;
-  }
-
-  div.l2 {
-    background: #243F83 !important;
   }
 
   ul.mobile-menu {
@@ -190,5 +118,102 @@
 
   #content {
     top: 15vw;
+  }
+}
+
+
+@media screen and (min-width: 850px) {
+  body {
+    overflow: hidden;
+  }
+
+  #header {
+    height: 5.75vw;
+  }
+
+  #content {
+    top: 5.75vw;
+  }
+
+  div.vertical-line {
+    position: absolute;
+    top: 0vw;
+    width: .4vw;
+    height: 0vw;
+    background: #4EFF01;
+    transition: 1s;
+    z-index: 1;
+  }
+
+  div.horizontal-line {
+    position: absolute;
+    top: 7.65vw;
+    left: 0vw;
+    width: 0vw;
+    height: .4vw;
+    background: #4EFF01;
+    transition: 1s;
+  }
+
+  div.name-page-font {
+    position: absolute;
+    font-family: 'Yu Gothic Light';
+    font-size: 2.5vw !important;
+    top: -5vw;
+    left: 2vw;
+    transition: 1s;
+  }
+
+  div.text-page-font {
+    position: absolute;
+    width: 28vw;
+    top: 11vw;
+    padding: 1.5vw;
+    left: -33vw;
+    line-height: 2.5vw;
+    font-size: 1.4vw;
+    transition: 1s;
+    z-index: 1;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  div#dots {
+    display: none;
+  }
+
+  ul#menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+
+  div#logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div.menu-button {
+    position: fixed;
+    top: 0vw;
+    right: 0vw;
+    cursor: pointer;
+    z-index: 3;
+    transition: 1s;
+    opacity: 0;
+  }
+
+  div.menu-line {
+    position: absolute;
+    transition-duration: .5s;
+    border-radius: 5px;
+    background: #70BF4C;
+  }
+
+  div.l2 {
+    background: #243F83 !important;
   }
 }

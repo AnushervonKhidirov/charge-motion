@@ -7,6 +7,7 @@ div#header {
   width: 100%;
   background: #101011;
   padding: 0vw 1vw;
+  user-select: none;
   box-sizing: border-box;
   box-shadow: 0vw .2vw .5vw #4EFF01;
   z-index: 4;
