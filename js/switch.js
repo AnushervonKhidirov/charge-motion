@@ -1,52 +1,72 @@
-var dotItem = document.querySelectorAll('.dot-item');
-var lengthItem = dotItem.length - 1;
-var activeDot = document.querySelectorAll('.active-dot');
-var menuItem = document.querySelectorAll('.menu-item');
-var scrolling = document.querySelector('.choose-third-page-menu');
-var isScrolling = true;
-var permission = true;
-var prevpos = 0;
-var pos = 0;
+let dotItem = document.querySelectorAll('.dot-item');
+let activeDot = document.querySelectorAll('.active-dot');
+let menuItemSwitch = document.querySelectorAll('.menu-item');
+let mobileMenuItemSwitch = document.querySelectorAll('.mobile-menu-item');
+let scrolling = document.querySelector('.choose-third-page-menu');
+let isScrolling = true;
+let permission = true;
+let desctopScrolling = true;
+let prevpos = 0;
+let pos = 0;
+
+let isLoad = false;
+
+
+if (document.body.clientWidth < 850) {
+  desctopScrolling = false;
+};
+
+window.addEventListener('resize', scrollingControl);
+
+function scrollingControl() {
+  if (document.body.clientWidth < 850) {
+    desctopScrolling = false;
+  } else {
+    desctopScrolling = true;
+  };
+};
+
 
 window.addEventListener('load', switching(0));
 
 window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function () {
-  mousewheelSwitch(event);
+  if (desctopScrolling) {
+    mousewheelSwitch(event);
+  };
 };
 
-isPermission()
+isPermission();
 
 function isPermission() {
   scrolling.onmouseover = function () {
     permission = false;
-    console.log(permission);
   };
 
   scrolling.onmouseout = function () {
     permission = true;
-    console.log(permission);
   };
 };
 
+
 function mousewheelSwitch(event) {
-  isPermission()
+  isPermission();
 
-  var delta = event.deltaY;
+  let delta = event.deltaY;
 
-  prevpos = pos
+  prevpos = pos;
 
   if (permission) {
     if (isScrolling) {
       if (delta < 0) {
         if (pos <= 0) {
-          pos = lengthItem;
+          pos = dotItem.length - 1;
         } else {
           pos--;
         };
       };
 
       if (delta > 0) {
-        if (pos >= lengthItem) {
+        if (pos >= dotItem.length - 1) {
           pos = 0;
         } else {
           pos++;
@@ -64,35 +84,60 @@ function mousewheelSwitch(event) {
   };
 };
 
-menuItem.forEach(function(elem, index) {
+menuItemSwitch.forEach(function(elem, index) {
   elem.onclick = function () {
-    prevpos = pos;
-    pos = index;
-
-    switching(index);
+    if (desctopScrolling) {
+      itemSwitch(index);
+    };
   };
-})
+});
+
+mobileMenuItemSwitch.forEach(function(elem, index) {
+  elem.onclick = function () {
+    if (desctopScrolling) {
+      itemSwitch(index);
+    };
+  };
+});
 
 dotItem.forEach(function(elem, index) {
   elem.onclick = function () {
-    prevpos = pos;
-    pos = index;
-
-    switching(index);
+    if (desctopScrolling) {
+      itemSwitch(index);
+    };
   };
 });
 
 function switching(index) {
-  closing();
   changeBodyClass(index);
   activingDot(index);
 };
 
-function changeBodyClass(index) {
-  document.body.setAttribute('class', 'pos_' + index);
+function itemSwitch(index) {
+  prevpos = pos;
+  pos = index;
+
+  switching(index);
 }
+
+
+
+function changeBodyClass(index) {
+
+  if (isLoad) {
+    document.body.setAttribute('class', 'pos_' + index);
+  }
+  else {
+    window.addEventListener('load', function() {
+      document.body.setAttribute('class', 'pos_' + index);
+      isLoad = true;
+    });
+  }
+};
 
 function activingDot(index) {
   activeDot[prevpos].style.opacity = 0;
   activeDot[pos].style.opacity = 1;
+  menuItemSwitch[prevpos].classList.remove('activeMenu');
+  menuItemSwitch[pos].classList.add('activeMenu');
 };
