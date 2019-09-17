@@ -1,11 +1,30 @@
-var paralaxPhone = document.querySelector('.phone-paralax');
-var paralaxItem = document.querySelectorAll('.paralax');
+let paralaxPhone = document.querySelector('.phone-paralax');
+let paralaxItem = document.querySelectorAll('.paralax');
+let desctopParalax = true;
 
-window.addEventListener('mousemove', function (event) {
-  var left = event.pageX / 50;
-  var top = event.pageY / 33;
+if (document.body.clientWidth < 850) {
+  desctopParalax = false;
+};
 
-  for (var i = 0; i < paralaxItem.length; i++) {
-    paralaxItem[i].style.transform = 'translate(-' + left + 'px, -' + top + 'px)';
+window.addEventListener('resize', paralaxControl);
+
+function paralaxControl() {
+  if (document.body.clientWidth < 850) {
+    desctopParalax = false;
+  } else {
+    desctopParalax = true;
   };
-});
+};
+
+window.addEventListener('mousemove', movingElement);
+
+function movingElement(event) {
+  if (desctopParalax) {
+    let left = event.pageX / 50;
+    let top = event.pageY / 33;
+
+    for (let i = 0; i < paralaxItem.length; i++) {
+      paralaxItem[i].style.transform = 'translate(-' + left + 'px, -' + top + 'px)';
+    };
+  };
+};

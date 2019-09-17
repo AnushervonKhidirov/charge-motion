@@ -1,4 +1,4 @@
-div.table-img {
+/* div.table-img {
   position: fixed;
   bottom: -42vw;
   width: 100%;
@@ -117,4 +117,142 @@ div.second-horizontal-line {
   height: .4vw;
   background: #4EFF01;
   transition: 1s;
+} */
+
+
+@media screen and (min-width: 850px) {
+  div.table-img {
+    position: fixed;
+    bottom: -42vw;
+    width: 100%;
+    transition: 1s;
+  }
+
+  div.circle {
+    position: absolute;
+    top: -3.65vw;
+    right: 11.7vw;
+    border: .3vw solid #4EFF01;
+    border-radius: 25vw;
+    width: 24.1vw;
+    height: 24.1vw;
+    transform: rotateX(60deg);
+  }
+
+  div.table-img img{
+    width: 100%;
+  }
+
+  div.prompt {
+    position: absolute;
+    font-size: 1.4vw;
+    z-index: 1;
+  }
+
+  div.first-prompt {
+    top: -5vw;
+    right: 25vw;
+  }
+
+  div.second-prompt {
+    bottom: 10.5vw;
+    right: 10vw;
+  }
+
+  div.first-prompt-line {
+    position: absolute;
+    top: -3.5vw;
+    right: 37vw;
+    border-left: .15vw solid;
+    border-top: .15vw solid;
+    width: 3vw;
+    height: 9vw;
+    z-index: 1;
+    transform: skewX(50deg);
+  }
+
+  div.second-prompt-line {
+    position: absolute;
+    bottom: 12vw;
+    right: 33vw;
+    border-left: .15vw solid;
+    border-bottom: .15vw solid;
+    width: 3vw;
+    height: 3.5vw;
+    z-index: 1;
+    transform: skewX(-50deg);
+  }
+
+  div.second-opacity {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  div.hand-img {
+    position: fixed;
+    right: -41vw;
+    bottom: 20.5vw;
+    width: 35vw;
+    z-index: 1;
+    transition: 1s;
+  }
+
+  div.hand-img img {
+    width: 100%;
+  }
+
+  div.mission {
+    position: absolute;
+    top: -5vw;
+    left: 5vw;
+    font-size: 3vw;
+    transition: 1s;
+  }
+
+  div.mission-text {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    padding: 1.5vw;
+    width: 28vw;
+    top: 12vw;
+    left: -33vw;
+    line-height: 2.5vw;
+    font-size: 1.4vw;
+    z-index: 1;
+    transition: 1s;
+  }
+
+  div.second-vertical-line {
+    position: absolute;
+    top: 0vw;
+    left: 31vw;
+    width: .4vw;
+    height: 0vw;
+    background: #4EFF01;
+    transition: 1s;
+    z-index: 1;
+  }
+
+  div.second-horizontal-line {
+    position: absolute;
+    top: 7.65vw;
+    left: 0vw;
+    width: 0vw;
+    height: .4vw;
+    background: #4EFF01;
+    transition: 1s;
+    z-index: 1;
+  }
+}
+
+
+
+@media screen and (max-width: 850px) {
+  div.table-img {
+    display: none;
+  }
+
+  div.hand-img {
+    display: none;
+  }
 }

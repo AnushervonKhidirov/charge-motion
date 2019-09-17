@@ -3,38 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
     <link rel="stylesheet" href="css/first-page.css">
     <link rel="stylesheet" href="css/second-page.css">
     <link rel="stylesheet" href="css/third-page.css">
     <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
     <title>Charge motion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div id="content">
+    <div id="header">
+      <div id="logo">
+        <span class="big-font">charge</span>
+        <img src="images/logo_w.png" class="white"><img src="images/logo_g.png" class="green"></img>
+        <span class="big-font">motion</span>
+        <!-- charge <img src="images/logo_w.png" alt=""> motion -->
+        <span class="little-font">fast & wireless</span>
+      </div>
 
-      <!-- Menu -->
-      <div id="top-menu">
-        <div id="menu">
-          <ul class="menu">
-            <li class="menu-item">О нас</li>
-            <li class="menu-item">Наша миссия</li>
-            <li class="menu-item">Наши партнёры</li>
+      <ul id="menu">
+        <li class="menu-item">О нас</li>
+        <li class="menu-item">Наша миссия</li>
+        <li class="menu-item">Наши партнёры</li>
+        <li class="menu-item">Page 4</li>
+        <li class="menu-item">Page 5</li>
+        <li class="menu-item">Page 6</li>
+      </ul>
+
+      <div class="menu-button">
+        <div class="menu-line l1"></div>
+        <div class="menu-line l2"></div>
+        <div class="menu-line l3"></div>
+      </div>
+    </div>
+
+    <div id="content">
+      <!-- Mobile menu -->
+        <div id="mobile-menu">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">О нас</li>
+            <li class="mobile-menu-item">Наша миссия</li>
+            <li class="mobile-menu-item">Наши партнёры</li>
+            <li class="mobile-menu-item">Page 4</li>
+            <li class="mobile-menu-item">Page 5</li>
+            <li class="mobile-menu-item">Page 6</li>
           </ul>
         </div>
-
-        <div class="menu-button">
-          <div class="menu-line l1"></div>
-          <div class="menu-line l2"></div>
-          <div class="menu-line l3"></div>
-        </div>
-      </div>
 
       <!-- First page -->
       <div class="about">О НАС:</div>
 
       <div class="about-text">
-        <img src="images/charge motion.png">
         Это новый технологический стартап,
         основанный в 2018 году,
         расположенный в Вене и Душанбе,
@@ -48,6 +70,10 @@
       <!-- line -->
       <div class="first-vertical-line"></div>
 
+      <div class="first-mobile-horizontal-line">
+
+      </div>
+
       <div id="bent">
         <div class="width">
           <div class="first-horizontal-line"></div>
@@ -57,13 +83,13 @@
       </div>
 
       <div class="charge-motion-circle first-opacity">
-        <img src="images/charge motion (circle).png" draggable="false">
+        <img src="images/charge motion.png" draggable="false">
       </div>
 
       <!-- Phone -->
       <div class="phone-hide">
         <div class="paralax phone-paralax">
-          <img src="images/phone.png">
+          <img class="phone">
           <div class="accumulator">
             <div class="background-accumulator">
               <div class="background-accumulator-green"></div>
@@ -104,7 +130,6 @@
       </div>
 
       <!-- Third page -->
-
       <div class="our-partners">НАШИ ПАРТНЁРЫ</div>
       <div class="third-vertical-line"></div>
       <div class="third-horizontal-line"></div>
@@ -118,15 +143,7 @@
           <li class="our-partners-menu-item">Банк</li>
           <li class="our-partners-menu-item noborder">Другие</li>
         </ul>
-        <div class="underline">
-          <div class="move-place">
-            <div class="underline-active">
-              <div class="underline-arrow">
-                <img src="images/arrow.png">
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="underline"><div class="move-place"><div class="underline-active"></div></div></div>
       </div>
 
       <div class="choose-third-page-menu">
@@ -163,9 +180,10 @@
 
       <!-- Main -->
       <div id="social">
-        <img src="images/facebook.png">
-        <img src="images/instagram.png">
-        <span>/chargemotion</span>
+        <a href="https://www.instagram.com/chargemotion/" target="_blank">
+          <img src="images/instagram.png" class="inst">
+        </a>
+        <span class="link">/chargemotion</span>
       </div>
 
       <div id="dots">
@@ -178,10 +196,11 @@
       </div>
     </div>
 
-    <script src="js/third-page-menu.js"></script>
-    <script src="js/main-menu.js"></script>
+
+    <script src="js/third-page.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <script src="js/paralax.js"></script>
-    <script src="js/percent.js"></script>
+    <script src="js/phone.js"></script>
     <script src="js/switch.js"></script>
   </body>
 </html>

@@ -1,22 +1,29 @@
-var li = document.querySelectorAll('.our-partners-menu-item')
-var underline = document.querySelector('.underline-active')
+let li = document.querySelectorAll('.our-partners-menu-item');
+let underline = document.querySelector('.underline-active');
 
-var bankItem = document.querySelectorAll('.bank-item')
-var background = document.querySelectorAll('.background')
+let bankItem = document.querySelectorAll('.bank-item');
+let background = document.querySelectorAll('.background');
 
-var menuWidth = document.querySelector('.our-partners-menu')
-var movePlace = document.querySelector('.move-place')
-var previous = 0;
-var current = 0;
+let menuWidth = document.querySelector('.our-partners-menu');
+let movePlace = document.querySelector('.move-place');
+let indexElem = 0;
+let previous = 0;
+let current = 0;
 
 movePlace.style.width = menuWidth.clientWidth + 'px';
 
+window.addEventListener('resize', () => movingUnderline(indexElem))
+
 li.forEach(function (elem, index) {
-  elem.onclick = function () {
-    underline.style.width = elem.clientWidth + 'px';
-    underline.style.left = elem.offsetLeft + 'px';
-  }
-})
+  elem.onclick = () => movingUnderline(index)
+});
+
+function movingUnderline(index) {
+  indexElem = index;
+  movePlace.style.width = menuWidth.clientWidth + 'px';
+  underline.style.width = li[index].clientWidth + 'px';
+  underline.style.left = li[index].offsetLeft + 'px';
+}
 
 bankItem.forEach(function (elem, index) {
   elem.onclick = function () {

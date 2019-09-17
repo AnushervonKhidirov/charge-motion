@@ -1,7 +1,14 @@
-var percent = document.querySelector('.percent-accumulator');
-var percentItem = 0;
-var charging = document.querySelector('.background-accumulator-green');
-var chargingEnd = document.querySelector('.background-end-accumulator-green');
+let percent = document.querySelector('.percent-accumulator');
+let percentItem = 0;
+let charging = document.querySelector('.background-accumulator-green');
+let chargingEnd = document.querySelector('.background-end-accumulator-green');
+
+let img = document.querySelector('.phone');
+let random = Math.round(Math.random() * 3);
+let src = `images/phone_${random}.png`;
+
+img.src = src
+
 
 window.addEventListener('load', start);
 
@@ -9,7 +16,7 @@ function start() {
   charging.style.left = '0%';
   charging.style.background = '#4EFF01';
 
-  var start = setInterval(function () {
+  let start = setInterval(function () {
     percentItem++;
     percent.innerHTML = percentItem;
 
@@ -21,8 +28,8 @@ function start() {
 };
 
 function firstPartChrage() {
-  var width = 88;
-  var start = setInterval(function () {
+  let width = 88;
+  let start = setInterval(function () {
     percentItem++;
     width++;
     percent.innerHTML = percentItem;
@@ -33,11 +40,11 @@ function firstPartChrage() {
       secondPartChrage();
     };
   }, 2000);
-}
+};
 
 function secondPartChrage() {
-  var width = 98;
-  var start = setInterval(function () {
+  let width = 98;
+  let start = setInterval(function () {
     percentItem++;
     width += 0.5;
     percent.innerHTML = percentItem;
@@ -45,14 +52,14 @@ function secondPartChrage() {
 
     if (percentItem == 94) {
       clearInterval(start);
-      thirdPartChrage()
+      thirdPartChrage();
     };
   }, 5000);
-}
+};
 
 function thirdPartChrage() {
-  var width = 16.5;
-  var start = setInterval(function () {
+  let width = 16.5;
+  let start = setInterval(function () {
     percentItem++;
     width += 16.5;
     percent.innerHTML = percentItem;
@@ -62,4 +69,4 @@ function thirdPartChrage() {
       clearInterval(start);
     };
   }, 1000);
-}
+};
