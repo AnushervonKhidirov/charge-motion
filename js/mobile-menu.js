@@ -5,15 +5,26 @@ let mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 let isOpen = true;
 let isLoadMobile = false;
 
-window.addEventListener('resize', isMobileOverflow);
+window.addEventListener('resize', isMobileOverflowResize);
 window.addEventListener('load', isMobileOverflow);
 
 function isMobileOverflow() {
   if (document.body.clientWidth < 850) {
+    window.scroll(0, 0);
     isLoadMobile = true;
     document.body.style.overflow = 'auto';
   } else {
     document.body.style.overflow = 'hidden';
+  }
+}
+
+function isMobileOverflowResize() {
+  if (document.body.clientWidth > 850) {
+    document.body.style.overflow = 'hidden';
+    window.scroll(0, 0);
+  }
+  if (document.body.clientWidth < 850) {
+    document.body.style.overflow = 'auto';
   }
 }
 

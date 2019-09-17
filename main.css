@@ -14,7 +14,8 @@ body {
 }
 
 #background-load {
-  position: relative;
+  /* position: relative; */
+  position: fixed;
   background: #231F20;
   height: 100vh;
   width: 100vw;

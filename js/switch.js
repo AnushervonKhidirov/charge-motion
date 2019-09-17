@@ -19,6 +19,7 @@ if (document.body.clientWidth > 850) {
 
 
 window.addEventListener('resize', function () {
+  // window.scroll(0, 0);
   if (document.body.clientWidth > 850) {
     desctopScrolling = false;
   } else {
