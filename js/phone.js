@@ -2,13 +2,11 @@ let percent = document.querySelector('.percent-accumulator');
 let percentItem = 0;
 let charging = document.querySelector('.background-accumulator-green');
 let chargingEnd = document.querySelector('.background-end-accumulator-green');
-
 let img = document.querySelector('.phone');
 let random = Math.round(Math.random() * 3);
 let src = `images/phone_${random}.png`;
 
-img.src = src
-
+img.src = src;
 
 window.addEventListener('load', start);
 

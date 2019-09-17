@@ -9,7 +9,10 @@ body {
 
 #content {
   position: relative;
+  overflow: hidden;
+  min-height: 100vh;
 }
+
 #background-load {
   position: relative;
   display: block;
@@ -23,21 +26,22 @@ body {
 div.loading-page {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 2vw;
+  border: 1px solid;
+  width: 100%;
 }
 
 div.loading-page span {
+  font-size: 2vw;
   padding-right: 1vw;
 }
 
 div.loading-page img {
   height: 3vw;
 }
-
 
 div#social {
   position: fixed;
@@ -97,4 +101,10 @@ div.active-dot {
   height: .42vw;
   margin: .035vw;
   transition: 1.5s;
+}
+
+
+
+div.font {
+  font-family: 'Yu Gothic Light';
 }

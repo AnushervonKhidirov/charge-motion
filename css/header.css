@@ -19,13 +19,12 @@ div#logo {
   display: flex;
   align-items: center;
   font-family: Arial Black;
-  cursor: pointer;
-  transition: .5s;
+  cursor: default;
 }
 
 div#logo span.big-font {
   font-size: 2vw;
-  transition: .5s;
+  color: #243F83;
 }
 
 div#logo span.little-font {
@@ -34,40 +33,12 @@ div#logo span.little-font {
   bottom: .8vw;
   font-size: .62vw;
   letter-spacing: .15vw;
-  transition: .5s;
+  color: #70BF4C;
 }
 
-div#logo img.white {
+div#logo img {
   margin-top: .6vw;
   width: 4.5vw;
-  opacity: 1;
-  transition: .5s;
-}
-
-div#logo img.green {
-  top: 0vw;
-  left: 38.5%;
-  position: absolute;
-  margin-top: .6vw;
-  width: 4.5vw;
-  opacity: 0;
-  transition: .5s;
-}
-
-div#logo:hover img.white {
-  opacity: 0;
-}
-
-div#logo:hover img.green {
-  opacity: 1;
-}
-
-div#logo:hover span.big-font {
-  color: #243F83 !important;
-}
-
-div#logo:hover span.little-font {
-  color: #70BF4C !important;
 }
 
 ul#menu {

@@ -21,8 +21,13 @@
 
 
 @media screen and (min-width: 550px) and (max-width: 850px) {
-  body {
-    overflow: auto;
+  div.loading-page span {
+    font-size: 3vw;
+    padding-right: 1.5vw;
+  }
+
+  div.loading-page img {
+    height: 4.5vw;
   }
 
   div#dots {
@@ -53,13 +58,7 @@
     letter-spacing: .3vw;
   }
 
-  div#logo img.white {
-    margin-top: 1vw;
-    width: 9vw;
-    opacity: 1;
-  }
-
-  div#logo img.green {
+  div#logo img {
     margin-top: 1vw;
     width: 9vw;
   }
@@ -81,13 +80,17 @@
     opacity: 0;
   }
 
+
   div.menu-line {
     position: absolute;
     transition-duration: .5s;
-    background: #fff;
     height: .8vw;
     width: 5.1vw;
     border-radius: 5px;
+    background: #70BF4C;
+  }
+  div.l2 {
+    background: #243F83 !important;
   }
 
   ul.mobile-menu {
@@ -103,8 +106,13 @@
 
 /* @media screen and (max-width: 450px) { */
 @media screen and (max-width: 550px) {
-  body {
-    overflow: auto;
+  div.loading-page span {
+    font-size: 6vw;
+    padding-right: 3vw;
+  }
+
+  div.loading-page img {
+    height: 9vw;
   }
 
   div#dots {
@@ -137,20 +145,11 @@
     letter-spacing: .45vw;
   }
 
-  div#logo img.white {
-    margin-top: 1.5vw;
-    width: 13.5vw;
-  }
-
-  div#logo img.green {
-    margin-top: 1.5vw;
-    width: 13.5vw;
-  }
-
   div#logo img {
     margin-top: 1.5vw;
     width: 13.5vw;
   }
+
 
   #mobile-menu {
     display: block;
@@ -176,6 +175,11 @@
     height: 1.2vw;
     width: 7.65vw;
     border-radius: 5px;
+    background: #70BF4C;
+  }
+
+  div.l2 {
+    background: #243F83 !important;
   }
 
   ul.mobile-menu {

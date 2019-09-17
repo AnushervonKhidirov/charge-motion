@@ -21,8 +21,10 @@ function toggleMenu() {
 
 function opening() {
   mobileMenu.classList.add('open-mobile-menu');
+  menuButton.classList.add('open-mobile-menu-button');
 
   setTimeout(function() {
+    menuButton.classList.add('open-mobile-menu-button-transform');
     menuBlock.style.opacity = 1;
   }, 500);
 
@@ -31,9 +33,11 @@ function opening() {
 
 function closing() {
   menuBlock.style.opacity = 0;
+  menuButton.classList.remove('open-mobile-menu-button-transform');
 
   setTimeout(function() {
     mobileMenu.classList.remove('open-mobile-menu');
+    menuButton.classList.remove('open-mobile-menu-button');
   }, 500);
 
   isOpen = true;

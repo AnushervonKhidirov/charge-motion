@@ -3,19 +3,15 @@ let activeDot = document.querySelectorAll('.active-dot');
 let menuItemSwitch = document.querySelectorAll('.menu-item');
 let mobileMenuItemSwitch = document.querySelectorAll('.mobile-menu-item');
 let scrolling = document.querySelector('.choose-third-page-menu');
+let isLoad = true;
 let isScrolling = true;
 let permission = true;
 let desctopScrolling = true;
 let prevpos = 0;
 let pos = 0;
 
-let isLoad = true;
-// let isLoad = false;
-
 let backgroundLoad = document.querySelector('#background-load');
 let content = document.querySelector('#content');
-
-
 
 if (document.body.clientWidth < 850) {
   desctopScrolling = false;
@@ -50,7 +46,6 @@ function isPermission() {
     permission = true;
   };
 };
-
 
 function mousewheelSwitch(event) {
   isPermission();
@@ -117,6 +112,9 @@ function switching(index) {
   if (isLoad) {
     index = 0;
     backgroundLoad.style.display = 'none';
+    if (desctopScrolling == false) {
+      document.body.style.overflow = 'auto';
+    }
     isLoad = false;
   }
 
@@ -131,8 +129,6 @@ function itemSwitch(index) {
 
   switching(index);
 }
-
-
 
 function changeBodyClass(index) {
   document.body.setAttribute('class', 'pos_' + index);
