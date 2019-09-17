@@ -3,26 +3,42 @@ let menuBlock = document.querySelector('.mobile-menu');
 let menuButton = document.querySelector('.menu-button');
 let mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 let isOpen = true;
+let isLoadMobile = false;
 
-menuButton.style.opacity = 1;
-menuButton.addEventListener('click', qwer);
+window.addEventListener('resize', isMobileOverflow);
+window.addEventListener('load', isMobileOverflow);
 
-for (let i = 0; i < mobileMenuItem.length; i++) {
-  mobileMenuItem[i].addEventListener('click', qwer);
-};
-
-let isClose = true;
-
-function qwer() {
-  if (isClose) {
-    toggleMenu();
-    isClose = false;
+function isMobileOverflow() {
+  if (document.body.clientWidth < 850) {
+    isLoadMobile = true;
+    document.body.style.overflow = 'auto';
+  } else {
+    document.body.style.overflow = 'hidden';
   }
-  setTimeout(() => isClose = true, 1200)
 }
 
+menuButton.style.opacity = 1;
+menuButton.addEventListener('click', function() {
+  if (isLoadMobile) {
+    toggleMenu();
+  };
+});
+
+for (let i = 0; i < mobileMenuItem.length; i++) {
+  mobileMenuItem[i].addEventListener('click', toggleMenu);
+};
+
+let timeout = true;
 
 function toggleMenu() {
+  if (timeout) {
+    openClocs();
+    timeout = false;
+  };
+  setTimeout(() => timeout = true, 1200);
+};
+
+function openClocs() {
   if (isOpen) {
     opening();
   } else {

@@ -42,7 +42,7 @@
     <div id="background-load">
       <div class="loading-page">
         <span>Загрузка страницы</span>
-        <img src="images/load.gif">
+        <img src="images/load.gif" draggable="false">
       </div>
 
     </div>
@@ -90,13 +90,14 @@
       </div>
 
       <div class="charge-motion-circle first-opacity">
-        <img src="images/charge motion.png" draggable="false">
+        <img src="" class="create-src-chargeMotion" draggable="false">
+        <!-- <img src="images/charge motion.png" draggable="false"> -->
       </div>
 
       <!-- Phone -->
       <div class="phone-hide">
         <div class="paralax phone-paralax">
-          <img class="phone">
+          <img class="phone"  draggable="false">
           <div class="accumulator">
             <div class="background-accumulator">
               <div class="background-accumulator-green"></div>
@@ -125,7 +126,10 @@
       <div class="vertical-line second-vertical-line"></div>
       <div class="horizontal-line second-horizontal-line"></div>
 
-      <div class="hand-img"><img class="paralax paralax-hand" src="images/hand.png"></div>
+      <div class="hand-img">
+        <img class="create-src-hand paralax paralax-hand" src="" draggable="false">
+        <!-- <img class="create-src-hand paralax paralax-hand" src="images/hand.png" draggable="false"> -->
+      </div>
 
       <div class="table-img">
         <div class="prompt first-prompt second-opacity">Устройства для передачи <br> энергии на телефон</div>
@@ -133,7 +137,8 @@
         <div class="first-prompt-line second-opacity"></div>
         <div class="second-prompt-line second-opacity"></div>
         <div class="circle"></div>
-        <img src="images/table.png">
+        <img src="" class="create-src-table" draggable="false">
+        <!-- <img src="images/table.png" class="create-src-table" draggable="false"> -->
       </div>
 
       <!-- Third page -->
@@ -204,10 +209,11 @@
     </div>
 
 
-    <script src="js/third-page.js"></script>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/paralax.js"></script>
-    <script src="js/phone.js"></script>
+    <script src="js/img-load.js"></script>
     <script src="js/switch.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/phone.js"></script>
+    <script src="js/paralax.js"></script>
+    <script src="js/third-page.js"></script>
   </body>
 </html>

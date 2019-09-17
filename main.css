@@ -3,6 +3,7 @@ body {
   padding: 0px;
   background: url(images/background.png);
   color: #fff;
+  overflow: hidden;
   font-family: arial;
 }
 
@@ -19,6 +20,7 @@ body {
   width: 100vw;
   color: #CCCCCC;
   z-index: 3;
+  user-select: none;
 }
 
 div.loading-page {

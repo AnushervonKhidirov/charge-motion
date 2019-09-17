@@ -6,7 +6,6 @@
   div.third-page-menu {
     position: absolute;
     top: 10vw;
-    /* bottom: 32vw; */
     left: -100%;
     width: 100%;
     box-sizing: border-box;
@@ -67,7 +66,6 @@
     position: absolute;
     left: -100%;
     top: 15.5vw;
-    /* bottom: 7vw; */
     transform: translateX(-48%);
     width: 73%;
     height: 25vw;

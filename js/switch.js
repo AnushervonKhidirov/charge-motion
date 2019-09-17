@@ -13,24 +13,23 @@ let pos = 0;
 let backgroundLoad = document.querySelector('#background-load');
 let content = document.querySelector('#content');
 
-if (document.body.clientWidth < 850) {
+if (document.body.clientWidth > 850) {
   desctopScrolling = false;
 };
 
-window.addEventListener('resize', scrollingControl);
 
-function scrollingControl() {
-  if (document.body.clientWidth < 850) {
+window.addEventListener('resize', function () {
+  if (document.body.clientWidth > 850) {
     desctopScrolling = false;
   } else {
     desctopScrolling = true;
   };
-};
+});
 
-window.addEventListener('load', switching);
+window.addEventListener('load', () => switching(0));
 
 window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function () {
-  if (desctopScrolling) {
+  if (desctopScrolling == false && isLoad == false) {
     mousewheelSwitch(event);
   };
 };
@@ -85,37 +84,36 @@ function mousewheelSwitch(event) {
 
 menuItemSwitch.forEach(function(elem, index) {
   elem.onclick = function () {
-    if (desctopScrolling) {
-      itemSwitch(index);
-    };
-  };
-});
-
-mobileMenuItemSwitch.forEach(function(elem, index) {
-  elem.onclick = function () {
-    if (desctopScrolling) {
-      itemSwitch(index);
-    };
+    itemSwitch(index);
   };
 });
 
 dotItem.forEach(function(elem, index) {
   elem.onclick = function () {
-    if (desctopScrolling) {
-      itemSwitch(index);
-    };
+    itemSwitch(index);
   };
 });
 
+// Удалить
+// mobileMenuItemSwitch.forEach(function(elem, index) {
+//   elem.onclick = function () {
+//     itemSwitch(index);
+//   };
+// });
+
+function itemSwitch(index) {
+  if (desctopScrolling == false && isLoad == false) {
+    prevpos = pos;
+    pos = index;
+
+    switching(index);
+  };
+};
 
 function switching(index) {
   if (isLoad) {
     index = 0;
     backgroundLoad.style.display = 'none';
-    if (desctopScrolling == false) {
-      document.body.style.overflow = 'auto';
-    }
-
     isLoad = false;
   }
 
@@ -123,15 +121,7 @@ function switching(index) {
     changeBodyClass(index);
     activingDot(index);
   }
-
 };
-
-function itemSwitch(index) {
-  prevpos = pos;
-  pos = index;
-
-  switching(index);
-}
 
 function changeBodyClass(index) {
   document.body.setAttribute('class', 'pos_' + index);
