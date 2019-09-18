@@ -170,10 +170,6 @@
   div.choose-third-page-menu::-o-scrollbar-thumb:active {
     background-color: #3CC201;
   }
-
-  .scrollbar-color:hover {
-    background-color: #3CC201;
-  }
 }
 
 

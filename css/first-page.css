@@ -1,4 +1,8 @@
 @media screen and (min-width: 850px) {
+  div.mobile-phone {
+    display: none;
+  }
+
   div.phone-hide {
     position: fixed;
     left: 45%;
@@ -8,7 +12,6 @@
   }
 
   div.phone-paralax {
-    border: .1vw solid rgba(0, 0, 0, 0);
     height: 49vw;
     width: 24vw;
     transition: .1s;
@@ -21,7 +24,9 @@
 
   div.accumulator {
     position: relative;
-    margin: 31% auto;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
     width: 48%;
     height: 9%;
   }
@@ -145,15 +150,41 @@
     opacity: 0;
     transition: 1.5s;
   }
-
 }
 
 
 @media screen and (max-width: 850px) {
+  div.phone-hide {
+    display: none;
+  }
 
-  /* div.accumulator {
+  div.phone-hide {
+    position: fixed;
+    left: 45%;
+    bottom: -60vw;
+    transform: rotate(-30deg);
+    transition: 1s;
+  }
+
+  div.mobile-phone {
+    display: block;
     position: relative;
-    margin: 31% auto;
+    left: 70vw;
+    transform: rotate(-45deg);
+    width: 50vw;
+    height: 100vw;
+  }
+
+  div.mobile-phone img {
+    position: absolute;
+    width: 100%;
+  }
+
+  div.accumulator {
+    position: relative;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
     width: 48%;
     height: 9%;
   }
@@ -165,7 +196,7 @@
     width: 90%;
     height: 100%;
     background: #5A5A5A;
-    border-radius: 1vw;
+    border-radius: 2vw;
     overflow: hidden;
   }
 
@@ -175,7 +206,7 @@
     width: 88%;
     height: 100%;
     background: red;
-    border-radius: 1vw;
+    border-radius: 2vw;
     z-index: 1;
     transition: 2s;
     transition-timing-function: ease;
@@ -189,7 +220,7 @@
     width: 5%;
     height: 40%;
     background: #5A5A5A;
-    border-radius: 2vw;
+    border-radius: 4vw;
     overflow: hidden;
   }
 
@@ -201,15 +232,14 @@
 
   div.percent-charge {
     position: absolute;
-    top: 5vw;
-    font-size: 1.6vw;
+    top: 10vw;
+    font-size: 3.2vw;
     text-shadow: .1vw .1vw .1vw #000;
-  } */
-
+  }
 
   div#bent {
     display: none;
-    }
+  }
 
   div.first-mobile-horizontal-line {
     display: block;
