@@ -18,6 +18,11 @@ ul.mobile-menu {
   opacity: 0;
 }
 
+ul.mobile-menu a{
+  color: inherit;
+  text-decoration: none;
+}
+
 li.mobile-menu-item {
   padding: 3vw;
 }

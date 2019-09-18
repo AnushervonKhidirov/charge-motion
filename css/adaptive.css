@@ -179,7 +179,7 @@
   div.name-page-font {
     position: absolute;
     font-family: 'Yu Gothic Light';
-    font-size: 2.5vw !important;
+    font-size: 2.5vw;
     top: -5vw;
     left: 2vw;
     transition: 1s;
@@ -263,5 +263,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 110%;
+  }
+
+  div.name-page-font {
+    position: relative;
+    padding-top: 5vw;
+    font-family: 'Yu Gothic Light';
+    font-size: 7vw;
+    text-align: center;
+    color: #70BF4C;
+    text-shadow: .7vw .7vw .5vw #243F83;
+  }
+
+  div.text-page-font {
+    padding: 5vw;
+    line-height: 9vw;
+    font-size: 5.5vw;
+    z-index: 1;
+  }
+
+  a[name] {
+    position: absolute;
+    top: -17vw;
   }
 }

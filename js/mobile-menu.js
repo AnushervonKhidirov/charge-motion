@@ -10,6 +10,7 @@ window.addEventListener('load', isMobileOverflow);
 function isMobileOverflow() {
   menuButton.style.display = 'block';
   if (document.body.clientWidth < 850) {
+    window.scroll(0, 0);
     isAllowOverflow();
   } else {
     isDenyOverflow();
@@ -27,7 +28,7 @@ function isMobileOverflowRe() {
 
 function isAllowOverflow() {
   setTimeout(function() {menuButton.style.opacity = 1;}, 0);
-  window.scroll(0, 0);
+  // window.scroll(0, 0);
   document.body.style.overflow = 'auto';
 };
 
