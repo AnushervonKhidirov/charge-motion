@@ -136,16 +136,16 @@
 
 
 @media screen and (min-width: 850px) {
-  div.menu-button {
-    display: none !important;
-  }
-
   body {
     overflow: hidden;
   }
 
+  div.menu-button {
+    display: none !important;
+  }
+
   div.charge-motion-circle-background {
-    display: none;
+    display: none !important;
   }
 
   #header {
@@ -253,8 +253,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 100%;
-    box-shadow: 0 0 5vw #000;
-    transition: 1.5s;
+    box-shadow: 0 0 10vw #70BF4C;
     z-index: 1;
   }
 

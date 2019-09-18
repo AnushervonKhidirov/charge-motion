@@ -1,0 +1,76 @@
+@-webkit-keyframes shine {
+  from {
+    box-shadow: 0 0 10vw #70BF4C;
+  }
+  to {
+    box-shadow: 0 0 20vw #70BF4C;
+  }
+}
+
+@-moz-keyframes shine {
+  from {
+    box-shadow: 0 0 10vw #70BF4C;
+  }
+  to {
+    box-shadow: 0 0 20vw #70BF4C;
+  }
+}
+
+@-ms-keyframes shine {
+  from {
+    box-shadow: 0 0 10vw #70BF4C;
+  }
+  to {
+    box-shadow: 0 0 20vw #70BF4C;
+  }
+}
+
+@-o-keyframes shine {
+  from {
+    box-shadow: 0 0 10vw #70BF4C;
+  }
+  to {
+    box-shadow: 0 0 20vw #70BF4C;
+  }
+}
+
+@keyframes shine {
+  from {
+    box-shadow: 0 0 10vw #70BF4C;
+  }
+  to {
+    box-shadow: 0 0 20vw #70BF4C;
+  }
+}
+
+div.charge-motion-circle-background {
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: shine;
+  -moz-animation-duration: 2s;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+  -ms-animation-name: shine;
+  -ms-animation-duration: 2s;
+  -ms-animation-direction: alternate;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: infinite;
+
+  -o-animation-name: shine;
+  -o-animation-duration: 2s;
+  -o-animation-direction: alternate;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+
+  animation-name: shine;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
