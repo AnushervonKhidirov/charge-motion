@@ -60,6 +60,13 @@
     font-size: 5vw;
   }
 
+
+  div.charge-motion-circle-background {
+    top: calc(50% + 10vw);
+    width: 40vw;
+    height: 40vw;
+  }
+
   #content {
     top: 10vw;
   }
@@ -116,6 +123,12 @@
     font-size: 7.5vw;
   }
 
+  div.charge-motion-circle-background {
+    top: calc(50% + 15vw);
+    width: 60vw;
+    height: 60vw;
+  }
+
   #content {
     top: 15vw;
   }
@@ -125,6 +138,10 @@
 @media screen and (min-width: 850px) {
   body {
     overflow: hidden;
+  }
+
+  div.charge-motion-circle-background {
+    display: none;
   }
 
   #header {
@@ -215,5 +232,32 @@
 
   div.l2 {
     background: #243F83 !important;
+  }
+
+  div#mobile-background {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  div.charge-motion-circle-background {
+    display: block;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    box-shadow: 0 0 5vw #000;
+    transition: 1.5s;
+    z-index: 1;
+  }
+
+  div.charge-motion-circle-background img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
   }
 }

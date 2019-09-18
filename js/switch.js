@@ -1,8 +1,8 @@
 let dotItem = document.querySelectorAll('.dot-item');
 let activeDot = document.querySelectorAll('.active-dot');
 let menuItemSwitch = document.querySelectorAll('.menu-item');
-let mobileMenuItemSwitch = document.querySelectorAll('.mobile-menu-item');
 let scrolling = document.querySelector('.choose-third-page-menu');
+let backgroundLoad = document.querySelector('#background-load');
 let isLoad = true;
 let isScrolling = true;
 let permission = true;
@@ -10,16 +10,11 @@ let desctopScrolling = true;
 let prevpos = 0;
 let pos = 0;
 
-let backgroundLoad = document.querySelector('#background-load');
-let content = document.querySelector('#content');
-
 if (document.body.clientWidth > 850) {
   desctopScrolling = false;
 };
 
-
 window.addEventListener('resize', function () {
-  // window.scroll(0, 0);
   if (document.body.clientWidth > 850) {
     desctopScrolling = false;
   } else {
@@ -94,13 +89,6 @@ dotItem.forEach(function(elem, index) {
     itemSwitch(index);
   };
 });
-
-// Удалить
-// mobileMenuItemSwitch.forEach(function(elem, index) {
-//   elem.onclick = function () {
-//     itemSwitch(index);
-//   };
-// });
 
 function itemSwitch(index) {
   if (desctopScrolling == false && isLoad == false) {

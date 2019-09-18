@@ -43,6 +43,7 @@ let timeout = true;
 
 function toggleMenu() {
   if (timeout) {
+    alert(document.body.clientWidth)
     openClocs();
     timeout = false;
   };

@@ -134,6 +134,7 @@
     right: 6vw;
     width: 37vw;
     overflow: hidden;
+    box-shadow: 0 0 0 #70BF4C !important;
   }
 
   div.charge-motion-circle img {
@@ -149,9 +150,62 @@
 
 
 @media screen and (max-width: 850px) {
-  div.charge-motion-circle {
-    display: none;
+
+  /* div.accumulator {
+    position: relative;
+    margin: 31% auto;
+    width: 48%;
+    height: 9%;
   }
+
+  div.background-accumulator {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 90%;
+    height: 100%;
+    background: #5A5A5A;
+    border-radius: 1vw;
+    overflow: hidden;
+  }
+
+  div.background-accumulator-green {
+    position: absolute;
+    left: -80%;
+    width: 88%;
+    height: 100%;
+    background: red;
+    border-radius: 1vw;
+    z-index: 1;
+    transition: 2s;
+    transition-timing-function: ease;
+  }
+
+  div.end-accumulator {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 40%;
+    background: #5A5A5A;
+    border-radius: 2vw;
+    overflow: hidden;
+  }
+
+  div.background-end-accumulator-green {
+    width: 0%;
+    height: 100%;
+    background: #4EFF01;
+  }
+
+  div.percent-charge {
+    position: absolute;
+    top: 5vw;
+    font-size: 1.6vw;
+    text-shadow: .1vw .1vw .1vw #000;
+  } */
+
 
   div#bent {
     display: none;
