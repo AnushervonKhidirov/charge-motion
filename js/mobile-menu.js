@@ -3,36 +3,41 @@ let menuBlock = document.querySelector('.mobile-menu');
 let menuButton = document.querySelector('.menu-button');
 let mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 let isOpen = true;
-let isLoadMobile = false;
 
-window.addEventListener('resize', isMobileOverflowResize);
+window.addEventListener('resize', isMobileOverflowRe);
 window.addEventListener('load', isMobileOverflow);
 
 function isMobileOverflow() {
+  menuButton.style.display = 'block';
   if (document.body.clientWidth < 850) {
-    window.scroll(0, 0);
-    isLoadMobile = true;
-    document.body.style.overflow = 'auto';
+    isAllowOverflow();
   } else {
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function isMobileOverflowResize() {
-  if (document.body.clientWidth > 850) {
-    document.body.style.overflow = 'hidden';
-    window.scroll(0, 0);
-  }
-  if (document.body.clientWidth < 850) {
-    document.body.style.overflow = 'auto';
-  }
-}
-
-menuButton.style.opacity = 1;
-menuButton.addEventListener('click', function() {
-  if (isLoadMobile) {
-    toggleMenu();
+    isDenyOverflow();
   };
+};
+
+function isMobileOverflowRe() {
+  if (document.body.clientWidth < 850) {
+    isAllowOverflow();
+  } else {
+    isDenyOverflow();
+  };
+};
+
+
+function isAllowOverflow() {
+  setTimeout(function() {menuButton.style.opacity = 1;}, 0);
+  window.scroll(0, 0);
+  document.body.style.overflow = 'auto';
+};
+
+function isDenyOverflow() {
+  window.scroll(0, 0);
+  document.body.style.overflow = 'hidden';
+};
+
+menuButton.addEventListener('click', function() {
+  toggleMenu();
 });
 
 for (let i = 0; i < mobileMenuItem.length; i++) {
@@ -43,7 +48,6 @@ let timeout = true;
 
 function toggleMenu() {
   if (timeout) {
-    alert(document.body.clientWidth)
     openClocs();
     timeout = false;
   };
