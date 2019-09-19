@@ -45,7 +45,29 @@ div.loading-page img {
   height: 3vw;
 }
 
-div#social {
+a {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 2vw;
+  left: 5vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: inherit;
+  z-index: 2;
+}
+
+a:hover::after {
+  content: '/chargemotion';
+}
+
+a img {
+  height: 100%;
+  margin-right: .5vw;
+}
+
+/* div#social {
   position: fixed;
   display: flex;
   align-items: center;
@@ -75,7 +97,7 @@ div#social span {
 
 div#social:hover span.link {
   opacity: 1;
-}
+} */
 
 div#dots {
   position: fixed;
