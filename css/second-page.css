@@ -1,7 +1,7 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 992px) {
   div.table-img {
-    position: fixed;
-    bottom: -42vw;
+    position: absolute;
+    bottom: -35vw;
     width: 100%;
     transition: 1s;
   }
@@ -67,9 +67,9 @@
   }
 
   div.hand-img {
-    position: fixed;
-    right: -41vw;
-    bottom: 20.5vw;
+    position: absolute;
+    right: -40vw;
+    bottom: 25.5vw;
     width: 35vw;
     z-index: 1;
     transition: 1s;
@@ -84,13 +84,13 @@
   }
 
   div.second-vertical-line {
-    left: 30vw;
+    left: 33vw;
   }
 }
 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 992px) {
   div.table-img {
     display: none;
   }

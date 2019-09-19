@@ -3,9 +3,10 @@ let backgroundLoad = document.querySelector('#background-load');
 let isLoad = true;
 
 // Desctop scrolling
-let scrolling = document.querySelector('.choose-third-page-menu');
+let scrolling = document.querySelector('#slider');
+let viewIMG = document.querySelector('#view-images');
 let isScrolling = true;
-let permission = true;
+let allowed = true;
 let desctopScrolling = true;
 
 // Mobile switching
@@ -23,12 +24,12 @@ let pos = 0;
 
 
 // Page control
-if (document.body.clientWidth > 850) {
+if (document.body.clientWidth > 992) {
   desctopScrolling = false;
 };
 
 window.addEventListener('resize', function () {
-  if (document.body.clientWidth > 850) {
+  if (document.body.clientWidth > 992) {
     desctopScrolling = false;
   } else {
     desctopScrolling = true;
@@ -45,24 +46,24 @@ window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function (
   };
 };
 
-isPermission();
+isAllow();
 
-function isPermission() {
-  scrolling.onmouseover = function () {
-    permission = false;
+function isAllow() {
+  scrolling.onmouseover = viewIMG.onmouseover = function () {
+    allowed = false;
   };
 
-  scrolling.onmouseout = function () {
-    permission = true;
+  scrolling.onmouseout = viewIMG.onmouseout = function () {
+    allowed = true;
   };
 };
 
 function mousewheelSwitch(event) {
-  isPermission();
+  isAllow();
 
   let delta = event.deltaY;
 
-  if (permission) {
+  if (allowed) {
     if (isScrolling) {
       findeScreenPosition(delta, 0);
 
@@ -96,27 +97,39 @@ document.addEventListener('touchstart', function() {
 
 //Function of Mobile switching & Mouse wheel scrolling
 function findeScreenPosition(firstPosition, secondPosition) {
-  prevpos = pos;
-
   if (firstPosition > (secondPosition)) {
-    if (pos >= dotItem.length - 1) {
-      pos = 0;
-    } else {
-      pos++;
-    };
+    nextSlide();
   };
 
   if (firstPosition < (secondPosition)) {
-    if (pos <= 0) {
-      pos = dotItem.length - 1;
-    } else {
-      pos--;
-    };
+    previousSlide();
+  };
+}
+
+// Next & Previous slide
+function nextSlide() {
+  prevpos = pos;
+
+  if (pos >= dotItem.length - 1) {
+    pos = 0;
+  } else {
+    pos++;
   };
 
   switching(pos);
 }
 
+function previousSlide() {
+  prevpos = pos;
+
+  if (pos <= 0) {
+    pos = dotItem.length - 1;
+  } else {
+    pos--;
+  };
+
+  switching(pos);
+}
 
 // Switch via menu button
 menuItemSwitch.forEach(function(elem, index) {

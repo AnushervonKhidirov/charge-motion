@@ -10,6 +10,7 @@ div#header {
   user-select: none;
   box-sizing: border-box;
   box-shadow: 0vw .2vw .5vw #4EFF01;
+  transition: 1s;
   z-index: 4;
 }
 
@@ -42,7 +43,7 @@ div#logo img {
   width: 4.5vw;
 }
 
-ul#menu {
+#menu ul {
   display: flex;
   list-style-type: none;
   transition: .5s;

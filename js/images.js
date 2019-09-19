@@ -12,13 +12,13 @@ let shine = document.querySelector('.charge-motion-circle-background');
 createBackground();
 
 window.addEventListener('resize', function() {
-  if (document.body.clientWidth < 850) {
+  if (document.body.clientWidth < 992) {
     createBackground();
   }
 })
 
 function createBackground() {
-  if (document.body.clientWidth < 850) {
+  if (document.body.clientWidth < 992) {
     shine.innerHTML = '<img class="" src="images/charge motion.png" draggable="false">'
   } else {
     shine.innerHTML = '';
@@ -41,7 +41,7 @@ createIMG()
 window.addEventListener('resize', createIMG)
 
 function createIMG() {
-  if (document.body.clientWidth > 850) {
+  if (document.body.clientWidth > 992) {
     srcChargeMotion.src = obj.srcChargeMotion;
     srcHand.src = obj.handSRC;
     srcTable.src = obj.tableSRC;

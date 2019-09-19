@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/first-page.css">
     <link rel="stylesheet" href="css/second-page.css">
     <link rel="stylesheet" href="css/third-page.css">
+    <link rel="stylesheet" href="css/fourth-page.css">
     <link rel="stylesheet" href="css/switch.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/adaptive.css">
@@ -16,22 +17,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div id="header">
+    <div id="header" class="blur">
       <div id="logo">
         <span class="big-font">charge</span>
         <img src="images/logo.png">
         <span class="big-font">motion</span>
         <span class="little-font">fast & wireless</span>
       </div>
-
-      <ul id="menu">
-        <li class="menu-item">О нас</li>
-        <li class="menu-item">Наша миссия</li>
-        <li class="menu-item">Наши партнёры</li>
-        <li class="menu-item">Page 4</li>
-        <li class="menu-item">Page 5</li>
-        <li class="menu-item">Page 6</li>
-      </ul>
+      <div id="menu">
+        <ul class="menu">
+          <li class="menu-item">О нас</li>
+          <li class="menu-item">Наша миссия</li>
+          <li class="menu-item">Наши партнёры</li>
+          <li class="menu-item">Наша галерея</li>
+          <li class="menu-item">Page 5</li>
+          <li class="menu-item">Page 6</li>
+        </ul>
+      </div>
 
       <div class="menu-button">
         <div class="menu-line l1"></div>
@@ -46,29 +48,25 @@
         <img src="images/load.gif" draggable="false">
       </div>
     </div>
-    <div id="mobile-background">
-    </div>
+    <div id="mobile-background"></div>
     <div id="mobile-background-img">
       <div class="charge-motion-circle-background"></div>
     </div>
 
+    <div id="view-images" class="active-opacity">
+      <div class="active-opacity exit">&#215;</div>
+      <div class="active-opacity nav-img previous-img">⯇</div>
+      <div class="active-opacity nav-img next-img">⯈</div>
 
-    <div id="content">
-      <!-- Mobile menu -->
-      <div id="mobile-menu">
-        <ul class="mobile-menu">
-          <a href="#about"><li class="mobile-menu-item">О нас</li></a>
-          <a href="#mission"><li class="mobile-menu-item">Наша миссия</li></a>
-          <a href="#our-partners"><li class="mobile-menu-item">Наши партнёры</li></a>
-          <a href="#"><li class="mobile-menu-item">Page 4</li></a>
-          <a href="#"><li class="mobile-menu-item">Page 5</li></a>
-          <a href="#"><li class="mobile-menu-item">Page 6</li></a>
-        </ul>
+      <div class="img-place">
+        <img class="active-opacity set-img-gallary">
       </div>
+    </div>
 
+    <div id="content" class="blur">
       <!-- First page -->
 
-      <div class="name-page-font about"><a name="about"></a>О НАС</div>
+      <div class="name-page-font about">О НАС</div>
 
       <div class="text-page-font about-text">
         Это новый технологический стартап,
@@ -83,8 +81,6 @@
 
       <!-- line -->
       <div class="vertical-line first-vertical-line"></div>
-
-      <!-- <div class="first-mobile-horizontal-line"></div> -->
 
       <div id="bent">
         <div class="width">
@@ -114,7 +110,6 @@
         </div>
       </div>
 
-
       <div class="mobile-phone">
         <img class="phone" draggable="false">
         <div class="accumulator">
@@ -129,7 +124,7 @@
       </div>
 
       <!-- Second page -->
-      <div class="name-page-font mission"><a name="mission"></a>НАША МИССИЯ</div>
+      <div class="name-page-font mission">НАША МИССИЯ</div>
 
       <div class="text-page-font mission-text">
         Наша миссия состоит в том,
@@ -158,66 +153,82 @@
       </div>
 
       <!-- Third page -->
-      <div class="name-page-font our-partners"><a name="our-partners"></a>НАШИ ПАРТНЁРЫ</div>
+      <div class="name-page-font our-partners">НАШИ ПАРТНЁРЫ</div>
+
       <div class="vertical-line third-vertical-line"></div>
       <div class="horizontal-line third-horizontal-line"></div>
 
-      <div class="third-page-menu">
-        <ul class="our-partners-menu">
-          <li class="our-partners-menu-item">ВСЕ</li>
-          <li class="our-partners-menu-item">Ресторан</li>
-          <li class="our-partners-menu-item max-width">Салон красоты</li>
-          <li class="our-partners-menu-item">Аэропорт</li>
-          <li class="our-partners-menu-item">Банк</li>
-          <li class="our-partners-menu-item noborder">Другие</li>
-        </ul>
-        <div class="underline"><div class="move-place"><div class="underline-active"></div></div></div>
-      </div>
+      <div id="slider">
+        <div class="nav left">⯇</div>
+        <div class="nav right">⯈</div>
 
-      <div class="choose-third-page-menu">
-        <div class="banks">
-          <div class="bank-item">
-            <div class="background"></div>
+        <div class="slider-images">
+          <div class="first slide-item">
+            <img class="img-item" src="images/test-img/image_0.jpg">
+            <img class="img-item" src="images/test-img/image_1.jpg">
+            <img class="img-item" src="images/test-img/image_2.jpg">
+            <img class="img-item" src="images/test-img/image_3.jpg">
+            <img class="img-item" src="images/test-img/image_4.jpg">
+            <img class="img-item" src="images/test-img/image_5.jpg">
+            <img class="img-item" src="images/test-img/image_6.jpg">
+            <img class="img-item" src="images/test-img/image_7.jpg">
+            <img class="img-item" src="images/test-img/image_8.jpg">
+            <img class="img-item" src="images/test-img/image_9.jpg">
           </div>
-          <div class="bank-item">
-            <div class="background"></div>
+
+          <div class="second slide-item">
+            <img class="img-item" src="images/test-img/image_0.jpg">
+            <img class="img-item" src="images/test-img/image_1.jpg">
+            <img class="img-item" src="images/test-img/image_2.jpg">
+            <img class="img-item" src="images/test-img/image_3.jpg">
+            <img class="img-item" src="images/test-img/image_4.jpg">
+            <img class="img-item" src="images/test-img/image_5.jpg">
+            <img class="img-item" src="images/test-img/image_6.jpg">
+            <img class="img-item" src="images/test-img/image_7.jpg">
+            <img class="img-item" src="images/test-img/image_8.jpg">
+            <img class="img-item" src="images/test-img/image_9.jpg">
           </div>
-          <div class="bank-item">
-            <div class="background"></div>
-          </div>
-          <div class="bank-item">
-            <div class="background"></div>
-          </div>
-          <div class="bank-item">
-            <div class="background"></div>
-          </div>
-          <div class="bank-item">
-            <div class="background"></div>
-          </div>
-          <div class="bank-item">
-            <div class="background"></div>
-          </div>
-          <div class="bank-item">
-            <div class="background"></div>
-          </div>
-          <div class="bank-item">
-            <div class="background"></div>
+
+          <div class="third slide-item">
+            <img class="img-item" src="images/test-img/image_0.jpg">
+            <img class="img-item" src="images/test-img/image_1.jpg">
+            <img class="img-item" src="images/test-img/image_2.jpg">
+            <img class="img-item" src="images/test-img/image_3.jpg">
+            <img class="img-item" src="images/test-img/image_4.jpg">
+            <img class="img-item" src="images/test-img/image_5.jpg">
+            <img class="img-item" src="images/test-img/image_6.jpg">
+            <img class="img-item" src="images/test-img/image_7.jpg">
+            <img class="img-item" src="images/test-img/image_8.jpg">
+            <img class="img-item" src="images/test-img/image_9.jpg">
           </div>
         </div>
+      </div>
+      <div class="discription">
+        THE MOST RENOWNED BRANDS IN THE WORLD ACROSS THE F&B, HOSPITALITY, RETAIL, TRANSPORT
+        AND OFFICE INDUSTRIES ARE DEPLOYING AIRCHARGE TO REDEFINE AND ENHANCE THEIR MOBILE EXPERIENCE.
+      </div>
+
+
+      <!-- fourth page -->
+      <div class="name-page-font our-gallary">НАША ГАЛЕРЕЯ</div>
+
+      <div class="vertical-line fourth-vertical-line"></div>
+      <div class="horizontal-line fourth-horizontal-line"></div>
+
+      <div id="gallary">
+        <div class="gallary-item grid-height"><img class="img-gallary-item" src="images/test-img/image_0.jpg"></div>
+        <div class="gallary-item grid-height"><img class="img-gallary-item" src="images/test-img/image_1.jpg"></div>
+        <div class="gallary-item grid-height"><img class="img-gallary-item" src="images/test-img/image_2.jpg"></div>
+        <div class="gallary-item"><img class="img-gallary-item" src="images/test-img/image_3.jpg"></div>
+        <div class="gallary-item"><img class="img-gallary-item" src="images/test-img/image_4.jpg"></div>
+        <div class="gallary-item"><img class="img-gallary-item" src="images/test-img/image_5.jpg"></div>
       </div>
 
 
       <!-- Main -->
-      <a href="https://www.instagram.com/chargemotion/" target="_blank">
-        <img src="images/instagram.png" class="inst"></img>
+      <a class="inst" href="https://www.instagram.com/chargemotion/" target="_blank">
+        <img src="images/instagram.png"></img>
       </a>
-
-      <!-- <div id="social">
-        <a href="https://www.instagram.com/chargemotion/" target="_blank">
-          <img src="images/instagram.png" class="inst">
-        </a>
-        <span class="link">/chargemotion</span>
-      </div> -->
 
       <div id="dots">
         <div class="dot-item"><div class="active-dot"></div></div>
@@ -227,14 +238,17 @@
         <div class="dot-item"><div class="active-dot"></div></div>
         <div class="dot-item"><div class="active-dot"></div></div>
       </div>
+
     </div>
 
 
     <script src="js/images.js"></script>
     <script src="js/switch.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/view-img.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="js/phone.js"></script>
     <script src="js/paralax.js"></script>
-    <script src="js/third-page.js"></script>
+
   </body>
 </html>

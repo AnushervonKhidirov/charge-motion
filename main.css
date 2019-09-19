@@ -6,13 +6,14 @@ body {
   background-attachment: fixed;
   color: #fff;
   overflow: hidden;
-  font-family: arial;
+  font-family: Arial;
 }
 
 #content {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
+  transition: 1s;
   z-index: 2;
 }
 
@@ -45,7 +46,7 @@ div.loading-page img {
   height: 3vw;
 }
 
-a {
+a.inst {
   position: fixed;
   display: flex;
   align-items: center;
@@ -58,50 +59,18 @@ a {
   z-index: 2;
 }
 
-a:hover::after {
+a.inst:hover::after {
   content: '/chargemotion';
 }
 
-a img {
+a.inst img {
   height: 100%;
   margin-right: .5vw;
 }
 
-/* div#social {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  bottom: 2vw;
-  left: 5vw;
-  height: 2.5vw;
-  font-size: 1.2vw;
-  z-index: 2;
-  cursor: pointer;
-}
-
-div#social a {
-  z-index: 3;
-  height: 100%;
-}
-
-div#social img {
-  height: 100%;
-  cursor: pointer;
-}
-
-div#social span {
-  margin-left: .5vw;
-  opacity: 0;
-  transition: .5s;
-}
-
-div#social:hover span.link {
-  opacity: 1;
-} */
-
 div#dots {
-  position: fixed;
-  bottom: 2vw;
+  position: absolute;
+  bottom: 8vw;
   right: 0vw;
   display: grid;
   grid-gap: 1vw;
@@ -125,4 +94,66 @@ div.active-dot {
   height: .42vw;
   margin: .035vw;
   transition: 1.5s;
+}
+
+/* view images */
+div#view-images {
+  display: none;
+  position: fixed;
+  top: 0vw;
+  background: rgba(0, 0, 0, .4);
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+}
+
+div.img-place {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 40vw;
+  overflow: hidden;
+  border-radius: 2vw;
+}
+
+div.img-place img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  border-radius: 2vw;
+  opacity: 0;
+  transition: .25s;
+}
+
+div.exit {
+  position: absolute;
+  top: .5vw;
+  right: .5vw;
+  font-size: 3vw;
+}
+
+div.nav-img {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+div.nav-img:hover {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+div.nav-img:active {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+body.view-img-opened #view-images {
+  display: block;
+}
+
+.active-opacity {
+  opacity: 0;
+  transition: 1s !important;
 }

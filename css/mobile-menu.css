@@ -1,36 +1,42 @@
-#mobile-menu {
+/* #mobile-menu {
   display: none;
   position: fixed;
   height: 0%;
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  comment
   overflow: hidden;
   transition: .7s;
   user-select: none;
   z-index: 3;
-}
+} */
 
-ul.mobile-menu {
+/* ul.mobile-menu {
   list-style-type: none;
   margin: 0vw;
   padding: 0vw 2vw;
   transition: .7s;
   opacity: 0;
-}
+} */
 
-ul.mobile-menu a{
+/* ul.mobile-menu a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-li.mobile-menu-item {
+/* li.mobile-menu-item {
   padding: 3vw;
-}
+} */
 
-li.mobile-menu-item:hover {
+/* li.mobile-menu-item:hover {
   background: #101011;
   color: #ffffff;
-}
+} */
+
+
+
+/* ---------------- */
 
 div.l1 {
   top: 30%;

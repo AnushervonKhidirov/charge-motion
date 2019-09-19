@@ -2,14 +2,14 @@ let paralaxPhone = document.querySelector('.phone-paralax');
 let paralaxItem = document.querySelectorAll('.paralax');
 let desctopParalax = true;
 
-if (document.body.clientWidth < 850) {
+if (document.body.clientWidth < 992) {
   desctopParalax = false;
 };
 
 window.addEventListener('resize', paralaxControl);
 
 function paralaxControl() {
-  if (document.body.clientWidth < 850) {
+  if (document.body.clientWidth < 992) {
     desctopParalax = false;
   } else {
     desctopParalax = true;
