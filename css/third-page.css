@@ -27,11 +27,24 @@
     display: flex;
   }
 
-  img.img-item {
-    width: 18vw;
+  div.slider-block {
+    width: 20vw;
     height: 20vw;
     padding: 0vw 1vw;
     cursor: pointer;
+    border: 1px solid;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  img.img-item {
+    width: 100%;
+    /* width: 18vw;
+    height: 20vw;
+    padding: 0vw 1vw;
+    cursor: pointer;
+    border: 1px solid;
+    box-sizing: border-box; */
   }
 
   div.nav, div.nav-img {
@@ -86,5 +99,9 @@
 
 
 @media screen and (max-width: 992px) {
-
+  #slider {
+    width: 0vw;
+    height: 0vw;
+    overflow: hidden;
+  }
 }

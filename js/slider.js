@@ -7,7 +7,7 @@ let startContactSlider;
 let endContactSlider;
 
 // Geting size
-let imgItem = document.querySelectorAll('.img-item');
+let imgItem = document.querySelectorAll('.slider-block');
 let first = document.querySelector('.first');
 let sliderImages = document.querySelector('.slider-images');
 
