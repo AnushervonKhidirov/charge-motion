@@ -3,15 +3,16 @@ let backgroundLoad = document.querySelector('#background-load');
 let isLoad = true;
 
 // Desctop scrolling
+let content = document.querySelector('#content')
 let scrolling = document.querySelector('#slider');
-let viewIMG = document.querySelector('#view-images');
+// let viewIMG = document.querySelector('#view-images');
 let isScrolling = true;
 let allowed = true;
 let desctopScrolling = true;
 
 // Mobile switching
-let startSwitch;
-let endSwitch;
+let startContact;
+let endContact;
 
 // Switch items
 let dotItem = document.querySelectorAll('.dot-item');
@@ -49,11 +50,13 @@ window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function (
 isAllow();
 
 function isAllow() {
-  scrolling.onmouseover = viewIMG.onmouseover = function () {
+  // scrolling.onmouseover = viewIMG.onmouseover = scrolling.ontouchstart = function () {
+  scrolling.onmouseover = scrolling.ontouchstart = function () {
     allowed = false;
   };
 
-  scrolling.onmouseout = viewIMG.onmouseout = function () {
+  // content.onmouseover = viewIMG.onmouseout = content.ontouchstart = function () {
+  content.onmouseover = content.ontouchstart = function () {
     allowed = true;
   };
 };
@@ -78,36 +81,38 @@ function mousewheelSwitch(event) {
 
 // Mobile switching
 document.addEventListener('touchstart', function(event) {
-  startSwitch = event.targetTouches[0].pageX;
+  startContact = event.targetTouches[0].pageX;
 })
 
 document.addEventListener('touchmove', function(event) {
-  endSwitch = event.targetTouches[0].pageX;
+  endContact = event.targetTouches[0].pageX;
 });
 
 document.addEventListener('touchstart', function() {
   setTimeout(function() {
-    findeScreenPosition(startSwitch, (endSwitch + 250));
+    findeScreenPosition(startContact, (endContact + 250));
 
-    startSwitch = undefined;
-    endSwitch = undefined;
+    startContact = undefined;
+    endContact = undefined;
   }, 300)
 })
 
 
 //Function of Mobile switching & Mouse wheel scrolling
 function findeScreenPosition(firstPosition, secondPosition) {
-  if (firstPosition > (secondPosition)) {
-    nextSlide();
-  };
+  if (allowed) {
+    if (firstPosition > (secondPosition)) {
+      nextPage();
+    };
 
-  if (firstPosition < (secondPosition)) {
-    previousSlide();
-  };
-}
+    if (firstPosition < (secondPosition)) {
+      previousPage();
+    };
+  }
+};
 
 // Next & Previous slide
-function nextSlide() {
+function nextPage() {
   prevpos = pos;
 
   if (pos >= dotItem.length - 1) {
@@ -119,7 +124,7 @@ function nextSlide() {
   switching(pos);
 }
 
-function previousSlide() {
+function previousPage() {
   prevpos = pos;
 
   if (pos <= 0) {

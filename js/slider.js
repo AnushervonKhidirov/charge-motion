@@ -3,6 +3,8 @@ let slider = document.querySelector('#slider');
 // Navigation
 let left = document.querySelector('.left');
 let right = document.querySelector('.right');
+let startContactSlider;
+let endContactSlider;
 
 // Geting size
 let imgItem = document.querySelectorAll('.img-item');
@@ -37,6 +39,35 @@ setInterval(function() {
   };
 }, 2500);
 
+
+// Mobile switch slider
+slider.addEventListener('touchstart', function(event) {
+  startContactSlider = event.targetTouches[0].pageX;
+})
+
+slider.addEventListener('touchmove', function(event) {
+  endContactSlider = event.targetTouches[0].pageX;
+});
+
+slider.addEventListener('touchstart', function() {
+  automaticly = false;
+  setTimeout(() => automaticly = true, 1500)
+
+  setTimeout(function() {
+    if (startContactSlider > (endContactSlider + 250)) {
+      toRight();
+    };
+
+    if (startContactSlider < (endContactSlider + 250)) {
+      toLeft();
+    };
+
+    startContactSlider = undefined;
+    endContactSlider = undefined;
+  }, 300)
+})
+
+// Control button
 right.addEventListener('click', toRight);
 left.addEventListener('click', toLeft);
 

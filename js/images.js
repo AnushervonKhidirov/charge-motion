@@ -25,17 +25,6 @@ function createBackground() {
   };
 };
 
-// random shining
-// setInterval(function () {
-//   if (document.body.clientWidth < 850) {
-//     let shiningControl = Math.round(Math.random() * 20);
-//     if (shiningControl < 5) {
-//       shiningControl = 5;
-//     };
-//     shine.style.boxShadow = `0 0 ${shiningControl}vw #70BF4C`;
-//   }
-// }, 1500);
-
 createIMG()
 
 window.addEventListener('resize', createIMG)

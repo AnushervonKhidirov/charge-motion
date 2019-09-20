@@ -11,7 +11,7 @@ div#header {
   box-sizing: border-box;
   box-shadow: 0vw .2vw .5vw #4EFF01;
   transition: 1s;
-  z-index: 4;
+  z-index: 5;
 }
 
 div#logo {

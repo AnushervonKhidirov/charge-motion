@@ -6,7 +6,7 @@
   /* slider */
   #slider {
     position: absolute;
-    top: 12vw;
+    top: 17.5vw;
     left: -102vw;
     width: 100vw;
     height: 20vw;
@@ -14,6 +14,7 @@
     overflow: hidden;
     opacity: 0;
     transition: 1s;
+    z-index: 3;
   }
 
   div.slider-images {
@@ -72,7 +73,7 @@
   /* discription */
   div.discription {
     position: absolute;
-    top: 34vw;
+    top: 33vw;
     left: -40vw;
     transform: translateX(-50%);
     width: 60vw;
