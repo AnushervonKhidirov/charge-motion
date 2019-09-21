@@ -6,7 +6,7 @@
   div.phone-hide {
     position: absolute;
     left: 45%;
-    bottom: -45vw;
+    bottom: -50vw;
     transform: rotate(-30deg);
     transition: 1s;
   }

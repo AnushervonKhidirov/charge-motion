@@ -28,7 +28,9 @@ body {
 }
 
 #main {
+  position: relative;
   transition: 1s;
+  z-index: 3;
 }
 
 div.loading-page {
@@ -73,7 +75,8 @@ a.inst img {
 }
 
 div#dots {
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   bottom: 2vw;
   /* bottom: 8vw; */
   right: 0vw;
@@ -81,7 +84,7 @@ div#dots {
   grid-gap: 1vw;
   width: 2.8vw;
   width: 4vw;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 div.dot-item {
@@ -100,4 +103,143 @@ div.active-dot {
   height: .42vw;
   margin: .035vw;
   transition: 1.5s;
+}
+
+div.moving {
+  position: fixed;
+  bottom: 0vw;
+  background: #4EFF01;
+  width: 0%;
+  height: .3vw;
+}
+
+div.activeAutoscrollingPage {
+  width: 100% !important;
+}
+
+#setting {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  transform: translateY(-100%);
+  height: 100vh;
+  width: 0vw;
+  border-right: .4vw solid;
+  background: #101011;
+  color: #626060;
+  user-select: none;
+  transition: .2s;
+  transition-timing-function: linear;
+  z-index: 3;
+}
+
+.setting-block {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 0vw;
+  margin: 0vw;
+  width: 100%;
+  height: 100%;
+  background: #101011;
+  z-index: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+ul.setting-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 0vw;
+  margin: 0vw;
+  list-style-type: none;
+  transition: .2s;
+  opacity: 0;
+}
+
+ul.setting-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vw 0vw;
+}
+
+li.set {
+  border: .2vw solid;
+  border-radius: .5vw;
+  width: 10vw;
+  height: 2vw;
+  justify-content: center !important;
+  margin: auto !important;
+  cursor: pointer;
+}
+
+span.toggle-autoscroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 2vw;
+  box-sizing: border-box;
+  border: .2vw solid;
+  border-radius: .5vw;
+  cursor: pointer;
+}
+
+input.timer {
+  width: 4vw;
+  height: 2vw;
+  background: #101011;
+  color: #626060;
+  text-align: center;
+  border: .2vw solid;
+  border-radius: .5vw;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.active:active {
+  background: #4D4D4D;
+  color: #101011;
+}
+
+.setting-button {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+
+  border-radius: 10vw;
+  background: #101011;
+  border: .2vw solid;
+  padding-right: .7vw;
+  box-sizing: border-box;
+  transition: .15s;
+  cursor: pointer;
+}
+
+span.arrow {
+  transition: .15s;
+}
+
+
+.open-setting {
+  width: 30vw !important;
+}
+
+.open-setting span.arrow {
+  transform: rotateY(180deg);
+}
+
+#setting:hover .setting-button {
+  transform: translate(-50%, -50%);
 }

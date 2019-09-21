@@ -74,3 +74,75 @@ div.charge-motion-circle-background {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+
+
+
+/* --------------------------------------------- */
+
+@-webkit-keyframes move-line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes move-line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-ms-keyframes move-line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-o-keyframes move-line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes move-line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+div.moving  {
+  -webkit-animation-name: move-line;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: move-line;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+  -ms-animation-name: move-line;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: infinite;
+
+  -o-animation-name: move-line;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+
+  animation-name: move-line;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

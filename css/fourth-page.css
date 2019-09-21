@@ -48,6 +48,7 @@ div#view-images {
   background: rgba(0, 0, 0, .4);
   width: 100vw;
   height: 100vh;
+  user-select: none;
   z-index: 5;
 }
 

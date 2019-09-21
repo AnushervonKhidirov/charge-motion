@@ -48,6 +48,10 @@ imgGallary.forEach(function (elem, index) {
         blur[i].style.filter = 'blur(.7vw)';
       }
     }, 10);
+
+    // Autoscroll
+    allowAutoscrollingPage = false;
+    isSetInterval();
   };
 });
 
@@ -62,6 +66,12 @@ exit.onclick = function () {
   setTimeout(function () {
     document.body.classList.remove('view-img-opened');
   }, 1000);
+
+  // Autoscroll
+  if (toggleAutoscroll.innerHTML == 'on') {
+    allowAutoscrollingPage = true;
+    isSetInterval();
+  }
 };
 
 nextImg.addEventListener('click', isNextIMG);

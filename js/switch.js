@@ -168,12 +168,14 @@ function switching(index) {
     index = 0;
     backgroundLoad.style.display = 'none';
     isLoad = false;
-  }
+  };
 
   if (!isLoad) {
     changeBodyClass(index);
     activity(index);
-  }
+  };
+  // Autoscroll
+  isSetInterval();
 };
 
 function changeBodyClass(index) {
