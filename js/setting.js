@@ -21,7 +21,6 @@ let startTimer;
 toggleAutoscrollValue();
 getSettingValue();
 
-
 toggleAutoscroll.addEventListener('click', istoggleAutoscroll);
 toggleSetting.addEventListener('click', isToggleSetting);
 getSettingValueButton.addEventListener('click', getSettingValue);
