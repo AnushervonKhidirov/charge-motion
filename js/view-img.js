@@ -6,6 +6,7 @@ let exit = document.querySelector('.exit');
 let activeOpacity = document.querySelectorAll('.active-opacity');
 let previousImg = document.querySelector('.previous-img');
 let nextImg = document.querySelector('.next-img');
+let gallaryItem = document.querySelectorAll('.border-gallary')
 let startContactViewIMG;
 let endContactViewIMG;
 let indexImgGalary = 0;
@@ -33,11 +34,11 @@ viewImages.addEventListener('touchstart', function() {
   }, 300)
 })
 
-imgGallary.forEach(function (elem, index) {
+gallaryItem.forEach(function (elem, index) {
   elem.onclick = function () {
     document.body.classList.add('view-img-opened');
     indexImgGalary = index;
-    setImgGallary.src = elem.src;
+    setImgGallary.src = imgGallary[index].src;
     allowed = false;
     setTimeout(function () {
       for (var i = 0; i < activeOpacity.length; i++) {

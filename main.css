@@ -7,6 +7,8 @@ body {
   color: #fff;
   overflow: hidden;
   font-family: Arial;
+  font-stretch: ultra-condensed;
+  letter-spacing: .2vw;
 }
 
 #content {
@@ -54,19 +56,22 @@ div.loading-page img {
 
 a.inst {
   position: fixed;
-  display: flex;
-  align-items: center;
   bottom: 2vw;
   left: 5vw;
+  display: flex;
+  align-items: center;
+  width: 2.5vw;
   height: 2.5vw;
   font-size: 1.3vw;
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
+  transition: .5s;
   z-index: 2;
 }
 
-a.inst:hover::after {
-  content: '/chargemotion';
+a.inst:hover {
+  width: 14vw;
 }
 
 a.inst img {
@@ -76,15 +81,12 @@ a.inst img {
 
 div#dots {
   position: fixed;
-  /* position: absolute; */
   bottom: 2vw;
-  /* bottom: 8vw; */
   right: 0vw;
   display: grid;
   grid-gap: 1vw;
   width: 2.8vw;
   width: 4vw;
-  /* z-index: 3; */
 }
 
 div.dot-item {
@@ -177,7 +179,12 @@ li.set {
   cursor: pointer;
 }
 
-span.toggle-autoscroll {
+li.set a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span.toggle-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,13 +218,11 @@ input.timer {
   top: 50%;
   left: 100%;
   transform: translate(-100%, -50%);
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 4vw;
   height: 4vw;
-
   border-radius: 10vw;
   background: #101011;
   border: .2vw solid;
@@ -230,7 +235,6 @@ input.timer {
 span.arrow {
   transition: .15s;
 }
-
 
 .open-setting {
   width: 30vw !important;

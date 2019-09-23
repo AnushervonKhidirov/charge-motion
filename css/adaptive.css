@@ -33,6 +33,7 @@
 
   div#logo {
     top: -.7vw;
+    height: 10vw;
   }
 
   div#logo span.big-font {
@@ -41,8 +42,8 @@
 
   div#logo span.little-font {
     bottom: 1.6vw;
-    font-size: 1.24vw;
-    letter-spacing: .3vw;
+    font-size: 1.24vw !important;
+    letter-spacing: .3vw !important;
   }
 
   div#logo img {
@@ -100,6 +101,7 @@
 
   div#logo {
     top: -1.05vw;
+    height: 15vw;
   }
 
   div#logo span.big-font {
@@ -108,8 +110,8 @@
 
   div#logo span.little-font {
     bottom: 2.4vw;
-    font-size: 1.86vw;
-    letter-spacing: .45vw;
+    font-size: 1.86vw !important;
+    letter-spacing: .45vw !important;
   }
 
   div#logo img {
@@ -167,11 +169,6 @@
     top: 5.75vw;
   }
 
-
-
-
-
-  /* --------------------------- */
   div.vertical-line {
     position: absolute;
     top: 0vw;
@@ -195,6 +192,7 @@
   div.name-page-font {
     position: absolute;
     font-family: 'Yu Gothic Light';
+    letter-spacing: 0vw !important;
     font-size: 2.5vw;
     top: -5vw;
     left: 5vw;
@@ -297,15 +295,11 @@
     width: 110%;
   }
 
-
-
-
-
-  /* --------------------------- */
   div.name-page-font {
     position: relative;
     padding-top: 5vw;
-    font-family: 'Yu Gothic Light';
+    /* font-family: 'Yu Gothic Light'; */
+    letter-spacing: 0vw !important;
     font-size: 7vw;
     text-align: center;
     color: #70BF4C;
@@ -318,11 +312,6 @@
     font-size: 5.5vw;
     z-index: 1;
   }
-
-  /* a[name] {
-    position: absolute;
-    top: -17vw;
-  } */
 }
 
 

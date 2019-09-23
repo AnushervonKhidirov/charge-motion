@@ -179,7 +179,12 @@ function switching(index) {
 };
 
 function changeBodyClass(index) {
-  document.body.setAttribute('class', 'pos_' + index);
+  document.body.classList.remove('pos_' + prevpos);
+  document.body.classList.add('pos_' + pos);
+  if (document.body.classList.contains('english-page')) {
+    document.body.classList.remove('pos_' + prevpos + '_en');
+    document.body.classList.add('pos_' + pos + '_en');
+  };
 };
 
 function activity(index) {

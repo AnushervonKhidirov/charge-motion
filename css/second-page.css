@@ -29,12 +29,16 @@
 
   div.first-prompt {
     top: -5vw;
-    right: 25vw;
+    right: 23vw;
+  }
+
+  body.english-page div.first-prompt {
+    right: 25vw !important;
   }
 
   div.second-prompt {
     bottom: 10.5vw;
-    right: 10vw;
+    right: 8vw;
   }
 
   div.first-prompt-line {
@@ -68,10 +72,11 @@
 
   div.hand-img {
     position: absolute;
-    right: -40vw;
+    right: -45vw;
     bottom: 25.5vw;
-    width: 35vw;
-    z-index: 1;
+    transform: rotate(-10deg);
+    width: 42vw;
+    z-index: 2;
     transition: 1s;
   }
 
@@ -82,12 +87,7 @@
   div.mission-text {
     background: rgba(0, 0, 0, .5);
   }
-
-  div.second-vertical-line {
-    left: 33vw;
-  }
 }
-
 
 
 @media screen and (max-width: 992px) {

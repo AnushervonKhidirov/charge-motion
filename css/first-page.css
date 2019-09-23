@@ -79,9 +79,9 @@
     text-shadow: .1vw .1vw .1vw #000;
   }
 
-  div.first-vertical-line {
+  /* div.first-vertical-line {
     left: 22vw;
-  }
+  } */
 
   div.first-mobile-horizontal-line {
     display: none;

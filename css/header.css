@@ -20,8 +20,10 @@ div#logo {
   left: 4vw;
   display: flex;
   align-items: center;
-  font-family: Arial Black;
-  cursor: default;
+  font-family: Arial Black !important;
+  letter-spacing: normal !important;
+  cursor: pointer;
+  height: 5.1vw;
 }
 
 div#logo span.big-font {
@@ -33,7 +35,7 @@ div#logo span.little-font {
   position: absolute;
   right: 0vw;
   bottom: .8vw;
-  font-size: .62vw;
+  font-size: .62vw !important;
   letter-spacing: .15vw;
   color: #70BF4C;
 }
@@ -47,7 +49,7 @@ div#logo img {
   display: flex;
   list-style-type: none;
   transition: .5s;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   padding: 0px;
   margin: 0px;
 }
@@ -55,7 +57,7 @@ div#logo img {
 li.menu-item {
   display: flex;
   align-items: center;
-  padding: 2vw 2vw;
+  padding: 2vw 1.5vw;
   transition: .5s;
   font-weight: bold;
   cursor: pointer;

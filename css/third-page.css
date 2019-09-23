@@ -1,7 +1,7 @@
 @media screen and (min-width: 992px) {
-  div.third-vertical-line {
+  /* div.third-vertical-line {
     left: 38vw;
-  }
+  } */
 
   /* slider */
   #slider {
@@ -31,19 +31,13 @@
     width: 20vw;
     height: 20vw;
     padding: 0vw 1vw;
-    cursor: pointer;
     overflow: hidden;
     box-sizing: border-box;
   }
 
   img.img-item {
     width: 100%;
-    /* width: 18vw;
-    height: 20vw;
-    padding: 0vw 1vw;
     cursor: pointer;
-    border: 1px solid;
-    box-sizing: border-box; */
   }
 
   div.nav, div.nav-img {
@@ -94,7 +88,6 @@
     transition: 1s;
   }
 }
-
 
 
 @media screen and (max-width: 992px) {
