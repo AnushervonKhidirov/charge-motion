@@ -14,7 +14,7 @@
 div.slider-images {
   display: flex;
   height: 20vw;
-  transition: .2s;
+  transition: .2s transform;
 }
 
 div.slide-item {

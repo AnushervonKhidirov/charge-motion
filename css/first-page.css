@@ -60,7 +60,7 @@ div#bent {
 
 div.first-opacity {
   opacity: 0;
-  transition: 1.5s;
+  transition: 1.5s opacity;
 }
 
 @media screen and (min-width: 992px) {

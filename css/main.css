@@ -3,6 +3,7 @@ body {
   padding: 0px;
   background-color: #101011;
   background-image: url(../images/background.png);
+  background-size: 18%;
   background-attachment: fixed;
   color: #fff;
   overflow: hidden;

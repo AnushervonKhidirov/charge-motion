@@ -10,7 +10,6 @@ div#header {
   user-select: none;
   box-sizing: border-box;
   box-shadow: 0vw .2vw .5vw #4EFF01;
-  transition: 1s;
   z-index: 5;
 }
 
@@ -48,7 +47,6 @@ div#logo img {
 #menu ul {
   display: flex;
   list-style-type: none;
-  transition: .5s;
   font-size: 1.3vw;
   padding: 0px;
   margin: 0px;
@@ -58,17 +56,15 @@ li.menu-item {
   display: flex;
   align-items: center;
   padding: 2vw 1.5vw;
-  transition: .5s;
+  transition: .5s color;
   font-weight: bold;
   cursor: pointer;
 }
 
 li.menu-item:hover {
-  color:  #4EFF01;
-  opacity: .7;
+  color:  #3AB606;
 }
 
 li.activeMenu {
-  color:  #4EFF01;
-  opacity: 1 !important;
+  color:  #4EFF01 !important;
 }

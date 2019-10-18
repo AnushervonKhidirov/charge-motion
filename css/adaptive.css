@@ -180,7 +180,7 @@
     width: .4vw;
     height: 0vw;
     background: #4EFF01;
-    transition: 1s;
+    transition: 1s height;
     z-index: 1;
   }
 
@@ -201,7 +201,7 @@
     font-size: 2.5vw;
     top: -5vw;
     left: 5vw;
-    transition: 1s;
+    transition: 1s top;
   }
 
   div.text-page-font {
@@ -212,7 +212,7 @@
     left: -33vw;
     line-height: 2.5vw;
     font-size: 1.4vw;
-    transition: 1s;
+    transition: 1s left;
     z-index: 1;
   }
 }
@@ -322,7 +322,7 @@
     top: -25vw;
     font-family: 'Yu Gothic Light';
     font-size: 5vw;
-    transition: 1s;
+    transition: 1s top;
     width: 100%;
     text-align: center;
   }
@@ -335,7 +335,7 @@
     padding: 5vw;
     line-height: 6vw;
     font-size: 4vw;
-    transition: 1s;
+    transition: 1s left;
     z-index: 3;
     width: 100vw;
     box-sizing: border-box;
@@ -356,7 +356,7 @@
     top: -25vw;
     font-family: 'Yu Gothic Light';
     font-size: 7vw;
-    transition: 1s;
+    transition: 1s top;
     width: 100%;
     text-align: center;
   }
@@ -369,7 +369,7 @@
     padding: 5vw;
     line-height: 8vw;
     font-size: 5.5vw;
-    transition: 1s;
+    transition: 1s left;
     z-index: 3;
     width: 100vw;
     box-sizing: border-box;

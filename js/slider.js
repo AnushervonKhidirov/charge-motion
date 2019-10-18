@@ -58,7 +58,7 @@ right.addEventListener('click', () => move(sum += imgSize));
 left.addEventListener('click', () => move(sum -= imgSize));
 
 function move(side) {
-  sliderImages.style.transition = '.2s';
+  sliderImages.style.transition = '.2s transform';
   sliderImages.style.transform = 'translateX(-' + (sliderSize + side) + 'px)';
 
   if (sliderSize + side <= imgSize || sliderSize + side >= createNextSlider) {
@@ -69,7 +69,7 @@ function move(side) {
 function createNewSlide() {
   setTimeout(function() {
     sum = 0;
-    sliderImages.style.transition = '0s';
+    sliderImages.style.transition = '0s transform';
     sliderImages.style.transform = 'translateX(-' + (sliderSize) + 'px)';
   }, 200);
 };
