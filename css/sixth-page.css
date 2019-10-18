@@ -1,0 +1,90 @@
+div#contact-form {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form input {
+  box-sizing: border-box;
+  font-size: 4.3vw;
+  border: 0vw solid;
+  outline: none;
+}
+
+form input[type="submit"] {
+  color: #626060;
+  background: #101011;
+}
+
+form input[type="submit"]:active {
+  background: #626060;
+  color: #101011;
+}
+
+@media screen and (min-width: 992px) {
+  div#contact-form {
+    top: -25vw;
+  }
+
+  form {
+    height: 20vw;
+  }
+
+  form input {
+    height: 3vw;
+    width: 30vw;
+    font-size: 1.4vw;
+    border-radius: 1vw;
+    padding: 0vw 1vw;
+  }
+
+  form input:focus {
+    box-shadow: 0 0 .7vw .1vw #4EFF01;
+  }
+
+  form input[type="submit"] {
+    border: .2vw solid;
+  }
+
+  form input[type="submit"]:active {
+    box-shadow: 0 0 .7vw .1vw #626060;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  div#contact-form {
+    top: -70vw;
+  }
+
+  form {
+    height: 60vw;
+  }
+
+  form input {
+    height: 9vw;
+    width: 90vw;
+    font-size: 4.3vw;
+    border-radius: 3vw;
+    padding: 0vw 3vw;
+  }
+
+  form input:focus {
+    box-shadow: 0 0 2.1vw .3vw #4EFF01;
+  }
+
+  form input[type="submit"] {
+    border: .6vw solid;
+  }
+
+  form input[type="submit"]:active {
+    box-shadow: 0 0 2.1vw .3vw #626060;
+  }
+}

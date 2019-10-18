@@ -1,0 +1,38 @@
+div.l1 {
+  top: 30%;
+}
+
+div.l2 {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+div.l3 {
+  bottom: 30%;
+}
+
+div.open-mobile-menu {
+  height: 100% !important;
+}
+
+div.open-mobile-menu-button .l1 {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+div.open-mobile-menu-button .l2 {
+  opacity: 0;
+}
+
+div.open-mobile-menu-button .l3 {
+  bottom: 50%;
+  transform: translate(0%, 50%);
+}
+
+div.open-mobile-menu-button-transform .l1 {
+  transform: translate(0%, -50%) rotate(-45deg);
+}
+
+div.open-mobile-menu-button-transform .l3 {
+  transform: translate(0%, 50%) rotate(45deg);
+}
