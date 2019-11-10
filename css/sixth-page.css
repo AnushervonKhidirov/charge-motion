@@ -1,9 +1,32 @@
-div#contact-form {
+#contact-form {
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+#contact-form span {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0;
-  transition: 1s;
+}
+
+#map {
+  position: absolute;
+  top: 11vw;
+  left: -40vw;
+  width: 36.5vw;
+  height: 15vw;
+  transition: left 1s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+
+.contact-page-address {
+  position: absolute;
+  transition: left 1s;
 }
 
 form {
@@ -14,14 +37,20 @@ form {
 
 form input {
   box-sizing: border-box;
-  font-size: 4.3vw;
-  border: 0vw solid;
+  border: none;
   outline: none;
 }
 
 form input[type="submit"] {
   color: #626060;
   background: #101011;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background: #4EFF01;
+  color: #101011;
 }
 
 form input[type="submit"]:active {
@@ -29,9 +58,27 @@ form input[type="submit"]:active {
   color: #101011;
 }
 
+form input[type="submit"]:focus {
+  box-shadow: none;
+}
+
 @media screen and (min-width: 992px) {
-  div#contact-form {
-    top: -25vw;
+  #contact-form {
+    top: 14vw;
+    right: -30vw;
+    font-size: 2vw;
+  }
+
+  #contact-form span {
+    top: -5vw;
+    width: 16vw;
+  }
+
+  .contact-page-address {
+    top: 27vw;
+    left: -40vw;
+    line-height: 2.5vw;
+    font-size: 1.4vw;
   }
 
   form {
@@ -60,8 +107,8 @@ form input[type="submit"]:active {
 }
 
 @media screen and (max-width: 992px) {
-  div#contact-form {
-    top: -70vw;
+  #map {
+    display: none;
   }
 
   form {
@@ -86,5 +133,41 @@ form input[type="submit"]:active {
 
   form input[type="submit"]:active {
     box-shadow: 0 0 2.1vw .3vw #626060;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 992px) {
+  #contact-form {
+    top: 30vw;
+    font-size: 5vw;
+  }
+
+  #contact-form span {
+    top: -11vw;
+  }
+
+  .contact-page-address {
+    bottom: 25vw;
+    left: -70vw;
+    line-height: 5vw;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #contact-form {
+    top: 33vw;
+    font-size: 6vw;
+  }
+
+  #contact-form span {
+    top: -13vw;
+  }
+
+  .contact-page-address {
+    bottom: 30vw;
+    left: -95vw;
+    line-height: 6vw;
+    font-size: 4vw;
   }
 }

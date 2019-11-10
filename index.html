@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="css/switch.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/toggle-language.css">
     <link rel="shortcut icon" href="images/logo.png">
     <title>Charge motion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+  <!-- <body class="pos_4 open-full-discription opacity-full-discription"> -->
   <body>
     <div id="header" class="blur">
       <div id="logo">
@@ -46,12 +49,16 @@
       </div>
     </div>
 
-    <div id="background-load">
-      <div class="loading-page">
-        <span>Загрузка страницы</span>
-        <img src="images/load.gif" draggable="false">
+    <div id="preloader">
+      <div class="preloader">
+        <div class="loader-circle-outside"></div>
+        <div class="loader-circle-inside"></div>
+        <div class="preload-text">
+          Loading ...
+        </div>
       </div>
     </div>
+
     <div id="mobile-background"></div>
     <div id="mobile-background-img">
       <div class="charge-motion-circle-background">
@@ -67,6 +74,19 @@
       <div class="img-place">
         <img class="active-opacity set-img-gallary">
       </div>
+    </div>
+
+    <div id="full-discription">
+      <div class="full-discription-data">
+        <p>dsafsdfadfdsafsdfadf</p>
+        <p>dsafsdfadfdsafsdfadf</p>
+        <p>dsafsdfadfdsafsdfadf</p>
+        <p>dsafsdfadfdsafsdfadf</p>
+        <p>dsafsdfadfdsafsdfadf</p>
+
+      </div>
+
+      <span class="hide-all show-hide-text">Назад</span>
     </div>
 
     <!-- slider -->
@@ -235,6 +255,54 @@
       <div class="horizontal-line fivth-horizontal-line"></div>
 
 
+      <div id="our-products">
+        <div class="our-products-img">
+          <img src="images/gallary_4.png">
+        </div>
+
+        <div class="our-products-discription">
+          <div class="our-products-discription-text">
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+            fasdfas dfn dsaf asd adsf asd fasd fsdf
+          </div>
+
+          <span class="show-all show-hide-text">Показать все</span>
+        </div>
+      </div>
 
       <!-- sixth page -->
       <div class="name-page-font contacts">КОНТАКТЫ</div>
@@ -242,20 +310,38 @@
       <div class="vertical-line sixth-vertical-line"></div>
       <div class="horizontal-line sixth-horizontal-line"></div>
 
+      <div id="map">
+        map
+      </div>
+
+      <div class="contact-page-address">
+        <div><span>E-mail: </span><span>chargemotionofficial@gmail.com</span></div>
+        <div><span>Телефон: </span><span>+992 908-83-77-77</span></div>
+        <div><span>Адрес: </span><span>Nisor Muhammad 5/5 (Regus Opera & Ballet)</span></div>
+      </div>
+
       <div id="contact-form">
+        <span>Оставьте заявку</span>
         <form class="" method="">
-          <input type="email" required autocomplete="on" name="mail" placeholder="E-mail">
-          <input type="text" required autocomplete="on" name="name" placeholder="Имя">
-          <input type="tel" required autocomplete="on" name="phone" placeholder="Введите номер телефона с кодом страны">
+          <input type="email" required name="mail" placeholder="E-mail">
+          <input type="text" required name="name" placeholder="Имя">
+          <input type="tel" required name="phone" placeholder="Введите номер телефона с кодом страны">
           <input type="submit" name="" value="Отправить">
         </form>
       </div>
-
 
     </div>
 
     <!-- Main -->
     <div id="main" class="blur">
+      <a href="index_en.html">
+        <div class="switch-language">
+          <span class="ru"><img src="images/flag-ru.png"></span>
+          <span class="en"><img src="images/flag-en.png"></span>
+          <div class="switcher"></div>
+        </div>
+      </a>
+
       <a class="inst" href="https://www.instagram.com/chargemotion/" target="_blank">
         <img src="images/instagram.png"></img>
         <span>/chargemotion</span>
@@ -281,7 +367,7 @@
 
           <div class="contact-data">
             <div class="contact-mail">
-              <span class="left-contact-data">Mail:</span><span class="right-contact-data">Chargemotionofficial@gmail.com</span>
+              <span class="left-contact-data">E-mail:</span><span class="right-contact-data">chargemotionofficial@gmail.com</span>
             </div>
             <div class="contact-phone">
               <span class="left-contact-data">Телефон:</span><span class="right-contact-data">+992 908-83-77-77</span>
@@ -304,6 +390,7 @@
     <script src="js/setting.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/view-img.js"></script>
+    <script src="js/discription.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="js/mobile-slider.js"></script>
     <script src="js/phone.js"></script>

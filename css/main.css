@@ -20,46 +20,16 @@ body {
   z-index: 2;
 }
 
-#background-load {
-  /* display: none; */
-  position: fixed;
-  background: #231F20;
-  height: 100vh;
-  width: 100vw;
-  color: #CCCCCC;
-  user-select: none;
-  z-index: 4;
-}
-
 #main {
   position: relative;
   transition: 1s;
   z-index: 3;
 }
 
-div.loading-page {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-div.loading-page span {
-  font-size: 2vw;
-  padding-right: 1vw;
-}
-
-div.loading-page img {
-  height: 3vw;
-}
-
 a.inst {
   position: fixed;
   bottom: 2vw;
-  left: 5vw;
+  left: 12vw;
   display: flex;
   align-items: center;
   width: 2.5vw;

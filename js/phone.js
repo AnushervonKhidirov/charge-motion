@@ -3,7 +3,7 @@ let percentItem = 0;
 let charging = document.querySelectorAll('.background-accumulator-green');
 let chargingEnd = document.querySelectorAll('.background-end-accumulator-green');
 let img = document.querySelectorAll('.phone');
-let random = Math.round(Math.random() * 3);
+let random = Math.round(Math.random() * 2);
 let src = `images/phone_${random}.png`;
 
 img[0].src = src;

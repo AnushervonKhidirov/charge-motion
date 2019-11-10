@@ -106,6 +106,10 @@ body.pos_4 div.fivth-horizontal-line {
   width: 43vw;
 }
 
+body.pos_4 #our-products {
+  left: 50%;
+}
+
 body.pos_4_en div.fivth-vertical-line {
   left: 28vw !important;
 }
@@ -133,6 +137,14 @@ body.pos_5_en div.sixth-horizontal-line {
 
 body.pos_5 div#contact-form {
   opacity: 1;
+}
+
+body.pos_5 .contact-page-address {
+  left: 5vw;
+}
+
+body.pos_5 #map {
+  left: 5vw;
 }
 
 
@@ -177,8 +189,8 @@ body.pos_5 div#contact-form {
     top: 2.2vw;
   }
 
-  body.pos_5 div#contact-form {
-    top: 12vw;
+  body.pos_5 #contact-form {
+    right: 15vw;
   }
 }
 
@@ -223,7 +235,8 @@ body.pos_5 div#contact-form {
     top: 5vw;
   }
 
-  body.pos_5 div#contact-form {
-    top: 25vw;
+  body.pos_5 #contact-form {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

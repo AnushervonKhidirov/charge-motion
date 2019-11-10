@@ -1,0 +1,60 @@
+div.switch-language {
+  position: fixed;
+  bottom: 2.3vw;
+  /* top: 10vw; */
+  left: 5vw;
+  border: .2vw solid #70BF4C;
+  border-radius: 1vw;
+  height: 1.5vw;
+  width: 5.1vw;
+  background: #ffffff;
+  cursor: pointer;
+  opacity: .3;
+  transition: .3s;
+  transition-timing-function: linear;
+  z-index: 1;
+}
+
+span.ru {
+  position: absolute;
+  left: .5vw;
+  top: .05vw;
+}
+
+div.switch-language span img {
+  height: 1.3vw;
+}
+
+span.en {
+  position: absolute;
+  right: .5vw;
+  top: .05vw;
+}
+
+div.switcher {
+  position: absolute;
+  top: .05vw;
+  right: .05vw;
+  width: 2.55vw;
+  height: 1.5vw;
+  border-radius: 1vw;
+  background: #4EFF01;
+  transition-duration: .4s;
+  z-index: 5;
+}
+
+div.switch-language:hover div.switcher {
+  right: 2.55vw;
+}
+
+div.switch-language:hover {
+  opacity: 1;
+}
+
+body.english-page div.switcher {
+  left: 0vw !important;
+}
+
+body.english-page div.switch-language:hover div.switcher {
+  left: 2.55vw !important;
+}

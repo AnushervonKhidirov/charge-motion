@@ -1,5 +1,5 @@
 // Loading
-let backgroundLoad = document.querySelector('#background-load');
+let preloader = document.querySelector('#preloader');
 let isLoad = true;
 
 // Desctop scrolling
@@ -92,7 +92,9 @@ function previousPage() {
 // Switch via menu button
 menuItemSwitch.forEach(function(elem, index) {
   elem.onclick = function () {
-    itemSwitch(index);
+    if (allowed) {
+      itemSwitch(index);
+    }
   };
 });
 
@@ -115,7 +117,7 @@ function itemSwitch(index) {
 function isSwitchingPage(index) {
   if (isLoad) {
     index = 0;
-    backgroundLoad.style.display = 'none';
+    preloader.style.display = 'none';
     isLoad = false;
   };
 
