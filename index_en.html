@@ -21,8 +21,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
-
   <body class="english-page">
     <div id="header" class="blur">
       <div id="logo">
@@ -39,7 +37,6 @@
           <li class="switch-menu menu-item">Our gallary</li>
           <li class="switch-menu menu-item">Our Products</li>
           <li class="switch-menu menu-item">Contacts</li>
-          <!-- <li class="switch-menu menu-item lang"><a href="./index.html">Turn to russian cite version</a></li> -->
         </ul>
       </div>
 
@@ -78,6 +75,8 @@
         <div class="product-full-discription-name">M1 Long Distance Wireless Charger</div>
 
         <div class="product-full-discription-text">
+          <div class="product-full-discription-img"><img src="images/gallary_3.png"></div>
+
           <div>
             <b>Product Feature:</b>
             <ul>
@@ -110,6 +109,8 @@
         <div class="product-full-discription-name">CM1 Desktop Wireless Charger</div>
 
         <div class="product-full-discription-text">
+          <div class="product-full-discription-img"><img src="images/gallary_11.jpg"></div>
+
           <div>
             <b>Product Feature:</b>
             <ul>
@@ -136,6 +137,7 @@
 
       <span class="hide-all show-hide-text">Back</span>
     </div>
+
 
     <!-- slider -->
     <div id="slider-mobile">
@@ -316,13 +318,31 @@
 
       <div id="our-products">
         <div class="toggle-products">
-          <div class="toggle-product-type">M1 Long Distance Wireless Charger</div>
-          <div class="toggle-product-type">CM1 Desktop Wireless Charger</div>
+          <div class="toggle-product-type active-product">
+            <img src="images/gallary_3.png">
+            <span>M1 Long Distance Wireless Charger</span>
+          </div>
+          <div class="toggle-product-type">
+            <img src="images/gallary_11.jpg">
+            <span>CM1 Desktop Wireless Charger</span>
+          </div>
         </div>
 
+        <!-- <div class="toggle-products">
+          <div class="toggle-product-type active-product">
+            <img src="images/gallary_3.png">
+            <span>M1 Беспроводное зарядное устройство</span>
+          </div>
+          <div class="toggle-product-type">
+            <img src="images/gallary_11.jpg">
+            <span>Настольное беспроводное зарядное устройство CM1</span>
+          </div>
+        </div> -->
+
         <div class="product-type hide-product-type first-product-type">
-          <div class="our-products-img">
-            <img src="images/gallary_4.png">
+          <div class="our-products-img first-product-img">
+            <div class="product-border"></div>
+            <img src="images/gallary_3.png">
           </div>
 
           <div class="our-products-discription">
@@ -342,8 +362,9 @@
         </div>
 
         <div class="product-type hide-product-type second-product-type">
-          <div class="our-products-img">
-            <img src="images/gallary_3.png">
+          <div class="our-products-img second-product-img">
+            <div class="product-border"></div>
+            <img src="images/gallary_11.jpg">
           </div>
 
           <div class="our-products-discription">

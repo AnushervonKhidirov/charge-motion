@@ -1,5 +1,5 @@
 #preloader {
-  display: none;
+  /* display: none; */
   position: fixed;
   background: #231F20;
   height: 100vh;
@@ -13,7 +13,7 @@
   position: absolute;
   left: 50%;
   top: 110px;
-  width: 110%;
+  width: 120%;
   transform: translateX(-50%);
   color: #4eff01;
 }
