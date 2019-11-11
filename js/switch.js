@@ -136,6 +136,9 @@ function changeBodyClass(index) {
     document.body.classList.remove('pos_' + prevpos + '_en');
     document.body.classList.add('pos_' + pos + '_en');
   };
+
+  // --------------------------
+  loader()
 };
 
 function activity(index) {

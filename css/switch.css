@@ -1,108 +1,108 @@
-body.pos_0 div.phone-hide {
+body.pos_0 .phone-hide {
   bottom: -13vw;
 }
 
-body.pos_0 div.mobile-phone {
+body.pos_0 .mobile-phone {
   right: -20vw;
 }
 
-body.pos_0 div.width {
+body.pos_0 .width {
   width: 100%;
 }
 
-body.pos_0 div.first-vertical-line {
+body.pos_0 .first-vertical-line {
   height: 10vw;
   left: 22vw;
 }
 
-body.pos_0 div.first-vertical-line {
+body.pos_0 .first-vertical-line {
   height: 10vw;
 }
 
-body.pos_0 div.first-opacity {
+body.pos_0 .first-opacity {
   opacity: 1;
 }
 
-body.pos_1 div.second-vertical-line {
+body.pos_1 .second-vertical-line {
   height: 10vw;
   left: 34vw;
 }
 
-body.pos_1 div.second-horizontal-line {
+body.pos_1 .second-horizontal-line {
   width: 37vw;
 }
 
-body.pos_1_en div.second-vertical-line {
+body.pos_1_en .second-vertical-line {
   left: 23vw !important;
 }
 
-body.pos_1_en div.second-horizontal-line {
+body.pos_1_en .second-horizontal-line {
   width: 26vw !important;
 }
 
-body.pos_1 div.second-opacity {
+body.pos_1 .second-opacity {
   opacity: 1;
 }
 
-body.pos_2 div.third-vertical-line {
+body.pos_2 .third-vertical-line {
   height: 10vw;
   left: 40vw;
 }
 
-body.pos_2 div.third-horizontal-line {
+body.pos_2 .third-horizontal-line {
   width: 43vw;
 }
 
-body.pos_2_en div.third-vertical-line {
+body.pos_2_en .third-vertical-line {
   left: 26vw !important;
 }
 
-body.pos_2_en div.third-horizontal-line {
+body.pos_2_en .third-horizontal-line {
   width: 29vw !important;
 }
 
-body.pos_2 div#slider {
+body.pos_2 #slider {
   opacity: 1;
   left: 0vw;
 }
 
-body.pos_2 div#slider-mobile {
+body.pos_2 #slider-mobile {
   opacity: 1;
   left: 50%;
 }
 
-body.pos_2 div.discription {
+body.pos_2 .discription {
   left: 50%;
   opacity: 1;
 }
 
-body.pos_3 div#gallary {
+body.pos_3 #gallary {
   left: 50%;
 }
 
-body.pos_3 div.fourth-vertical-line {
+body.pos_3 .fourth-vertical-line {
   height: 10vw;
   left: 37vw;
 }
 
-body.pos_3 div.fourth-horizontal-line {
+body.pos_3 .fourth-horizontal-line {
   width: 40vw;
 }
 
-body.pos_3_en div.fourth-vertical-line {
+body.pos_3_en .fourth-vertical-line {
   left: 26vw !important;
 }
 
-body.pos_3_en div.fourth-horizontal-line {
+body.pos_3_en .fourth-horizontal-line {
   width: 29vw !important;
 }
 
-body.pos_4 div.fivth-vertical-line {
+body.pos_4 .fivth-vertical-line {
   height: 10vw;
   left: 40vw;
 }
 
-body.pos_4 div.fivth-horizontal-line {
+body.pos_4 .fivth-horizontal-line {
   width: 43vw;
 }
 
@@ -110,28 +110,28 @@ body.pos_4 #our-products {
   left: 50%;
 }
 
-body.pos_4_en div.fivth-vertical-line {
+body.pos_4_en .fivth-vertical-line {
   left: 28vw !important;
 }
 
-body.pos_4_en div.fivth-horizontal-line {
+body.pos_4_en .fivth-horizontal-line {
   width: 31vw !important;
 }
 
-body.pos_5 div.sixth-vertical-line {
+body.pos_5 .sixth-vertical-line {
   height: 10vw;
   left: 29vw;
 }
 
-body.pos_5 div.sixth-horizontal-line {
+body.pos_5 .sixth-horizontal-line {
   width: 32vw;
 }
 
-body.pos_5_en div.sixth-vertical-line {
+body.pos_5_en .sixth-vertical-line {
   left: 21vw !important;
 }
 
-body.pos_5_en div.sixth-horizontal-line {
+body.pos_5_en .sixth-horizontal-line {
   width: 24vw !important;
 }
 
@@ -149,43 +149,43 @@ body.pos_5 #map {
 
 
 @media screen and (min-width: 992px) {
-  body.pos_0 div.about {
+  body.pos_0 .about {
     top: 2.2vw;
   }
 
-  body.pos_0 div.about-text {
+  body.pos_0 .about-text {
     left: 4vw;
   }
 
-  body.pos_1 div.mission {
+  body.pos_1 .mission {
     top: 2.2vw;
   }
 
-  body.pos_1 div.mission-text {
+  body.pos_1 .mission-text {
     left: 5vw;
   }
 
-  body.pos_1 div.table-img {
+  body.pos_1 .table-img {
     bottom: -4vw;
   }
 
-  body.pos_1 div.hand-img {
+  body.pos_1 .hand-img {
     right: -7vw;
   }
 
-  body.pos_2 div.our-partners {
+  body.pos_2 .our-partners {
     top: 2.2vw;
   }
 
-  body.pos_3 div.our-gallary {
+  body.pos_3 .our-gallary {
     top: 2.2vw;
   }
 
-  body.pos_4 div.our-products {
+  body.pos_4 .our-products {
     top: 2.2vw;
   }
 
-  body.pos_5 div.contacts {
+  body.pos_5 .contacts {
     top: 2.2vw;
   }
 
@@ -203,43 +203,43 @@ body.pos_5 #map {
 }
 
 @media screen and (max-width: 992px) {
-  body.pos_0 div.about {
+  body.pos_0 .about {
     top: 5vw;
   }
 
-  body.pos_0 div.about-text {
+  body.pos_0 .about-text {
     left: 0vw;
   }
 
-  body.pos_1 div.mission {
+  body.pos_1 .mission {
     top: 5vw;
   }
 
-  body.pos_1 div.mission-text {
+  body.pos_1 .mission-text {
     left: 0vw;
   }
 
-  body.pos_1 div.table-img {
+  body.pos_1 .table-img {
     bottom: -4vw;
   }
 
-  body.pos_1 div.hand-img {
+  body.pos_1 .hand-img {
     right: -7vw;
   }
 
-  body.pos_2 div.our-partners {
+  body.pos_2 .our-partners {
     top: 5vw;
   }
 
-  body.pos_3 div.our-gallary {
+  body.pos_3 .our-gallary {
     top: 5vw;
   }
 
-  body.pos_4 div.our-products {
+  body.pos_4 .our-products {
     top: 5vw;
   }
 
-  body.pos_5 div.contacts {
+  body.pos_5 .contacts {
     top: 5vw;
   }
 

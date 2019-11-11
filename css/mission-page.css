@@ -1,41 +1,41 @@
-div.table-img {
+.table-img {
   position: absolute;
   right: 0vw;
   transition: 1s bottom;
 }
 
-div.circle {
+.circle {
   position: absolute;
   border: .3vw solid #4EFF01;
   border-radius: 25vw;
   transform: rotateX(60deg);
 }
 
-div.table-img img{
+.table-img img{
   width: 100%;
 }
 
-div.prompt {
+.prompt {
   position: absolute;
   font-size: 1.4vw;
   z-index: 1;
 }
 
-div.first-prompt {
+.first-prompt {
   top: -5vw;
   right: 23vw;
 }
 
-body.english-page div.first-prompt {
+body.english-page .first-prompt {
   right: 25vw !important;
 }
 
-div.second-prompt {
+.second-prompt {
   bottom: 10.5vw;
   right: 8vw;
 }
 
-div.first-prompt-line {
+.first-prompt-line {
   position: absolute;
   top: -3.5vw;
   right: 37vw;
@@ -47,7 +47,7 @@ div.first-prompt-line {
   transform: skewX(50deg);
 }
 
-div.second-prompt-line {
+.second-prompt-line {
   position: absolute;
   bottom: 12vw;
   right: 33vw;
@@ -59,79 +59,79 @@ div.second-prompt-line {
   transform: skewX(-50deg);
 }
 
-div.second-opacity {
+.second-opacity {
   opacity: 0;
-  transition: 1s opacity;
+  transition: 1s;
 }
 
-div.hand-img {
+.hand-img {
   position: absolute;
   transform: rotate(-10deg);
   z-index: 2;
   transition: 1s right, transform;
 }
 
-div.mission-text {
+.mission-text {
   background: rgba(0, 0, 0, .5);
 }
 
 
 @media screen and (min-width: 992px) {
-  div.table-img {
+  .table-img {
     bottom: -35vw;
     width: 100%;
   }
 
-  div.circle {
+  .circle {
     top: -3.65vw;
     right: 11.7vw;
     width: 24.1vw;
     height: 24.1vw;
   }
 
-  div.hand-img {
+  .hand-img {
     right: -45vw;
     bottom: 25.5vw;
     width: 42vw;
   }
 
-  div.hand-img img {
+  .hand-img img {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 992px) {
-  div.table-img {
+  .table-img {
     bottom: -50vw;
     width: 150%;
   }
 
-  div.circle {
+  .circle {
     top: -5vw;
     right: 18.3vw;
     width: 35vw;
     height: 35vw;
   }
 
-  div.prompt {
+  .prompt {
     display: none;
   }
 
-  div.first-prompt-line {
+  .first-prompt-line {
     display: none;
   }
 
-  div.second-prompt-line {
+  .second-prompt-line {
     display: none;
   }
 
-  div.hand-img {
+  .hand-img {
     right: -70vw;
     bottom: 40vw;
     width: 65vw;
   }
 
-  div.hand-img img {
+  .hand-img img {
     width: 100%;
   }
 }
