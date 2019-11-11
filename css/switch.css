@@ -135,17 +135,17 @@ body.pos_5_en div.sixth-horizontal-line {
   width: 24vw !important;
 }
 
-body.pos_5 div#contact-form {
+body.pos_5 #contact-form {
   opacity: 1;
 }
 
-body.pos_5 .contact-page-address {
+/* body.pos_5 .contact-page-address {
   left: 5vw;
 }
 
 body.pos_5 #map {
   left: 5vw;
-}
+} */
 
 
 @media screen and (min-width: 992px) {
@@ -192,6 +192,14 @@ body.pos_5 #map {
   body.pos_5 #contact-form {
     right: 15vw;
   }
+
+  body.pos_5 .contact-page-address {
+    left: 5vw;
+  }
+
+  body.pos_5 #map {
+    left: 5vw;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -236,7 +244,11 @@ body.pos_5 #map {
   }
 
   body.pos_5 #contact-form {
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  body.pos_5 .contact-page-address {
+    left: 5vw;
   }
 }

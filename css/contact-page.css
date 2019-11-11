@@ -24,6 +24,11 @@
   border: 1px solid;
 }
 
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .contact-page-address {
   position: absolute;
   transition: left 1s;
@@ -109,6 +114,24 @@ form input[type="submit"]:focus {
 @media screen and (max-width: 992px) {
   #map {
     display: none;
+  }
+
+  #contact-form {
+    top: 14vw;
+    right: -100vw;
+    font-size: 2vw;
+  }
+
+  #contact-form span {
+    top: -5vw;
+    width: 43vw;
+  }
+
+  .contact-page-address {
+    top: 100vw;
+    left: 5vw;
+    line-height: 2.5vw;
+    font-size: 1.4vw;
   }
 
   form {

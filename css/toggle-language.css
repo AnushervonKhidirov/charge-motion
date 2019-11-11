@@ -1,15 +1,10 @@
 div.switch-language {
-  position: fixed;
-  bottom: 2.3vw;
-  /* top: 10vw; */
+  position: relative;
   left: 5vw;
-  border: .2vw solid #70BF4C;
-  border-radius: 1vw;
-  height: 1.5vw;
-  width: 5.1vw;
+  border-radius: 10vw;
   background: #ffffff;
   cursor: pointer;
-  opacity: .3;
+  opacity: 1;
   transition: .3s;
   transition-timing-function: linear;
   z-index: 1;
@@ -17,34 +12,18 @@ div.switch-language {
 
 span.ru {
   position: absolute;
-  left: .5vw;
-  top: .05vw;
-}
-
-div.switch-language span img {
-  height: 1.3vw;
 }
 
 span.en {
   position: absolute;
-  right: .5vw;
-  top: .05vw;
 }
 
 div.switcher {
   position: absolute;
-  top: .05vw;
-  right: .05vw;
-  width: 2.55vw;
-  height: 1.5vw;
-  border-radius: 1vw;
+  border-radius: 10vw;
   background: #4EFF01;
   transition-duration: .4s;
   z-index: 5;
-}
-
-div.switch-language:hover div.switcher {
-  right: 2.55vw;
 }
 
 div.switch-language:hover {
@@ -57,4 +36,93 @@ body.english-page div.switcher {
 
 body.english-page div.switch-language:hover div.switcher {
   left: 2.55vw !important;
+}
+
+
+@media screen and (min-width: 992px) {
+  div.switch-language {
+    bottom: 3.2vw;
+    height: 1.5vw;
+    width: 5.1vw;
+    border: .2vw solid #70BF4C;
+  }
+
+  div.switch-language span img {
+    height: 1.3vw;
+  }
+
+  span.ru {
+    left: .5vw;
+    top: .05vw;
+  }
+
+  span.en {
+    right: .5vw;
+    top: .05vw;
+  }
+
+  div.switcher {
+    top: 0vw;
+    right: .05vw;
+    width: 2.55vw;
+    height: 1.5vw;
+  }
+
+  div.switch-language:hover div.switcher {
+    right: 2.55vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  div.switch-language {
+    bottom: 6.3vw;
+    height: 3vw;
+    width: 10.2vw;
+    border: .4vw solid #70BF4C;
+  }
+
+  div.switch-language span img {
+    height: 2.6vw;
+  }
+
+  span.ru {
+    left: 1vw;
+  }
+
+  span.en {
+    right: 1vw;
+  }
+
+  div.switcher {
+    top: -.05vw;
+    right: -.15vw;
+    width: 5.1vw;
+    height: 3.05vw;
+  }
+
+  div.switch-language:hover div.switcher {
+    right: 5.2vw;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 992px) {
+  span.ru {
+    top: .2vw;
+  }
+
+  span.en {
+    top: .2vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  span.ru {
+    /* top: -.45vw; */
+    top: -0px;
+  }
+
+  span.en {
+    /* top: -.45vw; */
+    top: -0px;
+  }
 }

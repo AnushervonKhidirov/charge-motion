@@ -27,23 +27,14 @@ body {
 }
 
 a.inst {
-  position: fixed;
-  bottom: 2vw;
-  left: 12vw;
+  position: absolute;
   display: flex;
   align-items: center;
-  width: 2.5vw;
-  height: 2.5vw;
-  font-size: 1.3vw;
   text-decoration: none;
   color: inherit;
   overflow: hidden;
   transition: .5s;
   z-index: 2;
-}
-
-a.inst:hover {
-  width: 14vw;
 }
 
 a.inst img {
@@ -52,8 +43,8 @@ a.inst img {
 }
 
 div#dots {
-  position: fixed;
-  bottom: 2vw;
+  position: absolute;
+  bottom: 3vw;
   right: 0vw;
   display: grid;
   grid-gap: 1vw;
@@ -248,12 +239,28 @@ div.contact-data > div {
 }
 
 
+@media screen and (min-width: 992px) {
+  a.inst {
+    bottom: 3vw;
+    left: 12vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: 1.3vw;
+  }
+
+  a.inst:hover {
+    width: 14vw;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #setting {
     display: none;
   }
 
   a.inst {
+    bottom: 5.5vw;
+    left: 20vw;
     width: 5vw;
     height: 5vw;
     font-size: 2.6vw;

@@ -9,6 +9,11 @@ let nextImg = document.querySelector('.next-img');
 let gallaryItem = document.querySelectorAll('.border-gallary');
 let startContactViewIMG, endContactViewIMG, indexImgGalary;
 
+let gallarySlide = document.querySelectorAll('.gallary-slide');
+let gallaryDotItem = document.querySelectorAll('.gallary-dot-item');
+let previousGalary = 0;
+let presentGalary = 0;
+
 // Events
 nextImg.addEventListener('click', () => isNextIMG(imgGallary.length, 0, indexImgGalary++));
 previousImg.addEventListener('click', () => isNextIMG (-1, imgGallary.length - 1, indexImgGalary--));
@@ -19,6 +24,21 @@ exit.addEventListener('click', exitImgView);
 
 gallaryItem.forEach(function (elem, index) {
   elem.onclick = () => openImgView(index);
+});
+
+gallaryDotItem.forEach(function (elem, index) {
+  elem.onclick = () => {
+    previousGalary = presentGalary;
+    presentGalary = index;
+
+    gallaryDotItem[previousGalary].classList.remove('active-gallary-dot');
+    gallaryDotItem[presentGalary].classList.add('active-gallary-dot');
+
+    gallarySlide[previousGalary].classList.remove('opacity-gallary');
+    gallarySlide[previousGalary].classList.remove('show-gallary');
+    gallarySlide[presentGalary].classList.add('opacity-gallary');
+    gallarySlide[presentGalary].classList.add('show-gallary');
+  };
 });
 
 function openImgView(index) {
@@ -34,11 +54,11 @@ function exitImgView() {
 };
 
 function opacityAndBlur(first, second) {
-  for (var i = 0; i < activeOpacity.length; i++) {
+  for (let i = 0; i < activeOpacity.length; i++) {
     activeOpacity[i].style.opacity = first;
   };
 
-  for (var i = 0; i < blur.length; i++) {
+  for (let i = 0; i < blur.length; i++) {
     blur[i].style.filter = `blur(${second}vw)`;
   };
 };
