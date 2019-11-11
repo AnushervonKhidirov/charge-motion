@@ -4,10 +4,10 @@
   transition: 1s;
 }
 
-#contact-form span {
+#contact-form div {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
 }
 
 #map {
@@ -73,9 +73,8 @@ form input[type="submit"]:focus {
     font-size: 2vw;
   }
 
-  #contact-form span {
+  #contact-form div {
     top: -5vw;
-    width: 16vw;
   }
 
   .contact-page-address {
@@ -121,9 +120,8 @@ form input[type="submit"]:focus {
     font-size: 2vw;
   }
 
-  #contact-form span {
+  #contact-form div {
     top: -5vw;
-    width: 43vw;
   }
 
   .contact-page-address {
@@ -164,7 +162,7 @@ form input[type="submit"]:focus {
     font-size: 5vw;
   }
 
-  #contact-form span {
+  #contact-form div {
     top: -11vw;
   }
 
@@ -182,7 +180,7 @@ form input[type="submit"]:focus {
     font-size: 6vw;
   }
 
-  #contact-form span {
+  #contact-form div {
     top: -13vw;
   }
 
