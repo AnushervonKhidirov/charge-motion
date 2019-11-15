@@ -3,8 +3,8 @@ let paralaxItem = document.querySelectorAll('.paralax');
 let desctopParalax = true;
 
 paralaxControl();
-
 window.addEventListener('resize', paralaxControl);
+window.addEventListener('mousemove', movingElement);
 
 function paralaxControl() {
   if (document.body.clientWidth < 992) {
@@ -14,8 +14,6 @@ function paralaxControl() {
     desctopParalax = true;
   };
 };
-
-window.addEventListener('mousemove', movingElement);
 
 function movingElement(event) {
   if (desctopParalax) {

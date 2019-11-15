@@ -7,14 +7,12 @@ let activeOpacity = document.querySelectorAll('.active-opacity');
 let previousImg = document.querySelector('.previous-img');
 let nextImg = document.querySelector('.next-img');
 let gallaryItem = document.querySelectorAll('.border-gallary');
-let startContactViewIMG, endContactViewIMG, indexImgGalary;
-
 let gallarySlide = document.querySelectorAll('.gallary-slide');
 let gallaryDotItem = document.querySelectorAll('.gallary-dot-item');
+let startContactViewIMG, endContactViewIMG, indexImgGalary;
 let previousGalary = 0;
 let presentGalary = 0;
 
-// Events
 nextImg.addEventListener('click', () => isNextIMG(imgGallary.length, 0, indexImgGalary++));
 previousImg.addEventListener('click', () => isNextIMG (-1, imgGallary.length - 1, indexImgGalary--));
 viewImages.addEventListener('touchstart', event => startContactViewIMG = event.targetTouches[0].pageX);

@@ -2,26 +2,16 @@
 1200
 992
 767
+550
 */
 
-
-@media screen and (min-width: 1200px) {
-
-}
-
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-
-}
-
-
 @media screen and (min-width: 767px) and (max-width: 992px) {
-  div.loading-page span {
+  .loading-page span {
     font-size: 3vw;
     padding-right: 1.5vw;
   }
 
-  div.loading-page img {
+  .loading-page img {
     height: 4.5vw;
   }
 
@@ -33,44 +23,44 @@
     top: 10vw;
   }
 
-  div#logo {
+  #logo {
     top: -.7vw;
     height: 10vw;
   }
 
-  div#logo span.big-font {
+  #logo span.big-font {
     font-size: 4vw;
   }
 
-  div#logo span.little-font {
+  #logo span.little-font {
     bottom: 1.6vw;
     font-size: 1.24vw !important;
     letter-spacing: .3vw !important;
   }
 
-  div#logo img {
+  #logo img {
     margin-top: 1vw;
     width: 9vw;
   }
 
-  div.menu-button {
+  .menu-button {
     height: 4.4vw;
     width: 5.1vw;
     padding: 2.8vw;
   }
 
-  div.menu-line {
+  .menu-line {
     height: .8vw;
     width: 5.1vw;
   }
 
-  ul.mobile-menu {
+  .mobile-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 5vw;
   }
 
-  div.charge-motion-circle-background {
+  .charge-motion-circle-background {
     top: calc(50% + 10vw);
     width: 40vw;
     height: 40vw;
@@ -83,12 +73,12 @@
 
 
 @media screen and (max-width: 767px) {
-  div.loading-page span {
+  .loading-page span {
     font-size: 6vw;
     padding-right: 3vw;
   }
 
-  div.loading-page img {
+  .loading-page img {
     height: 9vw;
   }
 
@@ -100,44 +90,44 @@
     top: 15vw;
   }
 
-  div#logo {
+  #logo {
     top: -1.05vw;
     height: 15vw;
   }
 
-  div#logo span.big-font {
+  #logo span.big-font {
     font-size: 6vw;
   }
 
-  div#logo span.little-font {
+  #logo span.little-font {
     bottom: 2.4vw;
     font-size: 1.86vw !important;
     letter-spacing: .45vw !important;
   }
 
-  div#logo img {
+  #logo img {
     margin-top: 1.5vw;
     width: 13.5vw;
   }
 
-  div.menu-button {
+  .menu-button {
     height: 6.6vw;
     width: 7.65vw;
     padding: 4.2vw;
   }
 
-  div.menu-line {
+  .menu-line {
     height: 1.2vw;
     width: 7.65vw;
   }
 
-  ul.mobile-menu {
+  .mobile-menu {
     display: flex;
     flex-direction: column;
     font-size: 7.5vw;
   }
 
-  div.charge-motion-circle-background {
+  .charge-motion-circle-background {
     top: calc(50% + 15vw);
     width: 60vw;
     height: 60vw;
@@ -154,15 +144,15 @@
     opacity: 1 !important;
   }
 
-  li.lang {
+  .lang {
     display: none;
   }
 
-  div.menu-button {
+  .menu-button {
     display: none !important;
   }
 
-  div.charge-motion-circle-background {
+  .charge-motion-circle-background {
     display: none !important;
   }
 
@@ -174,7 +164,7 @@
     top: 5.75vw;
   }
 
-  div.vertical-line {
+  .vertical-line {
     position: absolute;
     top: 0vw;
     width: .4vw;
@@ -184,7 +174,7 @@
     z-index: 1;
   }
 
-  div.horizontal-line {
+  .horizontal-line {
     position: absolute;
     top: 7.65vw;
     left: 0vw;
@@ -194,23 +184,43 @@
     transition: 1s;
   }
 
-  div.name-page-font {
+  .name-page-font {
     position: absolute;
+    -webkit-font-family: 'Yu Gothic Light';
+    -moz-font-family: 'Yu Gothic Light';
+    -ms-font-family: 'Yu Gothic Light';
+    -o-font-family: 'Yu Gothic Light';
     font-family: 'Yu Gothic Light';
+    -webkit-letter-spacing: 0vw;
+    -moz-letter-spacing: 0vw;
+    -ms-letter-spacing: 0vw;
+    -o-letter-spacing: 0vw;
     letter-spacing: 0vw;
+    -webkit-font-size: 2.5vw;
+    -moz-font-size: 2.5vw;
+    -ms-font-size: 2.5vw;
+    -o-font-size: 2.5vw;
     font-size: 2.5vw;
     top: -5vw;
     left: 5vw;
     transition: 1s top;
   }
 
-  div.text-page-font {
+  .text-page-font {
     position: absolute;
     top: 11vw;
     left: -33vw;
     width: 28vw;
     padding: 1.5vw;
+    -webkit-line-height: 2.5vw;
+    -moz-line-height: 2.5vw;
+    -ms-line-height: 2.5vw;
+    -o-line-height: 2.5vw;
     line-height: 2.5vw;
+    -webkit-font-size: 1.4vw;
+    -moz-font-size: 1.4vw;
+    -ms-font-size: 1.4vw;
+    -o-font-size: 1.4vw;
     font-size: 1.4vw;
     transition: 1s left;
     z-index: 1;
@@ -218,16 +228,16 @@
 }
 
 @media screen and (max-width: 992px) {
-  div#dots {
+  #dots {
     display: none;
   }
 
-  div#logo {
+  #logo {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  div.menu-button {
+  .menu-button {
     display: none;
     position: fixed;
     top: 0vw;
@@ -238,14 +248,14 @@
     opacity: 0;
   }
 
-  div.menu-line {
+  .menu-line {
     position: absolute;
     transition-duration: .5s;
     border-radius: 5px;
     background: #70BF4C;
   }
 
-  div.l2 {
+  .l2 {
     background: #243F83 !important;
   }
 
@@ -266,23 +276,23 @@
     opacity: 0;
   }
 
-  li.menu-item {
+  .menu-item {
     padding: 2vw 2vw;
     transition: .5s;
     font-weight: bold;
     cursor: pointer;
   }
 
-  li.lang {
+  .lang {
     display: block;
   }
 
-  li.lang a {
+  .lang a {
     color: inherit;
     text-decoration: none;
   }
 
-  div#mobile-background {
+  #mobile-background {
     position: fixed;
     background: rgba(0, 0, 0, .5);
     height: 100vh;
@@ -290,7 +300,7 @@
     z-index: 2;
   }
 
-  div.charge-motion-circle-background {
+  .charge-motion-circle-background {
     display: block;
     position: fixed;
     left: 50%;
@@ -301,7 +311,7 @@
     z-index: 1;
   }
 
-  div.charge-motion-circle-background img {
+  .charge-motion-circle-background img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -317,7 +327,7 @@
     font-size: 5vw;
   }
 
-  div.name-page-font {
+  .name-page-font {
     position: absolute;
     top: -25vw;
     font-family: 'Yu Gothic Light';
@@ -327,7 +337,7 @@
     text-align: center;
   }
 
-  div.text-page-font {
+  .text-page-font {
     position: absolute;
     top: 15vw;
     left: -110vw;
@@ -351,7 +361,7 @@
     margin: 10vw 5vw;
   }
 
-  div.name-page-font {
+  .name-page-font {
     position: absolute;
     top: -25vw;
     font-family: 'Yu Gothic Light';
@@ -361,7 +371,7 @@
     text-align: center;
   }
 
-  div.text-page-font {
+  .text-page-font {
     position: absolute;
     top: 15vw;
     left: -110vw;

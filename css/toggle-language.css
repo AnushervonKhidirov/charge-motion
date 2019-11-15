@@ -1,4 +1,4 @@
-div.switch-language {
+.switch-language {
   position: relative;
   left: 5vw;
   border-radius: 10vw;
@@ -12,7 +12,7 @@ div.switch-language {
   z-index: 1;
 }
 
-div.switcher {
+.switcher {
   position: absolute;
   border-radius: 10vw;
   background: #4EFF01;
@@ -20,63 +20,55 @@ div.switcher {
   z-index: 5;
 }
 
-div.switch-language:hover {
+.switch-language:hover {
   opacity: 1;
 }
 
-body.english-page div.switcher {
+body.english-page .switcher {
   left: 0vw !important;
 }
 
-body.english-page div.switch-language:hover div.switcher {
+body.english-page .switch-language:hover .switcher {
   left: 2.55vw !important;
 }
 
 
 @media screen and (min-width: 992px) {
-  div.switch-language {
+  .switch-language {
     bottom: 3.2vw;
     height: 1.5vw;
     width: 5.1vw;
     border: .2vw solid #70BF4C;
   }
 
-  div.switcher {
+  .switcher {
     top: 0vw;
     right: .05vw;
     width: 2.55vw;
     height: 1.5vw;
   }
 
-  div.switch-language:hover div.switcher {
+  .switch-language:hover .switcher {
     right: 2.55vw;
   }
 }
 
 @media screen and (max-width: 992px) {
-  div.switch-language {
+  .switch-language {
     bottom: 6.3vw;
     height: 3vw;
     width: 10.2vw;
     border: .4vw solid #70BF4C;
   }
 
-  div.switcher {
+  .switcher {
     top: -.05vw;
     right: -.15vw;
     width: 5.1vw;
     height: 3.05vw;
   }
 
-  div.switch-language:hover div.switcher {
+  .switch-language:hover .switcher {
     right: 5.2vw;
   }
-}
-
-@media screen and (min-width: 550px) and (max-width: 992px) {
-
-}
-
-@media screen and (max-width: 550px) {
-
 }

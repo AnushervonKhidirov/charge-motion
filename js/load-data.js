@@ -4,7 +4,6 @@ let thirdBlock = document.querySelectorAll('.third-block');
 let imgGallaryItem = document.querySelectorAll('.img-gallary-item');
 let firstProduct = document.querySelectorAll('.first-product-load');
 let secondProduct = document.querySelectorAll('.second-product-load');
-// let map = document.querySelector('.map');
 
 let sliderArr = [
   'images/slide_1.jpg',
@@ -36,14 +35,12 @@ let productsArr = [
   'images/gallary_11.jpg'
 ];
 
-// let mapURL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1854.838294203212!2d68.79573968997434!3d38.569397691289744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d177a0402b97%3A0x615b5cd6560fe650!2sRegus%20-%20Dushanbe%2C%20Opera%20%26%20Ballet!5e0!3m2!1sru!2s!4v1573454411797!5m2!1sru!2s';
 
 function loader() {
   loadMobileSlider();
   loadSlider();
   loadGallary();
   loadProductIMG();
-  // loadMap();
 };
 
 function loadMobileSlider() {
@@ -90,10 +87,3 @@ function loadProductIMG() {
     };
   };
 };
-
-// function loadMap() {
-//   if (document.body.classList.contains('pos_5') && !map.classList.contains('loaded')) {
-//     map.classList.add('loaded');
-//     map.src = mapURL;
-//   };
-// };

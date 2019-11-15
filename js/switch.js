@@ -1,27 +1,16 @@
-// Loading
 let preloader = document.querySelector('#preloader');
-let isLoad = true;
-
-// Desctop scrolling
 let content = document.querySelector('#content');
 let scrolling = document.querySelector('#slider');
 let scrollingMobile = document.querySelector('#slider-mobile');
-let isScrolling = true;
-let allowed = true;
-
-// Mobile switching
-let startContact;
-let endContact;
-
-// Switch items
+let startContact, endContact;
 let dotItem = document.querySelectorAll('.dot-item');
 let activeDot = document.querySelectorAll('.active-dot');
 let menuItemSwitch = document.querySelectorAll('.switch-menu');
-
-// Swith position
+let isScrolling = true;
+let allowed = true;
+let isLoad = true;
 let prevpos = 0;
 let pos = 0;
-
 
 window.addEventListener('load', () => isSwitchingPage(0));
 
@@ -33,7 +22,7 @@ window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function (
 // Mobile switching
 document.addEventListener('touchstart', function(event) {
   startContact = event.targetTouches[0].pageX;
-})
+});
 
 document.addEventListener('touchmove', function(event) {
   endContact = event.targetTouches[0].pageX;
@@ -77,14 +66,12 @@ function findeScreenPosition(firstPosition, secondPosition, sum) {
 
 function nextPage() {
   prevpos = pos;
-
   pos >= dotItem.length - 1 ? pos = 0 : pos++;
   isSwitchingPage(pos);
 };
 
 function previousPage() {
   prevpos = pos;
-
   pos <= 0 ? pos = dotItem.length - 1 : pos--;
   isSwitchingPage(pos);
 };
@@ -94,7 +81,7 @@ menuItemSwitch.forEach(function(elem, index) {
   elem.onclick = function () {
     if (allowed) {
       itemSwitch(index);
-    }
+    };
   };
 });
 
@@ -137,7 +124,6 @@ function changeBodyClass(index) {
     document.body.classList.add('pos_' + pos + '_en');
   };
 
-  // --------------------------
   loader()
 };
 

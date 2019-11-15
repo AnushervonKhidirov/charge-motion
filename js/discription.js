@@ -18,10 +18,10 @@ toggleProductType.forEach((elem, index) => {
     previousProduct = presentProduct;
     presentProduct = index;
 
-    if (previousProduct == presentProduct) return
+    if (previousProduct == presentProduct) return;
 
-    toggleProductType[previousProduct].classList.remove('active-product')
-    toggleProductType[presentProduct].classList.add('active-product')
+    toggleProductType[previousProduct].classList.remove('active-product');
+    toggleProductType[presentProduct].classList.add('active-product');
 
     setTimeout(function () {
       productType[previousProduct].classList.remove('opacity-product-type');
@@ -38,8 +38,8 @@ toggleProductType.forEach((elem, index) => {
 
     fullDiscriptionData[presentProduct].classList.remove('hide-product-type');
     fullDiscriptionData[previousProduct].classList.add('hide-product-type');
-  }
-})
+  };
+});
 
 function openDiscription() {
   document.body.classList.add('open-full-discription');

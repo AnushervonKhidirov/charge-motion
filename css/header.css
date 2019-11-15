@@ -1,4 +1,4 @@
-div#header {
+#header {
   position: fixed;
   top: 0px;
   display: flex;
@@ -13,24 +13,28 @@ div#header {
   z-index: 5;
 }
 
-div#logo {
+#logo {
   position: relative;
   top: -.3vw;
   left: 4vw;
   display: flex;
   align-items: center;
+  -webkit-font-family: Arial Black !important;
+  -moz-font-family: Arial Black !important;
+  -ms-font-family: Arial Black !important;
+  -o-font-family: Arial Black !important;
   font-family: Arial Black !important;
   letter-spacing: normal !important;
   cursor: pointer;
   height: 5.1vw;
 }
 
-div#logo span.big-font {
+#logo span.big-font {
   font-size: 2vw;
   color: #243F83;
 }
 
-div#logo span.little-font {
+#logo span.little-font {
   position: absolute;
   right: 0vw;
   bottom: .8vw;
@@ -39,7 +43,7 @@ div#logo span.little-font {
   color: #70BF4C;
 }
 
-div#logo img {
+#logo img {
   margin-top: .6vw;
   width: 4.5vw;
 }
@@ -47,12 +51,16 @@ div#logo img {
 #menu ul {
   display: flex;
   list-style-type: none;
+  -webkit-font-size: 1.3vw;
+  -moz-font-size: 1.3vw;
+  -ms-font-size: 1.3vw;
+  -o-font-size: 1.3vw;
   font-size: 1.3vw;
   padding: 0px;
   margin: 0px;
 }
 
-li.menu-item {
+.menu-item {
   display: flex;
   align-items: center;
   padding: 2vw 1.5vw;
@@ -61,10 +69,10 @@ li.menu-item {
   cursor: pointer;
 }
 
-li.menu-item:hover {
+.menu-item:hover {
   color:  #3AB606;
 }
 
-li.activeMenu {
+.activeMenu {
   color:  #4EFF01 !important;
 }

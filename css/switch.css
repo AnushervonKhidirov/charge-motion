@@ -139,14 +139,6 @@ body.pos_5 #contact-form {
   opacity: 1;
 }
 
-/* body.pos_5 .contact-page-address {
-  left: 5vw;
-}
-
-body.pos_5 #map {
-  left: 5vw;
-} */
-
 
 @media screen and (min-width: 992px) {
   body.pos_0 .about {

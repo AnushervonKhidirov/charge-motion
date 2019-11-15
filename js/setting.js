@@ -1,25 +1,15 @@
-// Others variable
-// let allowAutoscrollingPage = true;
 let allowAutoscrollingPage = false;
 let timerLine = document.querySelector('#timer-line');
-
-// Setting items
 let setting = document.querySelector('#setting');
 let getSettingValueButton = document.querySelector('.set');
 let toggleSetting = document.querySelector('.setting-button');
 let lang = document.querySelector('.toggle-language');
 let logo = document.querySelector('#logo');
-let previousTimer = false;
-let fillLine;
-
-// Value
 let toggleAutoscroll = document.querySelector('.toggle-autoscroll');
 let timer = document.querySelector('.timer');
+let previousTimer = false;
 let isOpened = true;
-let isNumber;
-let interval;
-let startTimer;
-
+let fillLine, isNumber, interval, startTimer;
 
 if (document.body.clientWidth <= 992) allowAutoscrollingPage = false;
 

@@ -40,9 +40,7 @@ dotsItem.forEach(function (elem, index) {
 
     if ((index - presDot) <= toAnySide && ((index - presDot) > 0 || (index - presDot) <= -toAnySide)) {
       let timer = setInterval(() => {
-
         if (dotsItem[index].classList.contains('active-slider-dot')) clearInterval(timer);
-
         toRight(index);
       }, 100);
     };
@@ -50,7 +48,6 @@ dotsItem.forEach(function (elem, index) {
     if ((index - presDot) > toAnySide || (index - presDot) < 0 && (index - presDot) > -toAnySide) {
       let timer = setInterval(() => {
         toLeft(index);
-
         if (dotsItem[index].classList.contains('active-slider-dot')) clearInterval(timer);
       }, 100);
     };
@@ -78,7 +75,6 @@ sliderMobile.addEventListener('touchend', function() {
   endContactSliderMobile = undefined;
 });
 
-// functions
 function toRight() {
   if (movePosition) {
     movePosition = false;

@@ -43,7 +43,7 @@
   }
 }
 
-div.charge-motion-circle-background {
+.charge-motion-circle-background {
   -webkit-animation-name: shine;
   -webkit-animation-duration: 2s;
   -webkit-animation-direction: alternate;
@@ -121,7 +121,7 @@ div.charge-motion-circle-background {
   }
 }
 
-div.moving  {
+.moving  {
   -webkit-animation-name: move-line;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;

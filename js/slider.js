@@ -1,24 +1,15 @@
 let slider = document.querySelector('#slider');
-
-// Navigation
 let left = document.querySelector('.left');
 let right = document.querySelector('.right');
-let startContactSlider;
-let endContactSlider;
-
-// Geting size
+let startContactSlider, endContactSlider;
 let imgItem = document.querySelectorAll('.slider-block');
 let first = document.querySelector('.first');
 let sliderImages = document.querySelector('.slider-images');
-
-// Seting size
 let sliderSize = first.clientWidth;
 let imgSize = imgItem[0].clientWidth;
-let sum = 0;
 let createNextSlider = (sliderSize * 2) - imgSize;
-
-// Allow automaticly
 let automaticly = true;
+let sum = 0;
 
 sliderImages.style.transform = 'translateX(-' + sliderSize + 'px)';
 
@@ -51,8 +42,8 @@ slider.addEventListener('touchstart', function() {
 
     startContactSlider = undefined;
     endContactSlider = undefined;
-  }, 300)
-})
+  }, 300);
+});
 
 right.addEventListener('click', () => move(sum += imgSize));
 left.addEventListener('click', () => move(sum -= imgSize));

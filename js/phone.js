@@ -11,9 +11,6 @@ img[1].src = src;
 
 window.addEventListener('load', start);
 
-
-// Shorten code
-
 function start() {
   charging[0].style.left = '0%';
   charging[0].style.background = '#4EFF01';

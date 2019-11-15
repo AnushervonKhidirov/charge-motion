@@ -7,8 +7,20 @@ body {
   background-attachment: fixed;
   color: #fff;
   overflow: hidden;
+  -webkit-font-family: Arial;
+  -moz-font-family: Arial;
+  -ms-font-family: Arial;
+  -o-font-family: Arial;
   font-family: Arial;
+  -webkit-font-stretch: ultra-condensed;
+  -moz-font-stretch: ultra-condensed;
+  -ms-font-stretch: ultra-condensed;
+  -o-font-stretch: ultra-condensed;
   font-stretch: ultra-condensed;
+  -webkit-letter-spacing: .2vw;
+  -moz-letter-spacing: .2vw;
+  -ms-letter-spacing: .2vw;
+  -o-letter-spacing: .2vw;
   letter-spacing: .2vw;
 }
 
@@ -26,7 +38,7 @@ body {
   z-index: 3;
 }
 
-a.inst {
+.inst {
   position: absolute;
   display: flex;
   align-items: center;
@@ -37,12 +49,12 @@ a.inst {
   z-index: 2;
 }
 
-a.inst img {
+.inst img {
   height: 100%;
   margin-right: .5vw;
 }
 
-div#dots {
+#dots {
   position: absolute;
   bottom: 3vw;
   right: 0vw;
@@ -52,7 +64,7 @@ div#dots {
   width: 4vw;
 }
 
-div.dot-item {
+.dot-item {
   border: .175vw solid;
   border-radius: 1vw;
   width: .91vw;
@@ -60,7 +72,7 @@ div.dot-item {
   cursor: pointer;
 }
 
-div.active-dot {
+.active-dot {
   border: .21vw solid;
   border-radius: 1vw;
   opacity: 0;
@@ -70,7 +82,7 @@ div.active-dot {
   transition: 1.5s;
 }
 
-div.moving {
+.moving {
   position: fixed;
   bottom: 0vw;
   background: #4EFF01;
@@ -78,7 +90,7 @@ div.moving {
   height: .3vw;
 }
 
-div.activeAutoscrollingPage {
+.activeAutoscrollingPage {
   width: 100% !important;
 }
 
@@ -112,7 +124,7 @@ div.activeAutoscrollingPage {
   overflow: hidden;
 }
 
-ul.setting-items {
+.setting-items {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,14 +137,14 @@ ul.setting-items {
   opacity: 0;
 }
 
-ul.setting-items li {
+.setting-items li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2vw 0vw;
 }
 
-li.set {
+.set {
   border: .2vw solid;
   border-radius: .5vw;
   width: 10vw;
@@ -142,12 +154,12 @@ li.set {
   cursor: pointer;
 }
 
-li.set a {
+.set a {
   text-decoration: none;
   color: inherit;
 }
 
-span.toggle-button {
+.toggle-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +171,7 @@ span.toggle-button {
   cursor: pointer;
 }
 
-input.timer {
+.timer {
   width: 4vw;
   height: 2vw;
   background: #101011;
@@ -195,7 +207,7 @@ input.timer {
   cursor: pointer;
 }
 
-span.arrow {
+.arrow {
   transition: .15s;
 }
 
@@ -203,7 +215,7 @@ span.arrow {
   width: 30vw !important;
 }
 
-.open-setting span.arrow {
+.open-setting .arrow {
   transform: rotateY(180deg);
 }
 
@@ -211,15 +223,15 @@ span.arrow {
   transform: translate(-50%, -50%);
 }
 
-div.add-opacity ul.setting-items {
+.add-opacity .setting-items {
   opacity: 1;
 }
 
-div.add-opacity div.contact-data {
+.add-opacity .contact-data {
   opacity: 1;
 }
 
-div.contact-data {
+.contact-data {
   position: absolute;
   bottom: 0vw;
   padding: 1vw;
@@ -232,7 +244,7 @@ div.contact-data {
   opacity: 0;
 }
 
-div.contact-data > div {
+.contact-data > div {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
@@ -240,7 +252,7 @@ div.contact-data > div {
 
 
 @media screen and (min-width: 992px) {
-  a.inst {
+  .inst {
     bottom: 3vw;
     left: 12vw;
     width: 2.5vw;
@@ -248,7 +260,7 @@ div.contact-data > div {
     font-size: 1.3vw;
   }
 
-  a.inst:hover {
+  .inst:hover {
     width: 14vw;
   }
 }
@@ -258,7 +270,7 @@ div.contact-data > div {
     display: none;
   }
 
-  a.inst {
+  .inst {
     bottom: 5.5vw;
     left: 20vw;
     width: 5vw;
@@ -266,7 +278,7 @@ div.contact-data > div {
     font-size: 2.6vw;
   }
 
-  a.inst:hover {
+  .inst:hover {
     width: 25vw;
   }
 }

@@ -1,4 +1,4 @@
-div.accumulator {
+.accumulator {
   position: relative;
   left: 50%;
   top: 20%;
@@ -7,7 +7,7 @@ div.accumulator {
   height: 9%;
 }
 
-div.background-accumulator {
+.background-accumulator {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -17,7 +17,7 @@ div.background-accumulator {
   overflow: hidden;
 }
 
-div.background-accumulator-green {
+.background-accumulator-green {
   position: absolute;
   left: -80%;
   width: 88%;
@@ -28,7 +28,7 @@ div.background-accumulator-green {
   transition-timing-function: ease;
 }
 
-div.end-accumulator {
+.end-accumulator {
   position: absolute;
   top: 50%;
   right: 2%;
@@ -39,18 +39,18 @@ div.end-accumulator {
   overflow: hidden;
 }
 
-div.background-end-accumulator-green {
+.background-end-accumulator-green {
   width: 0%;
   height: 100%;
   background: #4EFF01;
 }
 
-div.percent-charge {
+.percent-charge {
   position: absolute;
   text-shadow: .1vw .1vw .1vw #000;
 }
 
-div#bent {
+#bent {
   position: absolute;
   top: 1vw;
   right: -.2vw;
@@ -58,17 +58,17 @@ div#bent {
   height: 7vw;
 }
 
-div.first-opacity {
+.first-opacity {
   opacity: 0;
   transition: 1.5s opacity;
 }
 
 @media screen and (min-width: 992px) {
-  div.mobile-phone {
+  .mobile-phone {
     display: none;
   }
 
-  div.phone-hide {
+  .phone-hide {
     position: absolute;
     left: 45%;
     bottom: -50vw;
@@ -76,42 +76,42 @@ div.first-opacity {
     transition: 1s;
   }
 
-  div.phone-paralax {
+  .phone-paralax {
     height: 49vw;
     width: 24vw;
     transition: .1s;
   }
 
-  div.phone-paralax img {
+  .phone-paralax img {
     position: absolute;
     width: 100%;
   }
 
-  div.background-accumulator {
+  .background-accumulator {
     border-radius: 1vw;
   }
 
-  div.background-accumulator-green {
+  .background-accumulator-green {
     border-radius: 1vw;
   }
 
-  div.end-accumulator {
+  .end-accumulator {
     border-radius: 2vw;
   }
 
-  div.percent-charge {
+  .percent-charge {
     top: 5vw;
     font-size: 1.6vw;
   }
 
-  div.width {
+  .width {
     width: 0%;
     overflow: hidden;
     z-index: 1;
     transition: 2s;
   }
 
-  div.bent {
+  .bent {
     margin: -6.6vw 0 0 45.8vw;
     right: 10vw;
     width: 29vw;
@@ -119,7 +119,7 @@ div.first-opacity {
     overflow: hidden;
   }
 
-  div.bent-line {
+  .bent-line {
     border: .4vw solid #4EFF01;
     width: 40vw;
     height: 40vw;
@@ -128,21 +128,21 @@ div.first-opacity {
     transform: translateX(-5.5vw);
   }
 
-  div.first-horizontal-line {
+  .first-horizontal-line {
     margin-top: 6.65vw;
     width: 46vw;
     height: .5vw;
     background: #4EFF01;
   }
 
-  div.first-next-horizontal-line {
+  .first-next-horizontal-line {
     margin: -.4vw 0 0 74.6vw;
     width: 11vw;
     height: .4vw;
     background: #4EFF01;
   }
 
-  div.charge-motion-circle {
+  .charge-motion-circle {
     position: absolute;
     top: 2.5vw;
     right: 6vw;
@@ -151,18 +151,18 @@ div.first-opacity {
     box-shadow: 0 0 0 #70BF4C !important;
   }
 
-  div.charge-motion-circle img {
+  .charge-motion-circle img {
     width: 100%;
   }
 }
 
 
 @media screen and (max-width: 992px) {
-  div.phone-hide {
+  .phone-hide {
     display: none;
   }
 
-  div.phone-hide {
+  .phone-hide {
     position: fixed;
     left: 45%;
     bottom: -60vw;
@@ -170,7 +170,7 @@ div.first-opacity {
     transition: 1s;
   }
 
-  div.mobile-phone {
+  .mobile-phone {
     display: block;
 
     position: absolute;
@@ -182,33 +182,33 @@ div.first-opacity {
     transition: 1s;
   }
 
-  div.mobile-phone img {
+  .mobile-phone img {
     position: absolute;
     width: 100%;
   }
 
-  div.background-accumulator {
+  .background-accumulator {
     border-radius: 2vw;
   }
 
-  div.background-accumulator-green {
+  .background-accumulator-green {
     border-radius: 2vw;
   }
 
-  div.end-accumulator {
+  .end-accumulator {
     border-radius: 4vw;
   }
 
-  div.percent-charge {
+  .percent-charge {
     top: 10vw;
     font-size: 3.2vw;
   }
 
-  div#bent {
+  #bent {
     display: none;
   }
 
-  div.charge-motion-circle {
+  .charge-motion-circle {
     display: none;
   }
 }
