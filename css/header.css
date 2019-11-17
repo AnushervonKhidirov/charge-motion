@@ -63,7 +63,7 @@
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 2vw 1.5vw;
+  padding: 2vw 1vw;
   transition: .5s color;
   font-weight: bold;
   cursor: pointer;
