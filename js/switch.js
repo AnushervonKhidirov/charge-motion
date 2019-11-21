@@ -12,6 +12,10 @@ let isLoad = true;
 let prevpos = 0;
 let pos = 0;
 
+let logo = document.querySelector('#logo');
+
+logo.onclick = () => itemSwitch(0);
+
 window.addEventListener('load', () => isSwitchingPage(0));
 
 // Mouse wheel scrolling
@@ -109,14 +113,14 @@ function isSwitchingPage(index) {
   };
 
   if (!isLoad) {
-    changeBodyClass(index);
-    activity(index);
+    changeBodyClass();
+    activity();
   };
 
   isAutoScrollPage();
 };
 
-function changeBodyClass(index) {
+function changeBodyClass() {
   document.body.classList.remove('pos_' + prevpos);
   document.body.classList.add('pos_' + pos);
   if (document.body.classList.contains('english-page')) {
@@ -127,7 +131,7 @@ function changeBodyClass(index) {
   loader()
 };
 
-function activity(index) {
+function activity() {
   activeDot[prevpos].style.opacity = 0;
   activeDot[pos].style.opacity = 1;
   menuItemSwitch[prevpos].classList.remove('activeMenu');

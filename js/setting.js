@@ -4,7 +4,7 @@ let setting = document.querySelector('#setting');
 let getSettingValueButton = document.querySelector('.set');
 let toggleSetting = document.querySelector('.setting-button');
 let lang = document.querySelector('.toggle-language');
-let logo = document.querySelector('#logo');
+// let logo = document.querySelector('#logo');
 let toggleAutoscroll = document.querySelector('.toggle-autoscroll');
 let timer = document.querySelector('.timer');
 let previousTimer = false;
@@ -18,7 +18,7 @@ getSettingValue();
 
 toggleAutoscroll.addEventListener('click', istoggleAutoscroll);
 toggleSetting.addEventListener('click', isToggleSetting);
-logo.addEventListener('click', isToggleSetting);
+// logo.addEventListener('click', isToggleSetting);
 lang.addEventListener('click', changeLanguage);
 getSettingValueButton.addEventListener('click', getSettingValue);
 

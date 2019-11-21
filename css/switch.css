@@ -12,11 +12,7 @@ body.pos_0 .width {
 
 body.pos_0 .first-vertical-line {
   height: 10vw;
-  left: 22vw;
-}
-
-body.pos_0 .first-vertical-line {
-  height: 10vw;
+  left: 20vw;
 }
 
 body.pos_0 .first-opacity {
@@ -25,19 +21,19 @@ body.pos_0 .first-opacity {
 
 body.pos_1 .second-vertical-line {
   height: 10vw;
-  left: 34vw;
-}
-
-body.pos_1 .second-horizontal-line {
-  width: 37vw;
+  left: 35vw;
 }
 
 body.pos_1_en .second-vertical-line {
-  left: 23vw !important;
+  left: 23.5vw !important;
+}
+
+body.pos_1 .second-horizontal-line {
+  width: 38vw;
 }
 
 body.pos_1_en .second-horizontal-line {
-  width: 26vw !important;
+  width: 26.5vw !important;
 }
 
 body.pos_1 .second-opacity {
@@ -46,19 +42,19 @@ body.pos_1 .second-opacity {
 
 body.pos_2 .third-vertical-line {
   height: 10vw;
-  left: 40vw;
-}
-
-body.pos_2 .third-horizontal-line {
-  width: 43vw;
+  left: 30vw;
 }
 
 body.pos_2_en .third-vertical-line {
-  left: 26vw !important;
+  left: 21vw !important;
+}
+
+body.pos_2 .third-horizontal-line {
+  width: 33vw;
 }
 
 body.pos_2_en .third-horizontal-line {
-  width: 29vw !important;
+  width: 24vw !important;
 }
 
 body.pos_2 #slider {
@@ -82,57 +78,57 @@ body.pos_3 #gallary {
 
 body.pos_3 .fourth-vertical-line {
   height: 10vw;
-  left: 37vw;
-}
-
-body.pos_3 .fourth-horizontal-line {
-  width: 40vw;
+  left: 27.5vw;
 }
 
 body.pos_3_en .fourth-vertical-line {
-  left: 26vw !important;
+  left: 21vw !important;
+}
+
+body.pos_3 .fourth-horizontal-line {
+  width: 30.5vw;
 }
 
 body.pos_3_en .fourth-horizontal-line {
-  width: 29vw !important;
+  width: 24vw !important;
 }
 
 body.pos_4 .fivth-vertical-line {
   height: 10vw;
-  left: 40vw;
+  left: 30vw;
+}
+
+body.pos_4_en .fivth-vertical-line {
+  left: 23.5vw !important;
 }
 
 body.pos_4 .fivth-horizontal-line {
-  width: 43vw;
+  width: 33vw;
+}
+
+body.pos_4_en .fivth-horizontal-line {
+  width: 26.5vw !important;
 }
 
 body.pos_4 #our-products {
   left: 50%;
 }
 
-body.pos_4_en .fivth-vertical-line {
-  left: 28vw !important;
-}
-
-body.pos_4_en .fivth-horizontal-line {
-  width: 31vw !important;
-}
-
 body.pos_5 .sixth-vertical-line {
   height: 10vw;
-  left: 29vw;
-}
-
-body.pos_5 .sixth-horizontal-line {
-  width: 32vw;
+  left: 30vw;
 }
 
 body.pos_5_en .sixth-vertical-line {
-  left: 21vw !important;
+  left: 23vw !important;
+}
+
+body.pos_5 .sixth-horizontal-line {
+  width: 33vw;
 }
 
 body.pos_5_en .sixth-horizontal-line {
-  width: 24vw !important;
+  width: 26vw !important;
 }
 
 body.pos_5 #contact-form {
