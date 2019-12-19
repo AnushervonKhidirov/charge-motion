@@ -1,3 +1,6 @@
+
+
+
 .accumulator {
   position: relative;
   left: 50%;
@@ -210,5 +213,20 @@
 
   .charge-motion-circle {
     display: none;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .mobile-phone {
+    display: block;
+
+    /* position: absolute; */
+    /* right: -75vw; */
+    bottom: -10vw;
+    /* transform: rotate(-45deg);
+    width: 50vw;
+    height: 100vw;
+    transition: 1s; */
   }
 }

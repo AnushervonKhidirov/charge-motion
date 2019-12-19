@@ -4,7 +4,6 @@ let setting = document.querySelector('#setting');
 let getSettingValueButton = document.querySelector('.set');
 let toggleSetting = document.querySelector('.setting-button');
 let lang = document.querySelector('.toggle-language');
-// let logo = document.querySelector('#logo');
 let toggleAutoscroll = document.querySelector('.toggle-autoscroll');
 let timer = document.querySelector('.timer');
 let previousTimer = false;
@@ -18,7 +17,6 @@ getSettingValue();
 
 toggleAutoscroll.addEventListener('click', istoggleAutoscroll);
 toggleSetting.addEventListener('click', isToggleSetting);
-// logo.addEventListener('click', isToggleSetting);
 lang.addEventListener('click', changeLanguage);
 getSettingValueButton.addEventListener('click', getSettingValue);
 
@@ -100,21 +98,11 @@ function changeLanguage() {
 };
 
 function changeLocationPage() {
-  if (lang.innerHTML == 'ru' && window.location.href == "file:///E:/Denzel%20Hawking/Programming/Works/Charge%20motion/index_en.html") {
-    window.location.href = "file:///E:/Denzel%20Hawking/Programming/Works/Charge%20motion/index.html";
+  if (lang.innerHTML == 'ru' && window.location.href == "http://chargemotion.net/index_en.html") {
+    window.location.href = "http://chargemotion.net";
   };
 
-  if (lang.innerHTML == 'en' && window.location.href == "file:///E:/Denzel%20Hawking/Programming/Works/Charge%20motion/index.html") {
-    window.location.href = "file:///E:/Denzel%20Hawking/Programming/Works/Charge%20motion/index_en.html";
+  if (lang.innerHTML == 'en' && (window.location.href == "http://chargemotion.net/" || window.location.href == "http://chargemotion.net/index.html")) {
+    window.location.href = "http://chargemotion.net/index_en.html";
   };
 };
-
-// function changeLocationPage() {
-//   if (lang.innerHTML == 'ru' && window.location.href == "http://chargemotion.net/en.html") {
-//     window.location.href = "http://chargemotion.net";
-//   };
-//
-//   if (lang.innerHTML == 'en' && window.location.href == "http://chargemotion.net/") {
-//     window.location.href = "http://chargemotion.net/en.html";
-//   };
-// };

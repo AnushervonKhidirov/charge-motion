@@ -20,8 +20,7 @@ let objData = [
   'images/slide_3.jpg',
   'images/slide_4.jpg',
   'images/slide_5.jpg',
-  'images/slide_6.jpg',
-  'images/slide_7.jpg'
+  'images/slide_6.jpg'
 ];
 
 // create the dots

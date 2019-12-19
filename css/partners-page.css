@@ -45,6 +45,9 @@
   cursor: pointer;
   user-select: none;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
 }
 
@@ -68,6 +71,23 @@
   right: 0vw;
   transform: translateY(-50%);
   border-radius: .7vw 0 0 .7vw;
+}
+
+.slider-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.left .slider-arrow {
+  transform: translateX(30%) rotate(45deg);
+  border-left: .15vw solid;
+  border-bottom: .15vw solid;
+}
+
+.right .slider-arrow {
+  transform: translateX(-30%) rotate(45deg);
+  border-right: .15vw solid;
+  border-top: .15vw solid;
 }
 
 .discription {
@@ -139,6 +159,6 @@
     top: 110vw;
     left: -40vw;
     width: 90%;
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+
 body {
   margin: 0px;
   padding: 0px;
@@ -7,22 +9,9 @@ body {
   background-attachment: fixed;
   color: #fff;
   overflow: hidden;
-  -webkit-font-family: Arial;
-  -moz-font-family: Arial;
-  -ms-font-family: Arial;
-  -o-font-family: Arial;
-  font-family: Arial;
-  -webkit-font-stretch: ultra-condensed;
-  -moz-font-stretch: ultra-condensed;
-  -ms-font-stretch: ultra-condensed;
-  -o-font-stretch: ultra-condensed;
-  font-stretch: ultra-condensed;
-  -webkit-letter-spacing: .2vw;
-  -moz-letter-spacing: .2vw;
-  -ms-letter-spacing: .2vw;
-  -o-letter-spacing: .2vw;
-  letter-spacing: .2vw;
+  font-family: 'Play', sans-serif;
 }
+
 
 #content {
   position: relative;
@@ -33,7 +22,6 @@ body {
 }
 
 #main {
-  position: relative;
   transition: 1s;
   z-index: 3;
 }
@@ -45,7 +33,7 @@ body {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
-  transition: .5s;
+  transition: width .5s;
   z-index: 2;
 }
 
@@ -252,6 +240,10 @@ body {
 
 
 @media screen and (min-width: 992px) {
+  #main {
+    position: relative;
+  }
+
   .inst {
     bottom: 3vw;
     left: 12vw;
@@ -266,19 +258,38 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  #main {
+    position: absolute;
+  }
+
   #setting {
     display: none;
   }
 
   .inst {
-    bottom: 5.5vw;
-    left: 20vw;
+    top: -.7vw;
     width: 5vw;
     height: 5vw;
     font-size: 2.6vw;
   }
+}
 
-  .inst:hover {
-    width: 25vw;
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  #main {
+    top: 17vw;
+  }
+
+  .inst {
+    left: 20vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main {
+    top: 22.5vw;
+  }
+
+  .inst {
+    left: 16vw;
   }
 }

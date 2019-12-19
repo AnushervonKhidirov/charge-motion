@@ -24,8 +24,7 @@
   }
 
   #logo {
-    top: -.7vw;
-    height: 10vw;
+    width: 35vw;
   }
 
   #logo span.big-font {
@@ -36,11 +35,6 @@
     bottom: 1.6vw;
     font-size: 1.24vw !important;
     letter-spacing: .3vw !important;
-  }
-
-  #logo img {
-    margin-top: 1vw;
-    width: 9vw;
   }
 
   .menu-button {
@@ -91,8 +85,7 @@
   }
 
   #logo {
-    top: -1.05vw;
-    height: 15vw;
+    width: 50vw;
   }
 
   #logo span.big-font {
@@ -103,11 +96,6 @@
     bottom: 2.4vw;
     font-size: 1.86vw !important;
     letter-spacing: .45vw !important;
-  }
-
-  #logo img {
-    margin-top: 1.5vw;
-    width: 13.5vw;
   }
 
   .menu-button {
@@ -233,8 +221,7 @@
   }
 
   #logo {
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
   }
 
   .menu-button {
@@ -365,7 +352,7 @@
     position: absolute;
     top: -25vw;
     font-family: 'Yu Gothic Light';
-    font-size: 7vw;
+    font-size: 6vw;
     transition: 1s top;
     width: 100%;
     text-align: center;

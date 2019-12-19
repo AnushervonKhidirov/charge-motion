@@ -14,19 +14,9 @@
 }
 
 #logo {
-  position: relative;
-  top: -.3vw;
-  left: 4vw;
-  display: flex;
-  align-items: center;
-  -webkit-font-family: Arial Black !important;
-  -moz-font-family: Arial Black !important;
-  -ms-font-family: Arial Black !important;
-  -o-font-family: Arial Black !important;
-  font-family: Arial Black !important;
-  letter-spacing: normal !important;
-  cursor: pointer;
-  height: 5.1vw;
+  width: 17vw;
+  margin-left: 4vw;
+  margin-top: .3vw;
 }
 
 #logo span.big-font {
@@ -44,8 +34,7 @@
 }
 
 #logo img {
-  margin-top: .6vw;
-  width: 4.5vw;
+  width: 100%;
 }
 
 #menu ul {

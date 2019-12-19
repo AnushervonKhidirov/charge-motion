@@ -77,6 +77,14 @@ form input[type="submit"]:focus {
     top: -5vw;
   }
 
+  .sub-contact {
+    font-size: 1.2vw;
+  }
+
+  body.english-page #contact-form div {
+    top: -8vw;
+  }
+
   .contact-page-address {
     top: 27vw;
     left: -50vw;
@@ -124,6 +132,10 @@ form input[type="submit"]:focus {
     top: -5vw;
   }
 
+  .sub-contact {
+    font-size: 3vw;
+  }
+
   .contact-page-address {
     top: 100vw;
     left: 5vw;
@@ -133,6 +145,14 @@ form input[type="submit"]:focus {
 
   form {
     height: 60vw;
+  }
+
+  body.english-page form {
+    margin-top: 10vw;
+  }
+
+  body.english-page .contact-page-address {
+    top: 107vw;
   }
 
   form input {
@@ -186,8 +206,12 @@ form input[type="submit"]:focus {
 
   .contact-page-address {
     bottom: 30vw;
-    left: -110vw;
+    left: -130vw;
     line-height: 6vw;
+    font-size: 4vw;
+  }
+
+  .sub-contact {
     font-size: 4vw;
   }
 }
