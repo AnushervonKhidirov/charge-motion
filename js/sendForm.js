@@ -1,7 +1,7 @@
 formElem.onsubmit = (event) => {
   event.preventDefault();
 
-  fetch('url', {
+  fetch('/server/sendForm.php', {
     method: 'POST',
     body: new FormData(formElem)
   })
