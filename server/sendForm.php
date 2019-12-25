@@ -8,7 +8,7 @@
  $msg = "Имя: ".$_POST["name"]."\n";
  $msg .= "Почта: ".$_POST["email"]."\n";
  $msg .= "Номер телефона: ".$_POST["phone"]."\n";
- // $msg .= "Сообщение: ".$_POST["msg"]."\n";
+ // $msg .= "Сообщение: ".$_POST["message"]."\n";
  mail($to, $subject, $msg, $headerss);
  echo "Сообщение успешно отправлено";
 }?>
