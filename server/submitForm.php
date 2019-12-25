@@ -75,10 +75,10 @@ function addRequestToDB($db_conn, $user_name, $user_phone, $user_email, $user_co
     $email = isset($_POST['email']) ? $_POST['email'] : "не указан";
     $comment = $_POST['comment'];
 
-    $from = "www.kafolattour.com";
-    $to = "";
+    $from = "chargemotion.net";
+    $to = "info@chargemotion.com";
     // $to = "info@kafolattour.com";
-    $subject = "Заявка с сайта: kafolattour.com";
+    $subject = "Заявка с сайта: chargemotion.net";
     $message = "Имя:" . $name .
     "\nТелефон:" . $phone .
     "\nПочта:" . $email .
