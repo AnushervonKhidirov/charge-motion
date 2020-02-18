@@ -25,11 +25,11 @@ window.onmousewheel = window.onwheel = window.onMozMousePixelScroll = function (
 
 // Mobile switching
 document.addEventListener('touchstart', function(event) {
-  startContact = event.targetTouches[0].pageX;
+  startContact = event.targetTouches[0].pageY;
 });
 
 document.addEventListener('touchmove', function(event) {
-  endContact = event.targetTouches[0].pageX;
+  endContact = event.targetTouches[0].pageY;
 });
 
 document.addEventListener('touchend', function() {
@@ -61,10 +61,10 @@ function mousewheelSwitch(event) {
 };
 
 function findeScreenPosition(firstPosition, secondPosition, sum) {
-  if (allowed) {
+  // if (allowed) {
     if (firstPosition > (secondPosition + sum)) nextPage();
     if (secondPosition > (firstPosition + sum)) previousPage();
-  };
+  // };
 };
 
 
